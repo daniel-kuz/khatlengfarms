@@ -21,9 +21,7 @@ export default function HomePage() {
         <ProductionZones />
         <Divider from="#F4EBDD" to="#3D4F1F" />
         <WhyBethlehem />
-        <Divider from="#3D4F1F" to="#F4EBDD" />
-        <FarmMap />
-        <Divider from="#F4EBDD" to="#E8D5C0" />
+        <Divider from="#3D4F1F" to="#E8D5C0" />
         <OurJourney />
         <Divider from="#E8D5C0" to="#F4EBDD" />
         <FarmPhilosophy />
@@ -80,7 +78,7 @@ function TheStory() {
         <div className="story-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(56px,8vw,120px)', alignItems: 'center' }}>
           <div style={{ position: 'relative', height: 'clamp(440px,48vw,580px)', width: '100%', overflow: 'hidden' }}>
             <Image
-              src="/images/aerial-farm.jpg"
+              src="/images/pexels-tomfisk-19165847.jpg"
               alt="Aerial view of Khatleng Farms, Bethlehem, Free State"
               fill
               style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -218,63 +216,6 @@ function WhyBethlehem() {
   );
 }
 
-/* ─────────────────── FARM MAP ─────────────────── */
-function FarmMap() {
-  const zones = [
-    { color: '#4A7FCB', label: 'Grain Fields', meta: '100ha' },
-    { color: '#556B2F', label: 'Tunnel Farming', meta: 'Phase 1 operational' },
-    { color: '#C0392B', label: 'Livestock Handling', meta: '' },
-    { color: '#E67E22', label: 'Grazing Camps', meta: '106ha' },
-    { color: '#2F2F2F', label: 'Operational Hub', meta: '' },
-  ];
-
-  return (
-    <section className="section-pad">
-      <div className="container">
-        <div style={{ maxWidth: 720, marginBottom: 'clamp(48px,6vw,72px)' }}>
-          <SectionLabel number="" label="The Farm" />
-          <h2 style={{ fontWeight: 400 }}>200 hectares. Five operational zones.</h2>
-        </div>
-        <div style={{ position: 'relative', height: 'clamp(380px,46vw,620px)', background: 'repeating-linear-gradient(135deg,rgba(85,107,47,0.06) 0 18px,rgba(85,107,47,0.12) 18px 36px),linear-gradient(180deg,#d4c4ae,#b9a98c)', border: '1px solid rgba(47,47,47,0.12)', marginBottom: 24 }}>
-          <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
-            <polygon points="80,80 420,80 420,300 80,300" fill="rgba(74,127,203,0.5)" stroke="#4A7FCB" strokeWidth={2}/>
-            <text x="250" y="198" textAnchor="middle" fontSize={13} fill="#fff" fontFamily="monospace">Grain Fields</text>
-            <polygon points="430,80 580,80 580,200 430,200" fill="rgba(85,107,47,0.6)" stroke="#556B2F" strokeWidth={2}/>
-            <text x="505" y="148" textAnchor="middle" fontSize={11} fill="#fff" fontFamily="monospace">Tunnels</text>
-            <polygon points="430,210 580,210 580,310 430,310" fill="rgba(192,57,43,0.5)" stroke="#C0392B" strokeWidth={2}/>
-            <text x="505" y="268" textAnchor="middle" fontSize={10} fill="#fff" fontFamily="monospace">Livestock</text>
-            <polygon points="80,310 420,310 420,450 80,450" fill="rgba(230,126,34,0.4)" stroke="#E67E22" strokeWidth={2}/>
-            <text x="250" y="387" textAnchor="middle" fontSize={13} fill="#fff" fontFamily="monospace">Grazing Camps</text>
-            <polygon points="590,80 720,80 720,310 590,310" fill="rgba(47,47,47,0.6)" stroke="#2F2F2F" strokeWidth={2}/>
-            <text x="655" y="200" textAnchor="middle" fontSize={10} fill="#fff" fontFamily="monospace">Op. Hub</text>
-            <text x="700" y="440" fontSize={11} fill="rgba(47,47,47,0.5)" fontFamily="monospace">N ↑</text>
-          </svg>
-          <div style={{ position: 'absolute', top: 12, left: 14, fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', padding: '5px 10px', background: 'rgba(244,235,221,0.92)', border: '1px solid rgba(47,47,47,0.18)' }}>
-            Khatleng Farms · Bethlehem, Free State
-          </div>
-        </div>
-        {/* Legend */}
-        <div className="legend-strip" style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 12 }}>
-          {zones.map(({ color, label, meta }) => (
-            <div key={label} style={{ display: 'flex', gap: 10, alignItems: 'flex-start', padding: '14px 16px', border: '1px solid rgba(47,47,47,0.1)', background: 'var(--color-bone-deep)' }}>
-              <div style={{ width: 16, height: 16, background: color, flexShrink: 0, marginTop: 3 }} />
-              <div>
-                <div style={{ fontSize: 14, fontFamily: 'var(--font-serif)' }}>{label}</div>
-                {meta && <div style={{ fontSize: 11, color: 'var(--color-ink-mute)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>{meta}</div>}
-              </div>
-            </div>
-          ))}
-        </div>
-        <div style={{ marginTop: 36 }}>
-          <Btn href="/our-farm" variant="outline-green" arrow>Explore The Farm</Btn>
-        </div>
-      </div>
-      <style>{`
-        @media(max-width:860px){.legend-strip{grid-template-columns:repeat(2,1fr)!important}}
-      `}</style>
-    </section>
-  );
-}
 
 /* ─────────────────── OUR JOURNEY ─────────────────── */
 function OurJourney() {
