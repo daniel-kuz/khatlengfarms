@@ -5,6 +5,7 @@ import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Divider from '@/components/ui/Divider';
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
+import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 
 export const metadata: Metadata = {
   title: 'About Us | Khatleng Farms',
@@ -36,8 +37,8 @@ export default function AboutPage() {
 function PageHero() {
   return (
     <header style={{ position: 'relative', minHeight: '56vh', display: 'flex', alignItems: 'flex-end', padding: 'clamp(96px,10vw,160px) clamp(24px,5vw,96px) 72px', color: 'var(--color-bone)', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, background: 'repeating-linear-gradient(135deg,rgba(244,235,221,0.03) 0 20px,rgba(244,235,221,0.06) 20px 40px),linear-gradient(180deg,#3a3520 0%,#1e1a0c 100%)' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.55) 60%,rgba(0,0,0,0.78) 100%)' }} />
+      <HeroVideoLoop />
+      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.55) 60%,rgba(0,0,0,0.78) 100%)', zIndex: 1 }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
         <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span>—</span>ABOUT US</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '18ch', marginBottom: 20, fontWeight: 400 }}>About Khatleng Farms</h1>
