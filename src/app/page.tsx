@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import NavBar from '@/components/layout/NavBar';
 import Footer from '@/components/layout/Footer';
 import Btn from '@/components/ui/Btn';
@@ -77,7 +78,16 @@ function TheStory() {
     <section className="section-pad">
       <div className="container">
         <div className="story-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(56px,8vw,120px)', alignItems: 'center' }}>
-          <ImagePlaceholder caption="img · aerial farm · Free State · warm tones" height="clamp(440px,48vw,580px)" />
+          <div style={{ position: 'relative', height: 'clamp(440px,48vw,580px)', width: '100%', overflow: 'hidden' }}>
+            <Image
+              src="/images/aerial-farm.jpg"
+              alt="Aerial view of Khatleng Farms, Bethlehem, Free State"
+              fill
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              sizes="(max-width: 860px) 100vw, 50vw"
+              priority
+            />
+          </div>
           <div>
             <SectionLabel number="" label="Our Story" />
             <h2 style={{ marginBottom: 28, fontWeight: 400 }}>
