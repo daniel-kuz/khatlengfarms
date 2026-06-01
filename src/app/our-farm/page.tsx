@@ -151,10 +151,16 @@ function FarmImagery() {
           <h2 style={{ fontWeight: 400 }}>200 hectares of productive farmland.</h2>
         </div>
         <div className="farm-img-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-          <ImagePlaceholder caption="img Â· grain fields Â· Free State Â· maize Â· wide angle" height="clamp(280px,32vw,420px)" />
+          <div style={{ position: 'relative', height: 'clamp(280px,32vw,420px)', overflow: 'hidden' }}>
+            <Image src="/images/grain-wide.jpg" alt="Grain fields, Free State, wide angle" fill style={{ objectFit: 'cover' }} sizes="(max-width:860px) 100vw, 50vw" />
+          </div>
           <div style={{ display: 'grid', gridTemplateRows: '1fr 1fr', gap: 16 }}>
-            <ImagePlaceholder caption="img Â· cattle herd Â· veld Â· morning Â· Free State" height="100%" />
-            <ImagePlaceholder caption="img Â· tunnel farming Â· vegetables Â· interior" height="100%" />
+            <div style={{ position: 'relative', overflow: 'hidden', minHeight: 180 }}>
+              <Image src="/images/cattle-herd.jpg" alt="Cattle herd in the Free State veld" fill style={{ objectFit: 'cover' }} sizes="(max-width:860px) 100vw, 50vw" />
+            </div>
+            <div style={{ position: 'relative', overflow: 'hidden', minHeight: 180 }}>
+              <Image src="/images/tunnel-interior.jpg" alt="Tunnel farming interior, vegetables" fill style={{ objectFit: 'cover' }} sizes="(max-width:860px) 100vw, 50vw" />
+            </div>
           </div>
         </div>
       </div>
