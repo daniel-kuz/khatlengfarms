@@ -3,7 +3,8 @@
     "allow": [
       "Bash(npm install *)",
       "PowerShell(Get-Command node, npm, npx -ErrorAction SilentlyContinue)",
-      "PowerShell(cd \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\nkoenyanetrust-master\\\\nkoenyanetrust-master\"; Move-Item \"public\\\\Videos\\\\hero.mp4\" \"$env:TEMP\\\\hero_temp.mp4\"; Remove-Item -Force \"public\\\\Videos\" -Recurse; New-Item -ItemType Directory \"public\\\\videos\"; Move-Item \"$env:TEMP\\\\hero_temp.mp4\" \"public\\\\videos\\\\hero.mp4\"; Get-ChildItem public\\\\videos)"
+      "PowerShell(cd \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\nkoenyanetrust-master\\\\nkoenyanetrust-master\"; Move-Item \"public\\\\Videos\\\\hero.mp4\" \"$env:TEMP\\\\hero_temp.mp4\"; Remove-Item -Force \"public\\\\Videos\" -Recurse; New-Item -ItemType Directory \"public\\\\videos\"; Move-Item \"$env:TEMP\\\\hero_temp.mp4\" \"public\\\\videos\\\\hero.mp4\"; Get-ChildItem public\\\\videos)",
+      "Bash(head -5 C:/Users/USER-PC/Documents/Farm/nkoenyanetrust-master/nkoenyanetrust-master/src/app/contact/page.tsx *)"
     ]
   }
 }

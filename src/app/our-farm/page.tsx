@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from 'next';
+import Image from 'next/image';
 import NavBar from '@/components/layout/NavBar';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 import Footer from '@/components/layout/Footer';
@@ -84,7 +85,15 @@ function IntegratedOperation() {
               Khatleng Farms operates as a fully integrated agricultural enterprise across grain production, tunnel farming, commercial livestock and beef stud development. The farm is equipped with the infrastructure and water resources to support year-round operations across all production activities.
             </p>
           </div>
-          <ImagePlaceholder caption="img Â· farm landscape Â· Bethlehem Free State Â· wide Â· golden hour" height="clamp(380px,42vw,520px)" />
+          <div style={{ position: 'relative', height: 'clamp(380px,42vw,520px)', width: '100%', overflow: 'hidden' }}>
+            <Image
+              src="/images/golden-hour.jpg"
+              alt="Khatleng Farms landscape, Bethlehem Free State, golden hour"
+              fill
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              sizes="(max-width: 860px) 100vw, 50vw"
+            />
+          </div>
         </div>
       </div>
       <style>{`@media(max-width:860px){.int-grid{grid-template-columns:1fr!important}}`}</style>

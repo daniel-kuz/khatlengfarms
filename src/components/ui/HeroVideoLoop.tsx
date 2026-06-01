@@ -6,6 +6,10 @@ const VIDEOS = [
   '/videos/hero.mp4',
   '/videos/hero2.mp4',
   '/videos/hero3.mp4',
+  '/videos/Cattle.mp4',
+  '/videos/Sheep.mp4',
+  '/videos/Sunflower Field.mp4',
+  '/videos/Maize Field.mp4',
 ];
 
 const FADE_DURATION = 1200; // ms — increase for a slower crossfade
