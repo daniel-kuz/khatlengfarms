@@ -5,6 +5,7 @@ import Divider from '@/components/ui/Divider';
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 import SectionLabel from '@/components/ui/SectionLabel';
 import NewsletterSignup from '@/components/ui/NewsletterSignup';
+import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 
 export default function HomePage() {
   return (
@@ -44,17 +45,8 @@ function Hero() {
   return (
     <header style={{ position: 'relative', minHeight: '90vh', display: 'flex', alignItems: 'flex-end', padding: 'clamp(96px,10vw,160px) clamp(24px,5vw,96px) 96px', color: 'var(--color-bone)', overflow: 'hidden' }}>
 
-      {/* ── Video background ── */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        aria-hidden="true"
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
-      >
-        <source src="/videos/hero.mp4" type="video/mp4" />
-      </video>
+      {/* ── Video background loop ── */}
+      <HeroVideoLoop />
 
       {/* ── Dark gradient overlay so text stays readable ── */}
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.50) 55%,rgba(0,0,0,0.80) 100%)', zIndex: 1 }} />
