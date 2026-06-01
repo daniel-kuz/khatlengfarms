@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const navLinks = [
@@ -66,19 +67,13 @@ export default function NavBar() {
             letterSpacing: '0.02em',
           }}
         >
-          <span
-            style={{
-              width: 36, height: 36,
-              background: 'var(--color-green)',
-              display: 'grid', placeItems: 'center',
-              color: 'var(--color-bone)',
-              fontFamily: 'var(--font-serif)',
-              fontSize: 17, fontWeight: 700,
-              flexShrink: 0,
-            }}
-          >
-            K
-          </span>
+          <Image
+            src="/images/Logo.png"
+            alt="Khatleng Farms logo"
+            width={40}
+            height={40}
+            style={{ objectFit: 'contain', flexShrink: 0 }}
+          />
           <span>Khatleng Farms</span>
         </Link>
 

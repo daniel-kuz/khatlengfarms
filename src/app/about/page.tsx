@@ -188,31 +188,11 @@ function JourneyTimeline() {
 
 function TeamSection() {
   const team = [
-    {
-      name: 'Ntebo Nkoenyane',
-      role: 'Family Principal & Trust Beneficiary',
-      bio: 'A founding member of the Nkoenyane Family Trust and central to the legacy this farm represents. Her involvement reflects the generational commitment that underpins everything Khatleng Farms stands for.',
-    },
-    {
-      name: 'Tshebeletso Hlapane',
-      role: 'Legal & Governance',
-      bio: 'Oversees legal, regulatory and governance matters to ensure the business maintains strong compliance standards and operates with integrity.',
-    },
-    {
-      name: 'Tshenolo Hlapane',
-      role: 'Finance & Administration',
-      bio: 'Responsible for financial reporting, internal controls, budgeting and administrative coordination. Brings structured financial oversight to support responsible growth and long-term sustainability.',
-    },
-    {
-      name: 'Tshimoloho Hlapane',
-      role: 'Farm Operations & Livestock Management',
-      bio: 'Oversees day-to-day farm activities including livestock management, procurement, field operations and implementation of on-farm systems. Supports operational efficiency and practical execution across the business.',
-    },
-    {
-      name: 'Daniel Tongoona',
-      role: 'Strategy, Development & Operations',
-      bio: 'A Civil Engineer with experience in infrastructure, project delivery and business development. Leads strategic planning, farm expansion, capital projects, mechanisation planning and operational development. Focused on building Khatleng Farms into a sustainable and commercially driven agricultural enterprise.',
-    },
+    { name: 'Ntebo Nkoenyane',     photo: '/images/Ntebo.png',        role: 'Family Principal & Trust Beneficiary',      bio: 'A founding member of the Nkoenyane Family Trust and central to the legacy this farm represents. Her involvement reflects the generational commitment that underpins everything Khatleng Farms stands for.' },
+    { name: 'Tshebeletso Hlapane', photo: '/images/Tshebeletso.png',  role: 'Legal & Governance',                        bio: 'Oversees legal, regulatory and governance matters to ensure the business maintains strong compliance standards and operates with integrity.' },
+    { name: 'Tshenolo Hlapane',    photo: '/images/Tshenolo.png',     role: 'Finance & Administration',                  bio: 'Responsible for financial reporting, internal controls, budgeting and administrative coordination. Brings structured financial oversight to support responsible growth and long-term sustainability.' },
+    { name: 'Tshimoloho Hlapane',  photo: '/images/Tshimoloho.png',   role: 'Farm Operations & Livestock Management',    bio: 'Oversees day-to-day farm activities including livestock management, procurement, field operations and implementation of on-farm systems. Supports operational efficiency and practical execution across the business.' },
+    { name: 'Daniel Tongoona',     photo: '/images/Daniel.png',       role: 'Strategy, Development & Operations',        bio: 'A Civil Engineer with experience in infrastructure, project delivery and business development. Leads strategic planning, farm expansion, capital projects, mechanisation planning and operational development. Focused on building Khatleng Farms into a sustainable and commercially driven agricultural enterprise.' },
   ];
 
   return (
@@ -223,9 +203,11 @@ function TeamSection() {
           <h2 style={{ fontWeight: 400 }}>The family behind the farm.</h2>
         </div>
         <div className="team-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 'clamp(32px,5vw,56px)' }}>
-          {team.map(({ name, role, bio }) => (
+          {team.map(({ name, photo, role, bio }) => (
             <div key={name} className="team-card" style={{ display: 'grid', gridTemplateColumns: '140px 1fr', gap: 24, alignItems: 'start' }}>
-              <ImagePlaceholder caption={`portrait · ${name.split(' ')[0].toLowerCase()}`} style={{ width: 140, height: 180, filter: 'grayscale(100%)' }} />
+              <div style={{ position: 'relative', width: 140, height: 180, overflow: 'hidden', flexShrink: 0 }}>
+                <Image src={photo} alt={`Portrait of ${name}`} fill style={{ objectFit: 'cover', objectPosition: 'top' }} sizes="140px" />
+              </div>
               <div>
                 <h3 style={{ fontSize: 'clamp(18px,1.6vw,22px)', lineHeight: 1.2, marginBottom: 6 }}>{name}</h3>
                 <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--color-brown)', marginBottom: 14 }}>{role}</div>
