@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import NavBar from '@/components/layout/NavBar';
 import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
@@ -63,7 +64,15 @@ function OpeningSection() {
               We operate 200 hectares of freehold farmland in Bethlehem, Free State — land that has been in the family since 2000 and is now entering its most productive chapter.
             </p>
           </div>
-          <ImagePlaceholder caption="img · farm landscape · Free State highlands · morning light" height="clamp(380px,42vw,520px)" />
+          <div style={{ position: 'relative', height: 'clamp(380px,42vw,520px)', width: '100%', overflow: 'hidden' }}>
+            <Image
+              src="/images/img · farm landscape · Free State highlands · morning light.jpg"
+              alt="Farm landscape, Free State highlands, morning light"
+              fill
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              sizes="(max-width: 860px) 100vw, 50vw"
+            />
+          </div>
         </div>
       </div>
       <style>{`@media(max-width:860px){.opening-grid{grid-template-columns:1fr!important}}`}</style>
@@ -192,6 +201,11 @@ function TeamSection() {
       name: 'Tshenolo Hlapane',
       role: 'Finance & Administration',
       bio: 'Responsible for financial reporting, internal controls, budgeting and administrative coordination. Brings structured financial oversight to support responsible growth and long-term sustainability.',
+    },
+    {
+      name: 'Ntebo Nkoenyane',
+      role: 'Family Principal & Trust Beneficiary',
+      bio: 'A founding member of the Nkoenyane Family Trust and central to the legacy this farm represents. Her involvement reflects the generational commitment that underpins everything Khatleng Farms stands for.',
     },
     {
       name: 'Tshebeletso Hlapane',
