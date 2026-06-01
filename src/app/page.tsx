@@ -340,9 +340,9 @@ function QuoteCloser() {
 /* ─────────────────── NEWS ─────────────────── */
 function NewsSection() {
   const articles = [
-    { img: 'img · tunnel install', category: 'Operations', date: '15 · 04 · 2026', title: 'First tunnel commissioned ahead of Q2 planting cycle.', body: 'Tunnel 01 is online — drip irrigation, climate sensors and substrate beds calibrated for the first crop.' },
-    { img: 'img · cattle in veld', category: 'Livestock', date: '02 · 04 · 2026', title: 'Rotational grazing programme expanded to the eastern camp.', body: 'A measured rotation across natural Free State grass veld — better soil, better animals, better meat.' },
-    { img: 'img · grain fields', category: 'Grain', date: '22 · 03 · 2026', title: 'Maize planting season preparations underway.', body: 'Soil preparation completed across 80ha. Seed and input procurement finalised ahead of planting window.' },
+    { img: '/images/tunnel install.jpg', alt: 'Tunnel installation at Khatleng Farms', category: 'Operations', date: '15 · 04 · 2026', title: 'First tunnel commissioned ahead of Q2 planting cycle.', body: 'Tunnel 01 is online — drip irrigation, climate sensors and substrate beds calibrated for the first crop.' },
+    { img: '/images/cattle in a veld.jpg', alt: 'Cattle grazing in the Free State veld', category: 'Livestock', date: '02 · 04 · 2026', title: 'Rotational grazing programme expanded to the eastern camp.', body: 'A measured rotation across natural Free State grass veld — better soil, better animals, better meat.' },
+    { img: '/images/grain fields.jpg', alt: 'Grain fields at Khatleng Farms', category: 'Grain', date: '22 · 03 · 2026', title: 'Maize planting season preparations underway.', body: 'Soil preparation completed across 80ha. Seed and input procurement finalised ahead of planting window.' },
   ];
 
   return (
@@ -353,9 +353,11 @@ function NewsSection() {
           <h2 style={{ fontWeight: 400, marginTop: 20 }}>News &amp; updates.</h2>
         </div>
         <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
-          {articles.map(({ img, category, date, title, body }) => (
+          {articles.map(({ img, alt, category, date, title, body }) => (
             <article key={title} style={{ display: 'flex', flexDirection: 'column' }}>
-              <ImagePlaceholder caption={img} height={220} style={{ marginBottom: 20 }} />
+              <div style={{ position: 'relative', height: 220, width: '100%', overflow: 'hidden', marginBottom: 20 }}>
+                <Image src={img} alt={alt} fill style={{ objectFit: 'cover' }} sizes="(max-width: 860px) 100vw, 33vw" />
+              </div>
               <div style={{ display: 'flex', gap: 14, alignItems: 'center', marginBottom: 12, fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--color-ink-mute)' }}>
                 <span style={{ color: 'var(--color-green)', border: '1px solid var(--color-green)', padding: '2px 8px' }}>{category}</span>
                 {date}
