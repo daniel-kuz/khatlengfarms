@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from 'next';
+import Image from 'next/image';
 import NavBar from '@/components/layout/NavBar';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 import Footer from '@/components/layout/Footer';
@@ -78,7 +79,9 @@ function OriginSection() {
               resilience, rootedness, and the generational responsibility to build something that endures.
             </p>
           </div>
-          <ImagePlaceholder caption="img Â· free state farmland Â· golden hour Â· 1200Ã—900" height={460} />
+          <div style={{ position: 'relative', height: 460, overflow: 'hidden' }}>
+            <Image src="/images/golden-hour.jpg" alt="Free State farmland at golden hour" fill style={{ objectFit: 'cover' }} sizes="(max-width:860px) 100vw, 50vw" />
+          </div>
         </div>
       </div>
       <style>{`@media(max-width:860px){.story-grid{grid-template-columns:1fr!important}}`}</style>

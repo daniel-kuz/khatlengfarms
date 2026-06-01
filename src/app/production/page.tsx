@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from 'next';
+import Image from 'next/image';
 import NavBar from '@/components/layout/NavBar';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 import Footer from '@/components/layout/Footer';
@@ -52,8 +53,8 @@ function PageHero() {
   );
 }
 
-function ProductRow({ label, title, body, imgCaption, details, reverse = false, bg = '#F4EBDD' }: {
-  label: string; title: string; body: string; imgCaption: string;
+function ProductRow({ label, title, body, imgSrc, imgAlt, details, reverse = false, bg = '#F4EBDD' }: {
+  label: string; title: string; body: string; imgSrc: string; imgAlt: string;
   details: { k: string; v: string }[]; reverse?: boolean; bg?: string;
 }) {
   return (
@@ -73,8 +74,8 @@ function ProductRow({ label, title, body, imgCaption, details, reverse = false, 
               ))}
             </div>
           </div>
-          <div className={reverse ? 'pr-img' : ''} style={{ height: 'clamp(320px,38vw,500px)' }}>
-            <ImagePlaceholder caption={imgCaption} height="100%" />
+          <div className={reverse ? 'pr-img' : ''} style={{ position: 'relative', height: 'clamp(320px,38vw,500px)', overflow: 'hidden' }}>
+            <Image src={imgSrc} alt={imgAlt} fill style={{ objectFit: 'cover' }} sizes="(max-width:860px) 100vw, 50vw" />
           </div>
         </div>
       </div>
@@ -98,7 +99,7 @@ function GrainProduction() {
         label="Grain Production"
         title="Yellow Maize â€” the backbone of the farm."
         body="80ha of yellow maize in dryland production. Rotated with 20ha of sunflower to improve soil health, manage input costs and break pest cycles. Sold through established grain market channels at prevailing commodity prices."
-        imgCaption="img Â· yellow maize fields Â· harvest Â· Free State"
+        imgSrc="/images/maize-harvest.jpg" imgAlt="Yellow maize fields at harvest, Free State"
         details={[
           { k: 'Maize area', v: '80ha' },
           { k: 'Sunflower area', v: '20ha' },
@@ -116,7 +117,7 @@ function TunnelVegetables() {
       label="Tunnel Farming"
       title="Protected tunnel farming. Fresh vegetables, year-round."
       body="Tunnel farming infrastructure currently in development â€” Phase 1 operational. Protected growing environment with drip irrigation, producing tomatoes, peppers, spinach and lettuce. Supplied to local fresh produce markets and direct retail buyers."
-      imgCaption="img Â· tunnel interior Â· tomatoes growing"
+      imgSrc="/images/tunnel-tomatoes.jpg" imgAlt="Tunnel interior with tomatoes growing"
       details={[
         { k: 'Status', v: 'Phase 1 operational' },
         { k: 'Irrigation', v: 'Drip system' },
@@ -136,7 +137,7 @@ function LivestockSection() {
         label="Livestock"
         title="Commercial cattle and sheep â€” built to grow."
         body="Opening herd of 50 cattle and 50 sheep, with a Bonsmara/Simmental stud programme anchored by 5 stud bulls. Sold through regional livestock auctions with consistent, predictable income cycles."
-        imgCaption="img Â· cattle herd Â· Free State veld Â· morning"
+        imgSrc="/images/cattle-morning.jpg" imgAlt="Cattle herd in the Free State veld, morning"
         details={[
           { k: 'Cattle', v: '50 head (Bonsmara/Simmental)' },
           { k: 'Sheep', v: '50 head' },
@@ -153,7 +154,9 @@ function FreeRangeEggs() {
     <section className="section-pad" style={{ background: 'var(--color-bone-deep)' }}>
       <div className="container">
         <div className="eggs-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(56px,8vw,112px)', alignItems: 'center' }}>
-          <ImagePlaceholder caption="img Â· free range hens Â· farm Â· natural light" height="clamp(300px,36vw,460px)" />
+          <div style={{ position: 'relative', height: 'clamp(300px,36vw,460px)', overflow: 'hidden' }}>
+            <Image src="/images/free-range-hens.jpg" alt="Free range hens on the farm, natural light" fill style={{ objectFit: 'cover' }} sizes="(max-width:860px) 100vw, 50vw" />
+          </div>
           <div>
             <SectionLabel number="" label="Free Range Eggs" />
             <h2 style={{ fontWeight: 400, marginBottom: 20 }}>Small-scale. Premium quality. Coming soon.</h2>
