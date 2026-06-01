@@ -1,40 +1,41 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import NavBar from '@/components/layout/NavBar';
+import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 
 export const metadata: Metadata = {
   title: 'Gallery | Khatleng Farms',
-  description: 'Photos from Khatleng Farms — grain fields, livestock, production tunnels and the Free State landscape.',
+  description: 'Photos from Khatleng Farms â€” grain fields, livestock, production tunnels and the Free State landscape.',
 };
 
 const categories = [
   {
     label: 'The Land',
     images: [
-      { caption: 'img · aerial farm · Free State · morning light · 1600×1200', tall: true },
-      { caption: 'img · grain fields · maize · golden hour · 1600×1200', tall: false },
-      { caption: 'img · farm road · eucalyptus · dust · 1600×1200', tall: false },
-      { caption: 'img · farm landscape · Free State highlands · wide · 1600×1200', tall: true },
+      { caption: 'img Â· aerial farm Â· Free State Â· morning light Â· 1600Ã—1200', tall: true },
+      { caption: 'img Â· grain fields Â· maize Â· golden hour Â· 1600Ã—1200', tall: false },
+      { caption: 'img Â· farm road Â· eucalyptus Â· dust Â· 1600Ã—1200', tall: false },
+      { caption: 'img Â· farm landscape Â· Free State highlands Â· wide Â· 1600Ã—1200', tall: true },
     ],
   },
   {
     label: 'Livestock',
     images: [
-      { caption: 'img · cattle herd · veld · 1600×1200', tall: false },
-      { caption: 'img · stud bull · portrait · 1600×1200', tall: true },
-      { caption: 'img · sheep flock · grazing camp · 1600×1200', tall: false },
-      { caption: 'img · cattle handling · pens · 1600×1200', tall: false },
+      { caption: 'img Â· cattle herd Â· veld Â· 1600Ã—1200', tall: false },
+      { caption: 'img Â· stud bull Â· portrait Â· 1600Ã—1200', tall: true },
+      { caption: 'img Â· sheep flock Â· grazing camp Â· 1600Ã—1200', tall: false },
+      { caption: 'img Â· cattle handling Â· pens Â· 1600Ã—1200', tall: false },
     ],
   },
   {
     label: 'Tunnel Farming',
     images: [
-      { caption: 'img · tunnel interior · tomatoes · light · 1600×1200', tall: true },
-      { caption: 'img · tunnel exterior · morning mist · 1600×1200', tall: false },
-      { caption: 'img · tunnel produce · peppers · 1600×1200', tall: false },
-      { caption: 'img · drip irrigation · tunnel · close-up · 1600×1200', tall: false },
+      { caption: 'img Â· tunnel interior Â· tomatoes Â· light Â· 1600Ã—1200', tall: true },
+      { caption: 'img Â· tunnel exterior Â· morning mist Â· 1600Ã—1200', tall: false },
+      { caption: 'img Â· tunnel produce Â· peppers Â· 1600Ã—1200', tall: false },
+      { caption: 'img Â· drip irrigation Â· tunnel Â· close-up Â· 1600Ã—1200', tall: false },
     ],
   },
 ];
@@ -84,12 +85,13 @@ export default function GalleryPage() {
 function PageHero() {
   return (
     <header style={{ position: 'relative', minHeight: '46vh', display: 'flex', alignItems: 'flex-end', padding: 'clamp(96px,10vw,160px) clamp(24px,5vw,96px) 72px', color: 'var(--color-bone)', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, background: 'repeating-linear-gradient(135deg,rgba(244,235,221,0.03) 0 20px,rgba(244,235,221,0.06) 20px 40px),linear-gradient(180deg,#3a3520 0%,#1e1a0c 100%)' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.65) 100%)' }} />
+      <HeroVideoLoop />
+      <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.65) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span>—</span>GALLERY</div>
+        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span>â€”</span>GALLERY</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '14ch', fontWeight: 400 }}>The Farm in Pictures</h1>
       </div>
     </header>
   );
 }
+

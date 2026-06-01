@@ -1,5 +1,6 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import NavBar from '@/components/layout/NavBar';
+import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Divider from '@/components/ui/Divider';
@@ -7,7 +8,7 @@ import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 
 export const metadata: Metadata = {
   title: 'Our Farm | Khatleng Farms',
-  description: '200 hectares of freehold farmland in Bethlehem, Free State. An integrated commercial agricultural operation — grain production, tunnel farming, livestock and beef stud development.',
+  description: '200 hectares of freehold farmland in Bethlehem, Free State. An integrated commercial agricultural operation â€” grain production, tunnel farming, livestock and beef stud development.',
 };
 
 export default function OurFarmPage() {
@@ -36,13 +37,13 @@ export default function OurFarmPage() {
 function PageHero() {
   return (
     <header style={{ position: 'relative', minHeight: '56vh', display: 'flex', alignItems: 'flex-end', padding: 'clamp(96px,10vw,160px) clamp(24px,5vw,96px) 72px', color: 'var(--color-bone)', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, background: 'repeating-linear-gradient(135deg,rgba(244,235,221,0.03) 0 20px,rgba(244,235,221,0.06) 20px 40px),linear-gradient(180deg,#3a3520 0%,#1e1a0c 100%)' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
+      <HeroVideoLoop />
+      <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span>—</span>BETHLEHEM, FREE STATE</div>
+        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span>â€”</span>BETHLEHEM, FREE STATE</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '16ch', marginBottom: 20, fontWeight: 400 }}>Our Farm</h1>
         <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
-          200 hectares of freehold agricultural land in Bethlehem, Free State — owned since 2000 and now in full commercial operation.
+          200 hectares of freehold agricultural land in Bethlehem, Free State â€” owned since 2000 and now in full commercial operation.
         </p>
       </div>
     </header>
@@ -83,7 +84,7 @@ function IntegratedOperation() {
               Khatleng Farms operates as a fully integrated agricultural enterprise across grain production, tunnel farming, commercial livestock and beef stud development. The farm is equipped with the infrastructure and water resources to support year-round operations across all production activities.
             </p>
           </div>
-          <ImagePlaceholder caption="img · farm landscape · Bethlehem Free State · wide · golden hour" height="clamp(380px,42vw,520px)" />
+          <ImagePlaceholder caption="img Â· farm landscape Â· Bethlehem Free State Â· wide Â· golden hour" height="clamp(380px,42vw,520px)" />
         </div>
       </div>
       <style>{`@media(max-width:860px){.int-grid{grid-template-columns:1fr!important}}`}</style>
@@ -93,8 +94,8 @@ function IntegratedOperation() {
 
 function LandTable() {
   const rows = [
-    { component: 'Dryland arable — maize', ha: '80ha', use: 'Yellow maize production' },
-    { component: 'Dryland arable — sunflower', ha: '20ha', use: 'Sunflower rotation, oilseed' },
+    { component: 'Dryland arable â€” maize', ha: '80ha', use: 'Yellow maize production' },
+    { component: 'Dryland arable â€” sunflower', ha: '20ha', use: 'Sunflower rotation, oilseed' },
     { component: 'Natural grazing', ha: '80.7ha', use: 'Extensive livestock support' },
     { component: 'Improved pasture', ha: '25.2ha', use: 'Livestock grazing and fodder' },
     { component: 'Infrastructure & roads', ha: '~4ha', use: 'Farm operations and access' },
@@ -141,10 +142,10 @@ function FarmImagery() {
           <h2 style={{ fontWeight: 400 }}>200 hectares of productive farmland.</h2>
         </div>
         <div className="farm-img-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-          <ImagePlaceholder caption="img · grain fields · Free State · maize · wide angle" height="clamp(280px,32vw,420px)" />
+          <ImagePlaceholder caption="img Â· grain fields Â· Free State Â· maize Â· wide angle" height="clamp(280px,32vw,420px)" />
           <div style={{ display: 'grid', gridTemplateRows: '1fr 1fr', gap: 16 }}>
-            <ImagePlaceholder caption="img · cattle herd · veld · morning · Free State" height="100%" />
-            <ImagePlaceholder caption="img · tunnel farming · vegetables · interior" height="100%" />
+            <ImagePlaceholder caption="img Â· cattle herd Â· veld Â· morning Â· Free State" height="100%" />
+            <ImagePlaceholder caption="img Â· tunnel farming Â· vegetables Â· interior" height="100%" />
           </div>
         </div>
       </div>
@@ -188,10 +189,10 @@ function ClimateSection() {
   const data = [
     { metric: 'Average annual rainfall', value: '772mm (30.4 inches)' },
     { metric: 'Rainy days per year', value: '93' },
-    { metric: 'Wettest months', value: 'October–March' },
-    { metric: 'Driest months', value: 'June–August (ideal for harvest)' },
+    { metric: 'Wettest months', value: 'Octoberâ€“March' },
+    { metric: 'Driest months', value: 'Juneâ€“August (ideal for harvest)' },
     { metric: 'Altitude', value: '1,651m above sea level' },
-    { metric: 'Classification', value: 'Cwb Köppen-Geiger — Subtropical Highland' },
+    { metric: 'Classification', value: 'Cwb KÃ¶ppen-Geiger â€” Subtropical Highland' },
     { metric: 'Annual sunshine hours', value: '~4,047 hours/year' },
   ];
   return (
@@ -201,7 +202,7 @@ function ClimateSection() {
           <SectionLabel number="" label="Climate" />
           <h2 style={{ fontWeight: 400 }}>A productive climate by any measure.</h2>
           <p className="lede" style={{ marginTop: 16 }}>
-            Bethlehem is located in the heart of South Africa&rsquo;s commercial grain belt — consistent rainfall, fertile soils and over 4,000 sunshine hours a year. In 8 of the last 9 recorded seasons, rainfall exceeded 600mm, well above the threshold for reliable dryland maize production.
+            Bethlehem is located in the heart of South Africa&rsquo;s commercial grain belt â€” consistent rainfall, fertile soils and over 4,000 sunshine hours a year. In 8 of the last 9 recorded seasons, rainfall exceeded 600mm, well above the threshold for reliable dryland maize production.
           </p>
         </div>
         <div style={{ maxWidth: 760 }}>
@@ -216,3 +217,4 @@ function ClimateSection() {
     </section>
   );
 }
+

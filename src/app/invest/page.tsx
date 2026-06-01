@@ -1,5 +1,6 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import NavBar from '@/components/layout/NavBar';
+import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Btn from '@/components/ui/Btn';
@@ -37,10 +38,11 @@ export default function InvestPage() {
 
 function PageHero() {
   return (
-    <header style={{ position: 'relative', minHeight: '56vh', display: 'flex', alignItems: 'flex-end', padding: 'clamp(72px,9vw,144px) clamp(24px,5vw,96px) 64px', color: 'var(--color-bone)', overflow: 'hidden', background: 'linear-gradient(180deg,#0e1208 0%,#1d2614 100%)' }}>
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 60%,rgba(0,0,0,0.75) 100%)' }} />
+    <header style={{ position: 'relative', minHeight: '56vh', display: 'flex', alignItems: 'flex-end', padding: 'clamp(72px,9vw,144px) clamp(24px,5vw,96px) 64px', color: 'var(--color-bone)', overflow: 'hidden' }}>
+      <HeroVideoLoop />
+      <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 60%,rgba(0,0,0,0.75) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span>—</span>INVEST</div>
+        <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span>â€”</span>INVEST</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '20ch', marginBottom: 20 }}>A De-Risked, Governance-Led Investment in South African Agriculture.</h1>
         <p style={{ color: 'rgba(248,245,238,0.85)', fontSize: 'clamp(17px,1.4vw,21px)', maxWidth: '60ch' }}>
           200ha unencumbered freehold land. Four revenue streams. Institutional-grade management. Zero existing debt.
@@ -67,14 +69,14 @@ function InvestmentCase() {
             </p>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, borderTop: '1px solid rgba(26,26,26,0.1)' }}>
               {[
-                '200ha freehold land — unencumbered, valued ~R12,000,000',
+                '200ha freehold land â€” unencumbered, valued ~R12,000,000',
                 'Four diversified revenue streams',
-                'Zero existing debt — clean balance sheet',
+                'Zero existing debt â€” clean balance sheet',
                 'Management combining financial governance, legal compliance, and 4IR expertise',
-                'BFS scorecard est. 46/50 — full transformation alignment',
+                'BFS scorecard est. 46/50 â€” full transformation alignment',
               ].map(item => (
                 <li key={item} style={{ padding: '12px 0', borderBottom: '1px solid rgba(26,26,26,0.08)', fontSize: 14, display: 'flex', gap: 12 }}>
-                  <span style={{ color: 'var(--color-gold)', flexShrink: 0 }}>—</span>{item}
+                  <span style={{ color: 'var(--color-gold)', flexShrink: 0 }}>â€”</span>{item}
                 </li>
               ))}
             </ul>
@@ -89,12 +91,12 @@ function InvestmentCase() {
               {[
                 'Yellow maize, sunflower, red meat, and fresh vegetables',
                 'Institutional-grade compliance standards',
-                'Verified provenance — chain from soil to shelf',
+                'Verified provenance â€” chain from soil to shelf',
                 'Operational consistency through data-driven production',
                 'Direct supply arrangements for local retailers and restaurants',
               ].map(item => (
                 <li key={item} style={{ padding: '12px 0', borderBottom: '1px solid rgba(248,245,238,0.12)', fontSize: 14, color: 'rgba(248,245,238,0.85)', display: 'flex', gap: 12 }}>
-                  <span style={{ color: 'var(--color-gold)', flexShrink: 0 }}>—</span>{item}
+                  <span style={{ color: 'var(--color-gold)', flexShrink: 0 }}>â€”</span>{item}
                 </li>
               ))}
             </ul>
@@ -180,7 +182,7 @@ function RevenueProjections() {
           </table>
         </div>
         <p style={{ marginTop: 16, fontSize: 12, color: 'var(--color-ink-mute)', letterSpacing: '0.06em' }}>
-          Figures indicative · All crop prices based on confirmed 2025 actual season prices · Full model on memorandum request
+          Figures indicative Â· All crop prices based on confirmed 2025 actual season prices Â· Full model on memorandum request
         </p>
       </div>
     </section>
@@ -205,7 +207,7 @@ function DSRSection() {
         <div style={{ maxWidth: 720, marginBottom: 'clamp(40px,5vw,64px)' }}>
           <SectionLabel number="04" label="Repayment Capacity" />
           <h2>Comfortable from Year 1. Excellent by Year 5.</h2>
-          <p className="lede" style={{ marginTop: 16 }}>Loan terms: R2,000,000 at Prime − 2% (9.25% p.a.) · Quarterly instalments · 17 quarters · Fully repaid: April 2031</p>
+          <p className="lede" style={{ marginTop: 16 }}>Loan terms: R2,000,000 at Prime âˆ’ 2% (9.25% p.a.) Â· Quarterly instalments Â· 17 quarters Â· Fully repaid: April 2031</p>
         </div>
         <div style={{ overflowX: 'auto' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse' }}>
@@ -236,9 +238,9 @@ function DSRSection() {
 
 function RoadmapSection() {
   const phases = [
-    { num: 'Phase I', title: 'Foundation & Systems Integration', range: 'Months 00 — 08', items: ['Asset deployment: core production machinery and logistics', '4IR technology integration: IoT monitoring, automation, data analytics', 'Pilot production and validation: quality assurance protocols', 'Workforce upskilling: data-driven workflows, compliance standards'] },
-    { num: 'Phase II', title: 'Expansion & Market Penetration', range: 'Months 09 — 18', items: ['Production scale-up: ~150% output increase', 'Value-added processing facility commissioned', 'B2B commercialisation: medium- to long-term supply contracts', 'Lean manufacturing and continuous improvement deployed'] },
-    { num: 'Phase III', title: 'Profitability & Export Readiness', range: 'Months 19 — 24', items: ['Consistent positive operating margins achieved', 'Regulated-market certifications attained', 'Export contracts initiated with international buyers', 'Strategic brand positioning: data-backed quality claims'] },
+    { num: 'Phase I', title: 'Foundation & Systems Integration', range: 'Months 00 â€” 08', items: ['Asset deployment: core production machinery and logistics', '4IR technology integration: IoT monitoring, automation, data analytics', 'Pilot production and validation: quality assurance protocols', 'Workforce upskilling: data-driven workflows, compliance standards'] },
+    { num: 'Phase II', title: 'Expansion & Market Penetration', range: 'Months 09 â€” 18', items: ['Production scale-up: ~150% output increase', 'Value-added processing facility commissioned', 'B2B commercialisation: medium- to long-term supply contracts', 'Lean manufacturing and continuous improvement deployed'] },
+    { num: 'Phase III', title: 'Profitability & Export Readiness', range: 'Months 19 â€” 24', items: ['Consistent positive operating margins achieved', 'Regulated-market certifications attained', 'Export contracts initiated with international buyers', 'Strategic brand positioning: data-backed quality claims'] },
   ];
 
   return (
@@ -262,7 +264,7 @@ function RoadmapSection() {
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0, textAlign: 'left' }}>
                   {items.map(item => (
                     <li key={item} style={{ padding: '8px 0', borderBottom: '1px solid rgba(26,26,26,0.08)', fontSize: 14, color: 'var(--color-ink-mute)', display: 'flex', gap: 8 }}>
-                      <span style={{ color: 'var(--color-gold)', flexShrink: 0 }}>—</span>{item}
+                      <span style={{ color: 'var(--color-gold)', flexShrink: 0 }}>â€”</span>{item}
                     </li>
                   ))}
                 </ul>
@@ -320,12 +322,12 @@ function OfftakeSection() {
 
 function EmploymentSection() {
   const rows = [
-    { cat: 'Permanent farm workers', y1: '6–8', y2: '10–12', y3plus: '12–15' },
-    { cat: 'Tunnel / horticulture workers', y1: '1–2', y2: '2–3', y3plus: '3–4' },
-    { cat: 'Seasonal — planting', y1: '4–6', y2: '6–8', y3plus: '8–10' },
-    { cat: 'Seasonal — harvest', y1: '6–8', y2: '8–10', y3plus: '10–12' },
-    { cat: 'Management / admin', y1: '1', y2: '2', y3plus: '2–3' },
-    { cat: 'TOTAL (peak season)', y1: '18–25', y2: '26–35', y3plus: '33–44', total: true },
+    { cat: 'Permanent farm workers', y1: '6â€“8', y2: '10â€“12', y3plus: '12â€“15' },
+    { cat: 'Tunnel / horticulture workers', y1: '1â€“2', y2: '2â€“3', y3plus: '3â€“4' },
+    { cat: 'Seasonal â€” planting', y1: '4â€“6', y2: '6â€“8', y3plus: '8â€“10' },
+    { cat: 'Seasonal â€” harvest', y1: '6â€“8', y2: '8â€“10', y3plus: '10â€“12' },
+    { cat: 'Management / admin', y1: '1', y2: '2', y3plus: '2â€“3' },
+    { cat: 'TOTAL (peak season)', y1: '18â€“25', y2: '26â€“35', y3plus: '33â€“44', total: true },
   ];
 
   return (
@@ -333,7 +335,7 @@ function EmploymentSection() {
       <div className="container">
         <div style={{ maxWidth: 720, marginBottom: 'clamp(40px,5vw,64px)' }}>
           <SectionLabel number="07" label="Job Creation" />
-          <h2>18–25 jobs in Year 1. Growing to 44 by Year 3.</h2>
+          <h2>18â€“25 jobs in Year 1. Growing to 44 by Year 3.</h2>
           <p className="lede" style={{ marginTop: 16 }}>Priority hiring: women (50% target), youth under 35, local community.</p>
         </div>
         <div style={{ overflowX: 'auto', maxWidth: 720 }}>
@@ -385,3 +387,4 @@ function CTASection() {
     </section>
   );
 }
+

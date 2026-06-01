@@ -1,7 +1,8 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import NavBar from '@/components/layout/NavBar';
+import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Btn from '@/components/ui/Btn';
@@ -22,13 +23,13 @@ export default function ContactPage() {
 function PageHero() {
   return (
     <header style={{ position: 'relative', minHeight: '40vh', display: 'flex', alignItems: 'flex-end', padding: 'clamp(96px,10vw,140px) clamp(24px,5vw,96px) 64px', color: 'var(--color-bone)', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, background: 'repeating-linear-gradient(135deg,rgba(244,235,221,0.03) 0 20px,rgba(244,235,221,0.06) 20px 40px),linear-gradient(180deg,#3a3520 0%,#1e1a0c 100%)' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.7) 100%)' }} />
+      <HeroVideoLoop />
+      <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.7) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span>—</span>CONTACT</div>
+        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span>â€”</span>CONTACT</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '14ch', marginBottom: 14, fontWeight: 400 }}>Get in Touch</h1>
         <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
-          We&rsquo;d love to hear from you — whether you&rsquo;re a supplier, retailer, partner or visitor.
+          We&rsquo;d love to hear from you â€” whether you&rsquo;re a supplier, retailer, partner or visitor.
         </p>
       </div>
     </header>
@@ -145,7 +146,7 @@ function ContactForm() {
         </div>
         <div>
           <Btn type="submit" variant="green" arrow disabled={status === 'sending'}>
-            {status === 'sending' ? 'Sending…' : 'Send Message'}
+            {status === 'sending' ? 'Sendingâ€¦' : 'Send Message'}
           </Btn>
           {status === 'error' && (
             <p style={{ color: '#C0392B', fontSize: 13, marginTop: 10 }}>
@@ -186,3 +187,4 @@ function ContactDetails() {
     </div>
   );
 }
+

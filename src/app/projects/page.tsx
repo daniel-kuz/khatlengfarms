@@ -1,5 +1,6 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import NavBar from '@/components/layout/NavBar';
+import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Btn from '@/components/ui/Btn';
@@ -7,7 +8,7 @@ import Divider from '@/components/ui/Divider';
 
 export const metadata: Metadata = {
   title: 'Projects | Khatleng Farms',
-  description: 'The growth roadmap for Khatleng Farms — from irrigation and tunnel expansion to agro-processing and feedlot development.',
+  description: 'The growth roadmap for Khatleng Farms â€” from irrigation and tunnel expansion to agro-processing and feedlot development.',
 };
 
 export default function ProjectsPage() {
@@ -29,10 +30,10 @@ export default function ProjectsPage() {
 function PageHero() {
   return (
     <header style={{ position: 'relative', minHeight: '52vh', display: 'flex', alignItems: 'flex-end', padding: 'clamp(96px,10vw,160px) clamp(24px,5vw,96px) 72px', color: 'var(--color-bone)', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, background: 'repeating-linear-gradient(135deg,rgba(244,235,221,0.03) 0 20px,rgba(244,235,221,0.06) 20px 40px),linear-gradient(180deg,#3a3520 0%,#1e1a0c 100%)' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
+      <HeroVideoLoop />
+      <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span>—</span>PROJECTS</div>
+        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span>â€”</span>PROJECTS</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '18ch', marginBottom: 20, fontWeight: 400 }}>What We&rsquo;re Building</h1>
         <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
           Khatleng Farms is a farm in motion. Here is where we are headed.
@@ -54,11 +55,11 @@ function ProjectsGrid() {
       title: 'Beef Stud Programme',
       status: 'In Development',
       statusType: 'active' as const,
-      body: 'Bonsmara/Simmental genetics programme — 5 stud bulls currently in maturation. Premium stud sales from Year 2 at R80,000–R150,000 per animal.',
+      body: 'Bonsmara/Simmental genetics programme â€” 5 stud bulls currently in maturation. Premium stud sales from Year 2 at R80,000â€“R150,000 per animal.',
     },
     {
       title: 'Irrigation Infrastructure',
-      status: 'Planned — Year 3',
+      status: 'Planned â€” Year 3',
       statusType: 'planned' as const,
       body: 'Developing irrigation from existing boreholes to reduce dryland risk, extend growing seasons and expand crop options.',
     },
@@ -66,7 +67,7 @@ function ProjectsGrid() {
       title: 'Agro-Processing',
       status: 'Future Vision',
       statusType: 'future' as const,
-      body: 'Maize meal, sunflower oil, dried vegetables — value chain integration for higher margins by capturing processing value on-farm.',
+      body: 'Maize meal, sunflower oil, dried vegetables â€” value chain integration for higher margins by capturing processing value on-farm.',
     },
     {
       title: 'Feedlot Development',
@@ -132,7 +133,7 @@ function VisionStatement() {
     <section className="section-pad" style={{ background: 'var(--color-green-deep)', color: 'var(--color-bone)', textAlign: 'center' }}>
       <div className="container-sm">
         <SectionLabel number="" label="Long-Term Vision" light />
-        <h2 style={{ color: 'var(--color-bone)', fontWeight: 400, marginBottom: 24 }}>A fully integrated commercial farm — grain to table.</h2>
+        <h2 style={{ color: 'var(--color-bone)', fontWeight: 400, marginBottom: 24 }}>A fully integrated commercial farm â€” grain to table.</h2>
         <p style={{ color: 'rgba(244,235,221,0.75)', fontSize: 'clamp(16px,1.3vw,19px)', maxWidth: '56ch', margin: '0 auto 40px', lineHeight: 1.75 }}>
           Every project on this page is a step toward a single outcome: an agricultural operation that produces, processes and delivers premium food from the Free State to markets across South Africa and beyond.
         </p>
@@ -141,3 +142,4 @@ function VisionStatement() {
     </section>
   );
 }
+

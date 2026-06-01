@@ -1,5 +1,6 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import NavBar from '@/components/layout/NavBar';
+import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Btn from '@/components/ui/Btn';
@@ -8,7 +9,7 @@ import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 
 export const metadata: Metadata = {
   title: 'Production | Khatleng Farms',
-  description: 'Grain production, field crops, cattle, sheep, free range eggs and tunnel vegetables — six production streams from Khatleng Farms in the Free State.',
+  description: 'Grain production, field crops, cattle, sheep, free range eggs and tunnel vegetables â€” six production streams from Khatleng Farms in the Free State.',
 };
 
 export default function ProductionPage() {
@@ -38,13 +39,13 @@ export default function ProductionPage() {
 function PageHero() {
   return (
     <header style={{ position: 'relative', minHeight: '56vh', display: 'flex', alignItems: 'flex-end', padding: 'clamp(96px,10vw,160px) clamp(24px,5vw,96px) 72px', color: 'var(--color-bone)', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, background: 'repeating-linear-gradient(135deg,rgba(244,235,221,0.03) 0 20px,rgba(244,235,221,0.06) 20px 40px),linear-gradient(180deg,#3a3520 0%,#1e1a0c 100%)' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
+      <HeroVideoLoop />
+      <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span>—</span>PRODUCTION</div>
+        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span>â€”</span>PRODUCTION</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '18ch', marginBottom: 20, fontWeight: 400 }}>Four Production Zones. One Resilient Operation.</h1>
         <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
-          Diversified by design — grain, livestock, tunnel vegetables and free range eggs from 200 hectares of Free State farmland.
+          Diversified by design â€” grain, livestock, tunnel vegetables and free range eggs from 200 hectares of Free State farmland.
         </p>
       </div>
     </header>
@@ -95,9 +96,9 @@ function GrainProduction() {
     <>
       <ProductRow
         label="Grain Production"
-        title="Yellow Maize — the backbone of the farm."
+        title="Yellow Maize â€” the backbone of the farm."
         body="80ha of yellow maize in dryland production. Rotated with 20ha of sunflower to improve soil health, manage input costs and break pest cycles. Sold through established grain market channels at prevailing commodity prices."
-        imgCaption="img · yellow maize fields · harvest · Free State"
+        imgCaption="img Â· yellow maize fields Â· harvest Â· Free State"
         details={[
           { k: 'Maize area', v: '80ha' },
           { k: 'Sunflower area', v: '20ha' },
@@ -114,8 +115,8 @@ function TunnelVegetables() {
     <ProductRow
       label="Tunnel Farming"
       title="Protected tunnel farming. Fresh vegetables, year-round."
-      body="Tunnel farming infrastructure currently in development — Phase 1 operational. Protected growing environment with drip irrigation, producing tomatoes, peppers, spinach and lettuce. Supplied to local fresh produce markets and direct retail buyers."
-      imgCaption="img · tunnel interior · tomatoes growing"
+      body="Tunnel farming infrastructure currently in development â€” Phase 1 operational. Protected growing environment with drip irrigation, producing tomatoes, peppers, spinach and lettuce. Supplied to local fresh produce markets and direct retail buyers."
+      imgCaption="img Â· tunnel interior Â· tomatoes growing"
       details={[
         { k: 'Status', v: 'Phase 1 operational' },
         { k: 'Irrigation', v: 'Drip system' },
@@ -133,9 +134,9 @@ function LivestockSection() {
     <>
       <ProductRow
         label="Livestock"
-        title="Commercial cattle and sheep — built to grow."
+        title="Commercial cattle and sheep â€” built to grow."
         body="Opening herd of 50 cattle and 50 sheep, with a Bonsmara/Simmental stud programme anchored by 5 stud bulls. Sold through regional livestock auctions with consistent, predictable income cycles."
-        imgCaption="img · cattle herd · Free State veld · morning"
+        imgCaption="img Â· cattle herd Â· Free State veld Â· morning"
         details={[
           { k: 'Cattle', v: '50 head (Bonsmara/Simmental)' },
           { k: 'Sheep', v: '50 head' },
@@ -152,7 +153,7 @@ function FreeRangeEggs() {
     <section className="section-pad" style={{ background: 'var(--color-bone-deep)' }}>
       <div className="container">
         <div className="eggs-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(56px,8vw,112px)', alignItems: 'center' }}>
-          <ImagePlaceholder caption="img · free range hens · farm · natural light" height="clamp(300px,36vw,460px)" />
+          <ImagePlaceholder caption="img Â· free range hens Â· farm Â· natural light" height="clamp(300px,36vw,460px)" />
           <div>
             <SectionLabel number="" label="Free Range Eggs" />
             <h2 style={{ fontWeight: 400, marginBottom: 20 }}>Small-scale. Premium quality. Coming soon.</h2>
@@ -160,7 +161,7 @@ function FreeRangeEggs() {
               A small-scale free range egg operation supplying premium quality eggs to local retailers and restaurants in the Bethlehem area.
             </p>
             <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75 }}>
-              Hens raised on natural pasture, supplemented with farm-grown grain. No cages, no shortcuts — just clean, traceable eggs from the Free State.
+              Hens raised on natural pasture, supplemented with farm-grown grain. No cages, no shortcuts â€” just clean, traceable eggs from the Free State.
             </p>
             <div style={{ display: 'inline-block', marginTop: 24, padding: '8px 16px', border: '1px solid var(--color-brown)', fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--color-brown)' }}>
               Coming Soon
@@ -217,7 +218,7 @@ function FutureOutlook() {
           <SectionLabel number="" label="What's Next" light />
           <h2 style={{ color: 'var(--color-bone)', fontWeight: 400 }}>Production grows as the farm grows.</h2>
           <p style={{ color: 'rgba(244,235,221,0.75)', fontSize: 'clamp(16px,1.3vw,19px)', maxWidth: '58ch', marginTop: 16, lineHeight: 1.7 }}>
-            Year 1 establishes the foundation. From Year 2, each production stream scales — more tunnels, larger herds, stud sales, and eventually value-added processing.
+            Year 1 establishes the foundation. From Year 2, each production stream scales â€” more tunnels, larger herds, stud sales, and eventually value-added processing.
           </p>
         </div>
         <div style={{ textAlign: 'left' }}>
@@ -227,3 +228,4 @@ function FutureOutlook() {
     </section>
   );
 }
+
