@@ -8,41 +8,43 @@ const VIDEOS = [
   '/videos/hero3.mp4',
 ];
 
+const FADE_DURATION = 1200; // ms — increase for a slower crossfade
+
 export default function HeroVideoLoop() {
   const [current, setCurrent] = useState(0);
   const [next, setNext]       = useState<number | null>(null);
-  const [fading, setFading]   = useState(false);
-
-  // One ref per video slot
   const refs = useRef<(HTMLVideoElement | null)[]>([]);
 
-  // When a video ends, start crossfade to the next one
   function handleEnded(index: number) {
-    if (fading) return;
-    const nextIndex = (index + 1) % VIDEOS.length;
-    setNext(nextIndex);
-    setFading(true);
+    // Ignore if a transition is already in progress
+    if (next !== null) return;
 
-    // Start playing the incoming video immediately
+    const nextIndex = (index + 1) % VIDEOS.length;
+
+    // Pre-load and start the incoming video before the fade begins
     const incoming = refs.current[nextIndex];
     if (incoming) {
       incoming.currentTime = 0;
       incoming.play().catch(() => {});
     }
+
+    setNext(nextIndex);
+
+    // After the crossfade completes, make the incoming video the new current
+    // and pause/reset the old one so it's ready for next time
+    setTimeout(() => {
+      setCurrent(nextIndex);
+      setNext(null);
+
+      const old = refs.current[index];
+      if (old) {
+        old.pause();
+        old.currentTime = 0;
+      }
+    }, FADE_DURATION);
   }
 
-  // Once fading state is set, wait for CSS transition then swap current
-  useEffect(() => {
-    if (!fading || next === null) return;
-    const t = setTimeout(() => {
-      setCurrent(next);
-      setNext(null);
-      setFading(false);
-    }, 800); // must match the CSS transition duration below
-    return () => clearTimeout(t);
-  }, [fading, next]);
-
-  // Autoplay the first video on mount
+  // Kick off the first video on mount
   useEffect(() => {
     refs.current[0]?.play().catch(() => {});
   }, []);
@@ -53,9 +55,28 @@ export default function HeroVideoLoop() {
       style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}
     >
       {VIDEOS.map((src, i) => {
-        const isActive  = i === current;
-        const isIncoming = i === next;
-        const visible   = isActive || isIncoming;
+        /*
+         * Layer logic — no grey gap:
+         *   current  → always opacity 1, sits underneath
+         *   next     → fades IN on top of current (0 → 1)
+         *   others   → hidden (opacity 0, no transition)
+         */
+        const isCurrent  = i === current;
+        const isNext     = i === next;
+
+        let opacity: number;
+        let transition: string;
+
+        if (isNext) {
+          opacity    = 1;
+          transition = `opacity ${FADE_DURATION}ms ease-in-out`;
+        } else if (isCurrent) {
+          opacity    = 1;
+          transition = 'none';
+        } else {
+          opacity    = 0;
+          transition = 'none';
+        }
 
         return (
           <video
@@ -64,7 +85,7 @@ export default function HeroVideoLoop() {
             src={src}
             muted
             playsInline
-            preload={i === 0 ? 'auto' : 'none'}
+            preload={i === 0 ? 'auto' : 'metadata'}
             onEnded={() => handleEnded(i)}
             style={{
               position: 'absolute',
@@ -72,8 +93,10 @@ export default function HeroVideoLoop() {
               width: '100%',
               height: '100%',
               objectFit: 'cover',
-              opacity: isIncoming ? 1 : isActive ? (fading ? 0 : 1) : 0,
-              transition: visible ? 'opacity 0.8s ease-in-out' : 'none',
+              opacity,
+              transition,
+              // incoming video sits on top so it fades in over the current
+              zIndex: isNext ? 1 : 0,
               pointerEvents: 'none',
             }}
           />
