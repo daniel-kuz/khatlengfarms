@@ -37,8 +37,8 @@ export default function Footer() {
             <Image
               src="/images/Logo.png"
               alt="Khatleng Farms logo"
-              width={40}
-              height={40}
+              width={52}
+              height={52}
               style={{ objectFit: 'contain', flexShrink: 0 }}
             />
             <span>Khatleng Farms</span>
