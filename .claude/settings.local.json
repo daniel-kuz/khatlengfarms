@@ -4,7 +4,10 @@
       "Bash(npm install *)",
       "PowerShell(Get-Command node, npm, npx -ErrorAction SilentlyContinue)",
       "PowerShell(cd \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\nkoenyanetrust-master\\\\nkoenyanetrust-master\"; Move-Item \"public\\\\Videos\\\\hero.mp4\" \"$env:TEMP\\\\hero_temp.mp4\"; Remove-Item -Force \"public\\\\Videos\" -Recurse; New-Item -ItemType Directory \"public\\\\videos\"; Move-Item \"$env:TEMP\\\\hero_temp.mp4\" \"public\\\\videos\\\\hero.mp4\"; Get-ChildItem public\\\\videos)",
-      "Bash(head -5 C:/Users/USER-PC/Documents/Farm/nkoenyanetrust-master/nkoenyanetrust-master/src/app/contact/page.tsx *)"
+      "Bash(head -5 C:/Users/USER-PC/Documents/Farm/nkoenyanetrust-master/nkoenyanetrust-master/src/app/contact/page.tsx *)",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; node --version; npm --version)",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; Set-Location \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\nkoenyanetrust-master\\\\nkoenyanetrust-master\"; Write-Host \"In: $\\(Get-Location\\)\"; npm run dev)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\nkoenyanetrust-master\\\\nkoenyanetrust-master\\\\public\\\\videos\" | Select-Object Name, @{N='MB';E={[math]::Round\\($_.Length/1MB,1\\)}})"
     ]
   }
 }

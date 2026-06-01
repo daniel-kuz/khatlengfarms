@@ -2,19 +2,15 @@
 
 import { useRef, useState, useEffect } from 'react';
 
-const VIDEOS = [
+const DEFAULT_VIDEOS = [
   '/videos/hero.mp4',
   '/videos/hero2.mp4',
   '/videos/hero3.mp4',
-  '/videos/Cattle.mp4',
-  '/videos/Sheep.mp4',
-  '/videos/Sunflower Field.mp4',
-  '/videos/Maize Field.mp4',
 ];
 
 const FADE_DURATION = 1200; // ms — increase for a slower crossfade
 
-export default function HeroVideoLoop() {
+export default function HeroVideoLoop({ videos = DEFAULT_VIDEOS }: { videos?: string[] }) {
   const [current, setCurrent] = useState(0);
   const [next, setNext]       = useState<number | null>(null);
   const refs = useRef<(HTMLVideoElement | null)[]>([]);
@@ -23,7 +19,7 @@ export default function HeroVideoLoop() {
     // Ignore if a transition is already in progress
     if (next !== null) return;
 
-    const nextIndex = (index + 1) % VIDEOS.length;
+    const nextIndex = (index + 1) % videos.length;
 
     // Pre-load and start the incoming video before the fade begins
     const incoming = refs.current[nextIndex];
@@ -58,7 +54,7 @@ export default function HeroVideoLoop() {
       aria-hidden="true"
       style={{ position: 'absolute', inset: 0, zIndex: 0, overflow: 'hidden' }}
     >
-      {VIDEOS.map((src, i) => {
+      {videos.map((src, i) => {
         /*
          * Layer logic — no grey gap:
          *   current  → always opacity 1, sits underneath
