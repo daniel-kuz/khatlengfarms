@@ -188,21 +188,6 @@ function JourneyTimeline() {
 function TeamSection() {
   const team = [
     {
-      name: 'Daniel Tongoona',
-      role: 'Strategy, Development & Operations',
-      bio: 'A Civil Engineer with experience in infrastructure, project delivery and business development. Leads strategic planning, farm expansion, capital projects, mechanisation planning and operational development. Focused on building Khatleng Farms into a sustainable and commercially driven agricultural enterprise.',
-    },
-    {
-      name: 'Tshimoloho Hlapane',
-      role: 'Farm Operations & Livestock Management',
-      bio: 'Oversees day-to-day farm activities including livestock management, procurement, field operations and implementation of on-farm systems. Supports operational efficiency and practical execution across the business.',
-    },
-    {
-      name: 'Tshenolo Hlapane',
-      role: 'Finance & Administration',
-      bio: 'Responsible for financial reporting, internal controls, budgeting and administrative coordination. Brings structured financial oversight to support responsible growth and long-term sustainability.',
-    },
-    {
       name: 'Ntebo Nkoenyane',
       role: 'Family Principal & Trust Beneficiary',
       bio: 'A founding member of the Nkoenyane Family Trust and central to the legacy this farm represents. Her involvement reflects the generational commitment that underpins everything Khatleng Farms stands for.',
@@ -211,6 +196,21 @@ function TeamSection() {
       name: 'Tshebeletso Hlapane',
       role: 'Legal & Governance',
       bio: 'Oversees legal, regulatory and governance matters to ensure the business maintains strong compliance standards and operates with integrity.',
+    },
+    {
+      name: 'Tshenolo Hlapane',
+      role: 'Finance & Administration',
+      bio: 'Responsible for financial reporting, internal controls, budgeting and administrative coordination. Brings structured financial oversight to support responsible growth and long-term sustainability.',
+    },
+    {
+      name: 'Tshimoloho Hlapane',
+      role: 'Farm Operations & Livestock Management',
+      bio: 'Oversees day-to-day farm activities including livestock management, procurement, field operations and implementation of on-farm systems. Supports operational efficiency and practical execution across the business.',
+    },
+    {
+      name: 'Daniel Tongoona',
+      role: 'Strategy, Development & Operations',
+      bio: 'A Civil Engineer with experience in infrastructure, project delivery and business development. Leads strategic planning, farm expansion, capital projects, mechanisation planning and operational development. Focused on building Khatleng Farms into a sustainable and commercially driven agricultural enterprise.',
     },
   ];
 
