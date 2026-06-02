@@ -72,7 +72,7 @@ export default function NavBar() {
             alt="Khatleng Farms logo"
             width={110}
             height={110}
-            style={{ objectFit: 'contain', flexShrink: 0 }}
+            style={{ objectFit: 'contain', flexShrink: 0, width: 110, height: 'auto' }}
           />
           <span>Khatleng Farms</span>
         </Link>
