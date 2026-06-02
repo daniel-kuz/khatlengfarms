@@ -2,8 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import KhatlengLogoSVG from '@/components/ui/KhatlengLogoSVG';
 
 const navLinks = [
   { href: '/',           label: 'Home' },
@@ -67,7 +67,13 @@ export default function NavBar() {
             letterSpacing: '0.02em',
           }}
         >
-          <KhatlengLogoSVG size={92} />
+          <Image
+            src="/images/Logo.png"
+            alt="Khatleng Farms logo"
+            width={88}
+            height={88}
+            style={{ objectFit: 'contain', flexShrink: 0 }}
+          />
           <span>Khatleng Farms</span>
         </Link>
 
