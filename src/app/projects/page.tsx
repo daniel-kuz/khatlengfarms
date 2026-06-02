@@ -47,39 +47,39 @@ function ProjectsGrid() {
   const projects = [
     {
       title: 'Tunnel Expansion',
-      status: 'Year 2',
+      status: 'Coming Soon',
       statusType: 'planned' as const,
-      body: 'Additional tunnel units to grow vegetable production capacity. Phase 2 tunnels funded from Year 1 operational surpluses.',
+      body: 'Scaling vegetable production through additional tunnel capacity.',
     },
     {
       title: 'Beef Stud Programme',
       status: 'In Development',
       statusType: 'active' as const,
-      body: 'Bonsmara/Simmental genetics programme  -  3 stud bulls currently in maturation. Premium stud sales from Year 2 at R80,000 - R150,000 per animal.',
+      body: 'Bonsmara/Simmental genetics programme currently in maturation. Premium stud sales to follow.',
     },
     {
-      title: 'Irrigation Infrastructure',
+      title: 'Irrigation',
       status: 'In Planning',
       statusType: 'planned' as const,
-      body: 'Expanding water infrastructure to reduce weather dependency and increase production reliability.',
+      body: 'Developing on-farm water infrastructure to strengthen production reliability.',
     },
     {
       title: 'Agro-Processing',
       status: 'Future Vision',
       statusType: 'future' as const,
-      body: 'Value-added processing on-farm to capture more of the supply chain and improve margins.',
+      body: 'On-farm processing to add value and capture more of the supply chain.',
     },
     {
-      title: 'Feedlot Development',
+      title: 'Feedlot',
       status: 'Future Vision',
       statusType: 'future' as const,
-      body: 'Controlled feeding programme to improve beef yield and enable premium supply arrangements.',
+      body: 'Controlled feeding to improve beef yield and enable premium market access.',
     },
     {
-      title: 'Packhouse Facility',
+      title: 'Packhouse',
       status: 'Future Vision',
       statusType: 'future' as const,
-      body: 'On-farm handling and storage for produce — enabling direct supply and better market access.',
+      body: 'On-farm grading, packing and cold storage for direct supply to market.',
     },
   ];
 
@@ -94,7 +94,7 @@ function ProjectsGrid() {
       <div className="container">
         <div style={{ maxWidth: 720, marginBottom: 'clamp(56px,7vw,88px)' }}>
           <SectionLabel number="" label="Our Projects" />
-          <h2 style={{ fontWeight: 400 }}>Six projects. Three timelines. One direction.</h2>
+          <h2 style={{ fontWeight: 400 }}>Building for the long term.</h2>
         </div>
         <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
           {projects.map(({ title, status, statusType, body }) => (
@@ -133,9 +133,9 @@ function VisionStatement() {
     <section className="section-pad" style={{ background: 'var(--color-green-deep)', color: 'var(--color-bone)', textAlign: 'center' }}>
       <div className="container-sm">
         <SectionLabel number="" label="Long-Term Vision" light />
-        <h2 style={{ color: 'var(--color-bone)', fontWeight: 400, marginBottom: 24 }}>A fully integrated commercial farm  -  grain to table.</h2>
-        <p style={{ color: 'rgba(244,235,221,0.75)', fontSize: 'clamp(16px,1.3vw,19px)', maxWidth: '56ch', margin: '0 auto 40px', lineHeight: 1.75 }}>
-          Every project on this page is a step toward a single outcome: an agricultural operation that produces, processes and delivers premium food from the Free State to markets across South Africa and beyond.
+        <h2 style={{ color: 'var(--color-bone)', fontWeight: 400, marginBottom: 24 }}>One farm. One direction.</h2>
+        <p style={{ color: 'rgba(244,235,221,0.75)', fontSize: 'clamp(16px,1.3vw,19px)', maxWidth: '52ch', margin: '0 auto 40px', lineHeight: 1.75 }}>
+          Each project is a step toward a fully integrated operation — producing, processing and supplying from the Free State.
         </p>
         <Btn href="/contact" variant="gold" arrow>Get in Touch</Btn>
       </div>
