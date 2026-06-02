@@ -203,8 +203,8 @@ function OperationalZones() {
     {
       num: 'iii.',
       title: 'Livestock Handling',
-      body: 'Opening herd of 50 cattle (3 bulls, 39 cows, 8 calves) and 50 sheep (2 rams, 37 ewes, 11 young ewes). Full auction-ready infrastructure: holding pens, loading ramps, crush and working systems.',
-      facts: [{ k: 'Cattle', v: '50 head (Bonsmara/Simmental)' }, { k: 'Sheep', v: '50 head' }, { k: 'Stud Bulls', v: '5' }, { k: 'Auction', v: 'regional livestock auctions' }],
+      body: 'Commercial cattle and sheep operation. Full auction-ready infrastructure: holding pens, loading ramps, crush and working systems.',
+      facts: [{ k: 'Stud Bulls', v: '3' }, { k: 'Breed', v: 'Bonsmara/Simmental' }, { k: 'Auction', v: 'Regional livestock auctions' }],
       imgCaption: 'img · cattle in pens · livestock facility',
     },
     {

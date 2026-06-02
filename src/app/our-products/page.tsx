@@ -135,11 +135,11 @@ function CommercialLivestock() {
     <ProductSection
       num="03" label="Livestock"
       title="Commercial cattle and sheep  -  auction-ready."
-      body="Opening herd: 50 cattle (Bonsmara/Simmental) and 50 sheep. Monthly cattle auctions and quarterly sheep auctions at regional livestock auctions. Full seller registration confirmed. Herd quality anchored by 5 stud bulls."
+      body="Commercial cattle and sheep operation. Monthly cattle auctions and quarterly sheep auctions at regional livestock auctions. Full seller registration confirmed."
       imgCaption="img · cattle herd · Free State veld · golden light"
       facts={[
-        { k: 'Cattle', v: '50 head' },
-        { k: 'Sheep', v: '50 head' },
+        
+        
         { k: 'Year 1 cattle income', v: 'R120,000' },
         { k: 'Year 1 sheep income', v: 'R60,000' },
         { k: 'Auction frequency', v: 'Monthly (cattle) / Quarterly (sheep)' },
@@ -154,10 +154,10 @@ function BeefStudProgramme() {
     <ProductSection
       num="04" label="Beef Stud"
       title="Premium genetics. Premium returns."
-      body="5 Bonsmara/Simmental stud bulls with 12+ month maturation programme. Breeding commences Year 1. First stud sales in Year 2 at R80,000 - R150,000 per animal. Market pricing aligned to Stud Breeders Society SA. A growing high-margin revenue stream from Year 2 onward."
+      body="3 Bonsmara/Simmental stud bulls with 12+ month maturation programme. First stud sales in Year 2 at R80,000 - R150,000 per animal. A growing high-margin revenue stream from Year 2 onward."
       imgCaption="img · stud bull · premium genetics · farm portrait"
       facts={[
-        { k: 'Stud bulls', v: '5 (Bonsmara/Simmental)' },
+        { k: 'Stud bulls', v: '3 (Bonsmara/Simmental)' },
         { k: 'First sales', v: 'Year 2 (4 - 5 animals)' },
         { k: 'Year 2 income target', v: 'R400,000' },
         { k: 'Price range', v: 'R80,000 - R150,000/animal' },

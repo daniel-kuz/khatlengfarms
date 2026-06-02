@@ -55,7 +55,7 @@ function ProjectsGrid() {
       title: 'Beef Stud Programme',
       status: 'In Development',
       statusType: 'active' as const,
-      body: 'Bonsmara/Simmental genetics programme  -  5 stud bulls currently in maturation. Premium stud sales from Year 2 at R80,000 - R150,000 per animal.',
+      body: 'Bonsmara/Simmental genetics programme  -  3 stud bulls currently in maturation. Premium stud sales from Year 2 at R80,000 - R150,000 per animal.',
     },
     {
       title: 'Irrigation Infrastructure',
