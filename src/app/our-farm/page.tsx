@@ -108,7 +108,7 @@ function LandTable() {
     { component: 'Natural grazing', ha: '70.8ha', use: 'Extensive livestock support' },
     { component: 'Improved pasture', ha: '25.2ha', use: 'Livestock grazing and fodder' },
     { component: 'Infrastructure & roads', ha: '~4ha', use: 'Farm operations and access' },
-    { component: 'TOTAL', ha: '~210ha', use: '', total: true },
+    { component: 'TOTAL', ha: '200ha', use: '', total: true },
   ];
   return (
     <section className="section-pad" style={{ background: 'var(--color-bone-deep)' }}>
