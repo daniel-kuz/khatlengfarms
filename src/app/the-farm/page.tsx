@@ -144,8 +144,8 @@ function MasterplanSection() {
 
 function LandCompositionTable() {
   const rows = [
-    { component: 'Dryland arable  -  maize', hectares: '80ha', use: 'Yellow maize production' },
-    { component: 'Dryland arable  -  sunflower', hectares: '20ha', use: 'Sunflower rotation, oilseed' },
+    { component: 'Dryland arable  -  maize', hectares: '60ha', use: 'Yellow maize production' },
+    { component: 'Dryland arable  -  sunflower', hectares: '40ha', use: 'Sunflower rotation, oilseed' },
     { component: 'Improved pasture', hectares: '80.7ha', use: 'Livestock grazing and fodder' },
     { component: 'Natural grazing', hectares: '70.8ha', use: 'Extensive livestock support' },
     { component: 'Infrastructure & roads', hectares: '~4ha', use: 'Farm operations, access, homestead' },
@@ -189,7 +189,7 @@ function OperationalZones() {
     {
       num: 'i.',
       title: 'Dryland Crops',
-      body: 'The backbone of the farm\'s annual income. 80ha of yellow maize targeting 5.5 t/ha at R3,500/ton, rotated with 20ha of sunflower at 1.8 t/ha and R8,500/ton. SAFEX spot price at delivery through established grain market channels.',
+      body: 'The backbone of the farm\'s annual income. 60ha of yellow maize targeting 5.5 t/ha at R3,500/ton, rotated with 40ha of sunflower at 1.8 t/ha and R8,500/ton. SAFEX spot price at delivery through established grain market channels.',
       facts: [{ k: 'Area', v: '100ha total' }, { k: 'Crops', v: 'Yellow Maize + Sunflower' }, { k: 'Off-take', v: 'established grain market channels' }, { k: 'Year 1 Income', v: 'R1,846,000' }],
       imgCaption: 'img · dryland maize fields · golden hour',
     },

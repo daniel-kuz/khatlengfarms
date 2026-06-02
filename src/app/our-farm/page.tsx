@@ -103,8 +103,8 @@ function IntegratedOperation() {
 
 function LandTable() {
   const rows = [
-    { component: 'Dryland arable  -  maize', ha: '80ha', use: 'Yellow maize production' },
-    { component: 'Dryland arable  -  sunflower', ha: '20ha', use: 'Sunflower rotation, oilseed' },
+    { component: 'Dryland arable  -  maize', ha: '60ha', use: 'Yellow maize production' },
+    { component: 'Dryland arable  -  sunflower', ha: '40ha', use: 'Sunflower rotation, oilseed' },
     { component: 'Natural grazing', ha: '70.8ha', use: 'Extensive livestock support' },
     { component: 'Improved pasture', ha: '25.2ha', use: 'Livestock grazing and fodder' },
     { component: 'Infrastructure & roads', ha: '~4ha', use: 'Farm operations and access' },
