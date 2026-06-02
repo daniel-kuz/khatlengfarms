@@ -67,44 +67,13 @@ export default function NavBar() {
             letterSpacing: '0.02em',
           }}
         >
-          <div style={{ position: 'relative', width: 88, height: 88, flexShrink: 0 }}>
-            <Image
-              src="/images/Logo.png"
-              alt="Khatleng Farms logo"
-              width={88}
-              height={88}
-              style={{ objectFit: 'contain', position: 'relative', zIndex: 1 }}
-            />
-            {/* Roots glow — pulses upward from the base of the logo */}
-            <div className="roots-glow" />
-          </div>
-          <style>{`
-            @keyframes roots-glow {
-              0%,15%  { opacity:0; transform:scaleX(1) scaleY(0.2) translateY(8px); }
-              25%     { opacity:0.55; transform:scaleX(1.1) scaleY(0.7) translateY(2px); }
-              45%     { opacity:0.35; transform:scaleX(1.2) scaleY(1) translateY(-4px); }
-              65%     { opacity:0.15; transform:scaleX(1.3) scaleY(1.2) translateY(-10px); }
-              80%,100%{ opacity:0; transform:scaleX(1.4) scaleY(1.4) translateY(-18px); }
-            }
-            .roots-glow {
-              position: absolute;
-              bottom: 4px;
-              left: 50%;
-              translate: -50% 0;
-              width: 72px;
-              height: 44px;
-              border-radius: 50%;
-              background: radial-gradient(ellipse at center bottom,
-                rgba(61,90,26,0.7) 0%,
-                rgba(85,120,30,0.4) 40%,
-                transparent 75%
-              );
-              transform-origin: center bottom;
-              pointer-events: none;
-              z-index: 0;
-              animation: roots-glow 8s ease-in-out infinite;
-            }
-          `}</style>
+          <Image
+            src="/images/Logo.png"
+            alt="Khatleng Farms logo"
+            width={110}
+            height={110}
+            style={{ objectFit: 'contain', flexShrink: 0 }}
+          />
           <span>Khatleng Farms</span>
         </Link>
 
