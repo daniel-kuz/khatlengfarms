@@ -342,13 +342,11 @@ function QuoteCloser() {
 }
 
 /* ─────────────────── NEWS ─────────────────── */
-function NewsSection() {
-  const articles = [
-    { img: '/images/tunnel install.jpg', alt: 'Tunnel installation at Khatleng Farms', category: 'Operations', date: '15 · 04 · 2026', title: 'First tunnel commissioned ahead of Q2 planting cycle.', body: 'Tunnel 01 is online — drip irrigation, climate sensors and substrate beds calibrated for the first crop.' },
-    { img: '/images/cattle in a veld.jpg', alt: 'Cattle grazing in the Free State veld', category: 'Livestock', date: '02 · 04 · 2026', title: 'Rotational grazing programme expanded to the eastern camp.', body: 'A measured rotation across natural Free State grass veld — better soil, better animals, better meat.' },
-    { img: '/images/grain fields.jpg', alt: 'Grain fields at Khatleng Farms', category: 'Grain', date: '22 · 03 · 2026', title: 'Maize planting season preparations underway.', body: 'Soil preparation completed across 80ha. Seed and input procurement finalised ahead of planting window.' },
-  ];
+import Link from 'next/link';
+import { articles as newsArticles } from '@/lib/articles';
 
+function NewsSection() {
+  const featured = newsArticles.slice(0, 3);
   return (
     <section className="section-pad">
       <div className="container">
@@ -357,22 +355,27 @@ function NewsSection() {
           <h2 style={{ fontWeight: 400, marginTop: 20 }}>News &amp; updates.</h2>
         </div>
         <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
-          {articles.map(({ img, alt, category, date, title, body }) => (
-            <article key={title} style={{ display: 'flex', flexDirection: 'column' }}>
+          {featured.map((article) => (
+            <Link key={article.slug} href={`/news/${article.slug}`} style={{ display: 'flex', flexDirection: 'column', textDecoration: 'none' }}>
               <div style={{ position: 'relative', height: 220, width: '100%', overflow: 'hidden', marginBottom: 20 }}>
-                <Image src={img} alt={alt} fill style={{ objectFit: 'cover' }} sizes="(max-width: 860px) 100vw, 33vw" />
+                <Image src={article.image} alt={article.imageAlt} fill style={{ objectFit: 'cover' }} sizes="(max-width: 860px) 100vw, 33vw" />
               </div>
               <div style={{ display: 'flex', gap: 14, alignItems: 'center', marginBottom: 12, fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--color-ink-mute)' }}>
-                <span style={{ color: 'var(--color-green)', border: '1px solid var(--color-green)', padding: '2px 8px' }}>{category}</span>
-                {date}
+                <span style={{ color: 'var(--color-green)', border: '1px solid var(--color-green)', padding: '2px 8px' }}>{article.category}</span>
+                {article.date}
               </div>
-              <h3 style={{ fontSize: 'clamp(18px,1.7vw,23px)', lineHeight: 1.25, marginBottom: 8 }}>{title}</h3>
-              <p style={{ color: 'var(--color-ink-mute)', fontSize: 14, marginBottom: 0, lineHeight: 1.65 }}>{body}</p>
-              <div style={{ marginTop: 'auto', paddingTop: 16, borderTop: '1px solid rgba(47,47,47,0.1)', fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--color-green)' }}>
+              <h3 style={{ fontSize: 'clamp(18px,1.7vw,23px)', lineHeight: 1.25, marginBottom: 8, color: 'var(--color-ink)' }}>{article.title}</h3>
+              <p style={{ color: 'var(--color-ink-mute)', fontSize: 14, marginBottom: 0, lineHeight: 1.65 }}>{article.excerpt}</p>
+              <div style={{ marginTop: 16, paddingTop: 16, borderTop: '1px solid rgba(47,47,47,0.1)', fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--color-green)' }}>
                 Read article →
               </div>
-            </article>
+            </Link>
           ))}
+        </div>
+        <div style={{ marginTop: 40 }}>
+          <Link href="/news" style={{ fontSize: 12, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--color-green)', borderBottom: '1px solid var(--color-green)', paddingBottom: 2 }}>
+            View all articles →
+          </Link>
         </div>
       </div>
       <style>{`@media(max-width:860px){.news-grid{grid-template-columns:1fr!important}}`}</style>
