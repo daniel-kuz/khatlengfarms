@@ -15,12 +15,19 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: true });
   }
 
+  const sast = new Date().toLocaleString('en-ZA', {
+    timeZone: 'Africa/Johannesburg',
+    dateStyle: 'full',
+    timeStyle: 'short',
+  });
+
   const html = `
     <p><strong>Name:</strong> ${name}</p>
     <p><strong>Organisation:</strong> ${org || '—'}</p>
     <p><strong>Email:</strong> ${email}</p>
     <p><strong>Phone:</strong> ${phone || '—'}</p>
     <p><strong>Enquiry type:</strong> ${type || '—'}</p>
+    <p><strong>Received:</strong> ${sast} (SAST)</p>
     <hr/>
     <p>${message.replace(/\n/g, '<br/>')}</p>
   `;
