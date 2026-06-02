@@ -115,11 +115,11 @@ function TunnelVegetables() {
     <ProductSection
       num="02" label="Tunnel Vegetables"
       title="Eight tunnels. Year-round production."
-      body="Tunnel farming - Phase 1 operational, with drip irrigation and raised beds. Multi-crop cycles of tomatoes, peppers, spinach, and lettuce run back-to-back throughout the year. First harvest October 2026, reaching full production by December."
+      body="Tunnel farming with drip irrigation and raised beds. Multi-crop cycles of tomatoes, peppers, spinach, and lettuce. Launching Year 2."
       imgCaption="img · production tunnel interior · tomatoes · fresh produce"
       facts={[
-        { k: 'Tunnels', v: 'Phase 1 operational' },
-        { k: 'First harvest', v: 'October 2026 - R35,000' },
+        { k: 'Tunnels', v: 'Year 2' },
+        { k: 'Launch', v: 'Year 2' },
         { k: 'Full production', v: 'R50,000-R55,000/month' },
         { k: 'Primary buyer', v: 'local fresh produce markets' },
         { k: 'Secondary buyers', v: 'Local retailers & restaurants' },

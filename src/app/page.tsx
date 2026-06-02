@@ -145,9 +145,9 @@ function ProductionZones() {
     { icon: '🌽', name: 'Grain Production', desc: 'Yellow Maize, 80ha dryland production', status: 'Live', statusColor: 'var(--color-green)' },
     { icon: '🌻', name: 'Field Crops', desc: 'Sunflower rotation, oilseed production', status: 'Live', statusColor: 'var(--color-green)' },
     { icon: '🐄', name: 'Cattle', desc: 'Commercial herd + Bonsmara/Simmental stud programme', status: 'Live', statusColor: 'var(--color-green)' },
-    { icon: '🐑', name: 'Sheep', desc: 'Commercial flock, rotational grazing', status: 'Live', statusColor: 'var(--color-green)' },
+    { icon: '🐑', name: 'Sheep', desc: 'Commercial flock, rotational grazing', status: 'Live', statusColor: 'var(--color-brown)' },
     { icon: '🥚', name: 'Free Range Eggs', desc: 'Small-scale, premium local supply', status: 'Coming Soon', statusColor: 'var(--color-brown)' },
-    { icon: '🌱', name: 'Tunnel Farming', desc: 'Protected tunnel farming — tomatoes, peppers, spinach, lettuce. Phase 1 operational.', status: 'Live', statusColor: 'var(--color-green)' },
+    { icon: '🌱', name: 'Tunnel Farming', desc: 'Protected tunnel farming — tomatoes, peppers, spinach, lettuce. Launching Year 2.', status: 'Year 2', statusColor: 'var(--color-green)' },
   ];
 
   return (

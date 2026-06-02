@@ -115,10 +115,10 @@ function TunnelVegetables() {
     <ProductRow
       label="Tunnel Farming"
       title="Protected tunnel farming. Fresh vegetables, year-round."
-      body="Tunnel farming infrastructure currently in development. Phase 1 operational. Protected growing environment with drip irrigation, producing tomatoes, peppers, spinach and lettuce."
+      body="Tunnel farming with drip irrigation, producing tomatoes, peppers, spinach and lettuce. Coming in Year 2."
       imgSrc="/images/tunnel-tomatoes.jpg" imgAlt="Tunnel interior with tomatoes growing"
       details={[
-        { k: 'Status', v: 'Phase 1 operational' },
+        { k: 'Status', v: 'Year 2' },
         { k: 'Irrigation', v: 'Drip system' },
         { k: 'Crops', v: 'Tomatoes, Peppers, Spinach, Lettuce' },
       ]}

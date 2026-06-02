@@ -85,7 +85,7 @@ function FarmFactsBar() {
 function MasterplanSection() {
   const zones = [
     { color: '#4A7FCB', name: 'Dryland Crops', meta: '100ha  -  Yellow Maize & Sunflower' },
-    { color: '#3D5220', name: 'Production Tunnels', meta: 'Tunnel farming  -  Phase 1 operational' },
+    { color: '#3D5220', name: 'Production Tunnels', meta: 'Tunnel Farming - Year 2' },
     { color: '#C0392B', name: 'Livestock Handling', meta: 'Cattle & sheep pens, loading ramps' },
     { color: '#E67E22', name: 'Grazing Camps', meta: '80.7ha improved + 25.2ha natural' },
     { color: '#1A1A1A', name: 'Operational Hub', meta: 'Workshop, silos, boreholes, homestead' },
@@ -196,8 +196,8 @@ function OperationalZones() {
     {
       num: 'ii.',
       title: 'Production Tunnels',
-      body: 'Tunnel farming  -  Phase 1 operational, with drip irrigation and raised beds. Multi-crop cycles run year-round: tomatoes, peppers, spinach, and lettuce. First harvest October 2026  -  R35,000/month growing to R55,000/month by Year 2.',
-      facts: [{ k: 'Tunnels', v: 'Phase 1 operational' }, { k: 'Crops', v: 'Tomatoes, Peppers, Spinach, Lettuce' }, { k: 'First Harvest', v: 'October 2026' }, { k: 'Buyer', v: 'local fresh produce markets' }],
+      body: 'Tunnel farming with drip irrigation and raised beds. Multi-crop cycles of tomatoes, peppers, spinach, and lettuce. Launching Year 2.',
+      facts: [{ k: 'Tunnels', v: 'Year 2' }, { k: 'Crops', v: 'Tomatoes, Peppers, Spinach, Lettuce' }, { k: 'Launch', v: 'Year 2' }, { k: 'Buyer', v: 'local fresh produce markets' }],
       imgCaption: 'img · tunnel interior · vegetables growing',
     },
     {
