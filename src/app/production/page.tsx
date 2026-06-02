@@ -134,11 +134,13 @@ function LivestockSection() {
       <ProductRow
         label="Livestock"
         title="Commercial cattle and sheep - built to grow."
-        body="Commercial cattle and sheep operation with a Bonsmara/Simmental stud programme. Sold through regional livestock auctions."
+        body="Commercial cattle and sheep operation with a Bonsmara/Simmental stud programme anchored by 3 stud bulls. Sold through regional livestock auctions with consistent, predictable income cycles."
         imgSrc="/images/cattle-morning.jpg" imgAlt="Cattle herd in the Free State veld, morning"
         details={[
           
           
+          { k: 'Cattle', v: 'Commercial herd (Bonsmara/Simmental)' },
+          { k: 'Sheep', v: 'Commercial flock' },
           { k: 'Stud bulls', v: '3' },
         ]}
       />

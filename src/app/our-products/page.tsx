@@ -157,6 +157,8 @@ function BeefStudProgramme() {
       body="3 Bonsmara/Simmental stud bulls with 12+ month maturation programme. First stud sales in Year 2 at R80,000 - R150,000 per animal. A growing high-margin revenue stream from Year 2 onward."
       imgCaption="img · stud bull · premium genetics · farm portrait"
       facts={[
+        { k: 'Cattle', v: 'Commercial herd' },
+        { k: 'Sheep', v: 'Commercial flock' },
         { k: 'Stud bulls', v: '3 (Bonsmara/Simmental)' },
         { k: 'First sales', v: 'Year 2 (4 - 5 animals)' },
         { k: 'Year 2 income target', v: 'R400,000' },

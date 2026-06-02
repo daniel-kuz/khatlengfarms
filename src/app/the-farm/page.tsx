@@ -204,7 +204,7 @@ function OperationalZones() {
       num: 'iii.',
       title: 'Livestock Handling',
       body: 'Commercial cattle and sheep operation. Full auction-ready infrastructure: holding pens, loading ramps, crush and working systems.',
-      facts: [{ k: 'Stud Bulls', v: '3' }, { k: 'Breed', v: 'Bonsmara/Simmental' }, { k: 'Auction', v: 'Regional livestock auctions' }],
+      facts: [{ k: 'Cattle', v: 'Commercial herd (Bonsmara/Simmental)' }, { k: 'Sheep', v: 'Commercial flock' }, { k: 'Stud Bulls', v: '3' }, { k: 'Auction', v: 'Regional livestock auctions' }],
       imgCaption: 'img · cattle in pens · livestock facility',
     },
     {
