@@ -1,6 +1,7 @@
-﻿﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import NavBar from '@/components/layout/NavBar';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
+import ScrollReveal from '@/components/ui/ScrollReveal';
 import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Btn from '@/components/ui/Btn';
@@ -42,8 +43,8 @@ function PageHero() {
       <HeroVideoLoop />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 60%,rgba(0,0,0,0.75) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span></span>INVEST</div>
-        <h1 style={{ color: 'var(--color-bone)', maxWidth: '20ch', marginBottom: 20 }}>A De-Risked, Governance-Led Investment in South African Agriculture.</h1>
+        <div className="numlabel hero-animate" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span></span>INVEST</div>
+        <h1 className="hero-animate-1" style={{ color: 'var(--color-bone)', maxWidth: '20ch', marginBottom: 20 }}>A De-Risked, Governance-Led Investment in South African Agriculture.</h1>
         <p style={{ color: 'rgba(248,245,238,0.85)', fontSize: 'clamp(17px,1.4vw,21px)', maxWidth: '60ch' }}>
           Unencumbered freehold land. Four revenue streams. Institutional-grade management. Zero existing debt.
         </p>

@@ -10,7 +10,16 @@
       "PowerShell(Get-ChildItem \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\nkoenyanetrust-master\\\\nkoenyanetrust-master\\\\public\\\\videos\" | Select-Object Name, @{N='MB';E={[math]::Round\\($_.Length/1MB,1\\)}})",
       "mcp__1444db9c-b25b-42e6-a94e-29acb0657727__list_projects",
       "mcp__1444db9c-b25b-42e6-a94e-29acb0657727__get_project",
-      "mcp__1444db9c-b25b-42e6-a94e-29acb0657727__list_deployments"
+      "mcp__1444db9c-b25b-42e6-a94e-29acb0657727__list_deployments",
+      "Read(//c/Users/USER-PC/Documents/Farm/**)",
+      "Bash(npx create-next-app@latest elite-civil-solutions --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\elite-civil-solutions\\\\components\" \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\elite-civil-solutions\\\\app\\\\about\" \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\elite-civil-solutions\\\\app\\\\services\" \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\elite-civil-solutions\\\\app\\\\projects\" \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\elite-civil-solutions\\\\app\\\\contact\" \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\elite-civil-solutions\\\\app\\\\gallery\" \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\elite-civil-solutions\\\\app\\\\calculator\" \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\elite-civil-solutions\\\\app\\\\solar\" \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\elite-civil-solutions\\\\app\\\\tip-tuesday\" 2>&1)",
+      "WebFetch(domain:claude.ai)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(pandoc \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Elite Civil Solutions \\(Pty\\) Ltd\\\\Documents\\\\ECS_Business_Profile_2026.docx\" -t plain)",
+      "Bash(npm run *)",
+      "WebFetch(domain:jenaandsonsgroup.co.za)",
+      "WebFetch(domain:bcgsolar.co.za)"
     ]
   }
 }

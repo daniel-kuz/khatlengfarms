@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import NavBar from '@/components/layout/NavBar';
 import Footer from '@/components/layout/Footer';
@@ -54,7 +54,7 @@ function OpeningSection() {
     <section className="section-pad">
       <div className="container">
         <div className="opening-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(56px,8vw,112px)', alignItems: 'center' }}>
-          <ScrollReveal direction="left">
+          
             <div>
               <SectionLabel number="" label="Who We Are" />
               <h2 style={{ fontWeight: 400, marginBottom: 28 }}>200 hectares. One purpose. Built to last.</h2>
@@ -65,8 +65,8 @@ function OpeningSection() {
                 We operate Freehold farmland in Bethlehem, Free State — now entering its most productive chapter.
               </p>
             </div>
-          </ScrollReveal>
-          <ScrollReveal direction="right" delay={150}>
+          
+          
             <div className="img-zoom" style={{ position: 'relative', height: 'clamp(380px,42vw,520px)', width: '100%', overflow: 'hidden' }}>
               <Image
                 src="/images/img · farm landscape · Free State highlands · morning light.jpg"
@@ -76,7 +76,7 @@ function OpeningSection() {
                 sizes="(max-width: 860px) 100vw, 50vw"
               />
             </div>
-          </ScrollReveal>
+          
         </div>
       </div>
       <style>{`@media(max-width:860px){.opening-grid{grid-template-columns:1fr!important}}`}</style>
@@ -89,13 +89,13 @@ function FullStory() {
     <section className="section-pad" style={{ background: 'var(--color-green-deep)', color: 'var(--color-bone)' }}>
       <div className="container">
         <div className="story-layout" style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: 'clamp(56px,8vw,112px)', alignItems: 'start' }}>
-          <ScrollReveal direction="up">
+          
             <div>
               <SectionLabel number="" label="Our Story" light />
               <h2 style={{ color: 'var(--color-bone)', fontWeight: 400 }}>From landholding to commercial enterprise.</h2>
             </div>
-          </ScrollReveal>
-          <ScrollReveal direction="up" delay={200}>
+          
+          
           <div style={{ color: 'rgba(244,235,221,0.82)', lineHeight: 1.8 }}>
             <p style={{ marginBottom: 20 }}>
               Khatleng Farms was farming in the Free State since 2000 on freehold land in Bethlehem.
@@ -122,7 +122,7 @@ function FullStory() {
               At Khatleng Farms, we are not simply farming land. We are continuing a legacy.
             </p>
           </div>
-          </ScrollReveal>
+          
         </div>
       </div>
       <style>{`@media(max-width:860px){.story-layout{grid-template-columns:1fr!important}}`}</style>
@@ -144,14 +144,14 @@ function PhilosophyPillars() {
           <SectionLabel number="" label="Our Philosophy" />
           <h2 style={{ fontWeight: 400 }}>How we farm. Why it matters.</h2>
         </div>
-        <div className="phil-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
+<div className="phil-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
           {pillars.map(({ title, body }, i) => (
-            <ScrollReveal key={title} direction="up" delay={i * 120}>
+            
               <div style={{ padding: '36px 32px', borderTop: '3px solid var(--color-brown)', height: '100%' }}>
                 <h3 style={{ marginBottom: 16, fontWeight: 600 }}>{title}</h3>
                 <p style={{ color: 'var(--color-ink-mute)', margin: 0, lineHeight: 1.75 }}>{body}</p>
               </div>
-            </ScrollReveal>
+            
           ))}
         </div>
       </div>
@@ -179,7 +179,7 @@ function JourneyTimeline() {
         <div style={{ position: 'relative', maxWidth: 860 }}>
           <div style={{ position: 'absolute', left: 'clamp(48px,6vw,72px)', top: 0, bottom: 0, width: 1, background: 'rgba(122,92,62,0.25)' }} />
           {milestones.map(({ year, event }, i) => (
-            <ScrollReveal key={year} direction="left" delay={i * 100}>
+            
               <div style={{ display: 'grid', gridTemplateColumns: 'clamp(96px,12vw,144px) 1fr', gap: 32, padding: 'clamp(20px,2.5vw,32px) 0', borderBottom: i < milestones.length - 1 ? '1px solid rgba(47,47,47,0.08)' : 'none', alignItems: 'start' }}>
                 <div style={{ textAlign: 'right', paddingRight: 'clamp(20px,3vw,36px)', position: 'relative' }}>
                   <div style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(18px,1.8vw,24px)', color: year === 'Future' ? 'var(--color-brown)' : 'var(--color-green)', fontWeight: 600 }}>{year}</div>
@@ -187,7 +187,7 @@ function JourneyTimeline() {
                 </div>
                 <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.7, margin: 0, paddingTop: 2 }}>{event}</p>
               </div>
-            </ScrollReveal>
+            
           ))}
         </div>
       </div>

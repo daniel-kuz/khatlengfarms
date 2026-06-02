@@ -1,4 +1,4 @@
-﻿import Image from 'next/image';
+import Image from 'next/image';
 import NavBar from '@/components/layout/NavBar';
 import Footer from '@/components/layout/Footer';
 import Btn from '@/components/ui/Btn';
@@ -77,7 +77,7 @@ function TheStory() {
     <section className="section-pad">
       <div className="container">
         <div className="story-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(56px,8vw,120px)', alignItems: 'center' }}>
-          <ScrollReveal direction="left">
+          
             <div style={{ position: 'relative', height: 'clamp(440px,48vw,580px)', width: '100%', overflow: 'hidden' }}>
               <Image
                 src="/images/pexels-tomfisk-19165847.jpg"
@@ -88,8 +88,8 @@ function TheStory() {
                 priority
               />
             </div>
-          </ScrollReveal>
-          <ScrollReveal direction="right" delay={150}>
+          
+          
             <div>
               <SectionLabel number="" label="Our Story" />
               <h2 style={{ marginBottom: 28, fontWeight: 400 }}>
@@ -103,7 +103,7 @@ function TheStory() {
               </p>
               <Btn href="/about" variant="outline-green" arrow>Read Our Full Story</Btn>
             </div>
-          </ScrollReveal>
+          
         </div>
       </div>
       <style>{`@media(max-width:860px){.story-grid{grid-template-columns:1fr!important}}`}</style>
@@ -159,16 +159,16 @@ function ProductionZones() {
           <SectionLabel number="" label="What We Produce" />
           <h2 style={{ fontWeight: 400 }}>From grain fields to livestock camps — four production zones, one integrated farm.</h2>
         </div>
-        <div className="zones-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
+<div className="zones-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
           {zones.map(({ icon, name, desc, status, statusColor }, i) => (
-            <ScrollReveal key={name} delay={i * 80} direction="up">
+            
             <div style={{ padding: '32px 28px', background: 'var(--color-bone-deep)', border: '1px solid rgba(47,47,47,0.1)', display: 'flex', flexDirection: 'column', gap: 12, height: '100%' }}>
               <div style={{ fontSize: 32 }}>{icon}</div>
               <h3 style={{ fontSize: 'clamp(18px,1.6vw,22px)', marginBottom: 4 }}>{name}</h3>
               <p style={{ fontSize: 14, color: 'var(--color-ink-mute)', margin: 0, lineHeight: 1.6, flexGrow: 1 }}>{desc}</p>
               <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: statusColor, fontWeight: 500, marginTop: 4 }}>{status}</div>
             </div>
-            </ScrollReveal>
+            
           ))}
         </div>
         <div style={{ marginTop: 48 }}>
@@ -304,7 +304,7 @@ function ImpactSection() {
           <SectionLabel number="" label="Our Impact" />
           <h2 style={{ fontWeight: 400 }}>Agriculture that gives back.</h2>
         </div>
-        <div className="impact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 24 }}>
+<div className="impact-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 24 }}>
           {impacts.map(({ title, body }) => (
             <div key={title} style={{ padding: '32px 24px', background: 'var(--color-bone)', border: '1px solid rgba(47,47,47,0.1)' }}>
               <div style={{ width: 32, height: 3, background: 'var(--color-brown)', marginBottom: 20 }} />
@@ -354,7 +354,7 @@ function NewsSection() {
           <SectionLabel number="" label="From The Farm" />
           <h2 style={{ fontWeight: 400, marginTop: 20 }}>News &amp; updates.</h2>
         </div>
-        <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
+<div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
           {featured.map((article) => (
             <Link key={article.slug} href={`/news/${article.slug}`} className="card-hover" style={{ display: 'flex', flexDirection: 'column', textDecoration: 'none' }}>
               <div className="img-zoom" style={{ position: 'relative', height: 220, width: '100%', overflow: 'hidden', marginBottom: 20 }}>

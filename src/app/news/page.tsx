@@ -4,6 +4,7 @@ import Link from 'next/link';
 import NavBar from '@/components/layout/NavBar';
 import Footer from '@/components/layout/Footer';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
+import ScrollReveal from '@/components/ui/ScrollReveal';
 import SectionLabel from '@/components/ui/SectionLabel';
 import { articles } from '@/lib/articles';
 
@@ -22,8 +23,8 @@ export default function NewsPage() {
           <HeroVideoLoop />
           <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.65) 100%)' }} />
           <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-            <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span>—</span>NEWS</div>
-            <h1 style={{ color: 'var(--color-bone)', maxWidth: '18ch', fontWeight: 400 }}>News & Updates</h1>
+            <div className="numlabel hero-animate" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span>—</span>NEWS</div>
+            <h1 className="hero-animate-1" style={{ color: 'var(--color-bone)', maxWidth: '18ch', fontWeight: 400 }}>News & Updates</h1>
           </div>
         </header>
 
@@ -34,7 +35,7 @@ export default function NewsPage() {
               <SectionLabel number="" label="From The Farm" />
               <h2 style={{ fontWeight: 400 }}>Stories from the land.</h2>
             </div>
-            <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 32 }}>
+<div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 32 }}>
               {articles.map((article) => (
                 <Link key={article.slug} href={`/news/${article.slug}`} className="card-hover" style={{ display: 'flex', flexDirection: 'column', textDecoration: 'none' }}>
                   <div className="img-zoom" style={{ position: 'relative', height: 260, overflow: 'hidden', marginBottom: 20 }}>

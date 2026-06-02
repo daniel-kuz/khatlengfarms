@@ -1,7 +1,8 @@
-﻿﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import NavBar from '@/components/layout/NavBar';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
+import ScrollReveal from '@/components/ui/ScrollReveal';
 import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Divider from '@/components/ui/Divider';
@@ -41,8 +42,8 @@ function PageHero() {
       <HeroVideoLoop videos={['/videos/hero8.mp4','/videos/hero9.mp4','/videos/hero10.mp4','/videos/hero11.mp4']} />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span></span>BETHLEHEM, FREE STATE</div>
-        <h1 style={{ color: 'var(--color-bone)', maxWidth: '16ch', marginBottom: 20, fontWeight: 400 }}>Our Farm</h1>
+        <div className="numlabel hero-animate" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span></span>BETHLEHEM, FREE STATE</div>
+        <h1 className="hero-animate-1" style={{ color: 'var(--color-bone)', maxWidth: '16ch', marginBottom: 20, fontWeight: 400 }}>Our Farm</h1>
         <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
           Freehold agricultural land in Bethlehem, Free State — in full commercial operation since 2026.
         </p>
@@ -78,22 +79,26 @@ function IntegratedOperation() {
     <section className="section-pad">
       <div className="container">
         <div className="int-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(56px,8vw,112px)', alignItems: 'center' }}>
-          <div>
-            <SectionLabel number="" label="An Integrated Farm Operation" />
-            <h2 style={{ fontWeight: 400, marginBottom: 28 }}>One farm. Every resource working together.</h2>
-            <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.8, marginBottom: 0 }}>
-              Khatleng Farms operates as a fully integrated agricultural enterprise across grain production, tunnel farming, commercial livestock and beef stud development. The farm is equipped with the infrastructure and water resources to support year-round operations across all production activities.
-            </p>
-          </div>
-          <div style={{ position: 'relative', height: 'clamp(380px,42vw,520px)', width: '100%', overflow: 'hidden' }}>
-            <Image
-              src="/images/golden-hour.jpg"
-              alt="Khatleng Farms landscape, Bethlehem Free State, golden hour"
-              fill
-              style={{ objectFit: 'cover', objectPosition: 'center' }}
-              sizes="(max-width: 860px) 100vw, 50vw"
-            />
-          </div>
+          <ScrollReveal direction="left">
+            <div>
+              <SectionLabel number="" label="An Integrated Farm Operation" />
+              <h2 style={{ fontWeight: 400, marginBottom: 28 }}>One farm. Every resource working together.</h2>
+              <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.8, marginBottom: 0 }}>
+                Khatleng Farms operates as a fully integrated agricultural enterprise across grain production, tunnel farming, commercial livestock and beef stud development. The farm is equipped with the infrastructure and water resources to support year-round operations across all production activities.
+              </p>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal direction="right" delay={150}>
+            <div className="img-zoom" style={{ position: 'relative', height: 'clamp(380px,42vw,520px)', width: '100%', overflow: 'hidden' }}>
+              <Image
+                src="/images/golden-hour.jpg"
+                alt="Khatleng Farms landscape, Bethlehem Free State, golden hour"
+                fill
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
+                sizes="(max-width: 860px) 100vw, 50vw"
+              />
+            </div>
+          </ScrollReveal>
         </div>
       </div>
       <style>{`@media(max-width:860px){.int-grid{grid-template-columns:1fr!important}}`}</style>

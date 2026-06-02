@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import NavBar from '@/components/layout/NavBar';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
+import ScrollReveal from '@/components/ui/ScrollReveal';
 import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 
@@ -83,8 +84,8 @@ function PageHero() {
       <HeroVideoLoop videos={['/videos/hero2.mp4','/videos/hero3.mp4','/videos/hero4.mp4','/videos/hero5.mp4','/videos/hero6.mp4','/videos/hero7.mp4']} />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.65) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span></span>GALLERY</div>
-        <h1 style={{ color: 'var(--color-bone)', maxWidth: '14ch', fontWeight: 400 }}>The Farm in Pictures</h1>
+        <div className="numlabel hero-animate" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span></span>GALLERY</div>
+        <h1 className="hero-animate-1" style={{ color: 'var(--color-bone)', maxWidth: '14ch', fontWeight: 400 }}>The Farm in Pictures</h1>
       </div>
     </header>
   );

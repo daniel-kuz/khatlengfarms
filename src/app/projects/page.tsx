@@ -1,6 +1,7 @@
-﻿﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import NavBar from '@/components/layout/NavBar';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
+import ScrollReveal from '@/components/ui/ScrollReveal';
 import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Btn from '@/components/ui/Btn';
@@ -33,8 +34,8 @@ function PageHero() {
       <HeroVideoLoop videos={['/videos/hero4.mp4','/videos/hero5.mp4','/videos/hero6.mp4','/videos/hero7.mp4']} />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span></span>PROJECTS</div>
-        <h1 style={{ color: 'var(--color-bone)', maxWidth: '18ch', marginBottom: 20, fontWeight: 400 }}>What We&rsquo;re Building</h1>
+        <div className="numlabel hero-animate" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span></span>PROJECTS</div>
+        <h1 className="hero-animate-1" style={{ color: 'var(--color-bone)', maxWidth: '18ch', marginBottom: 20, fontWeight: 400 }}>What We&rsquo;re Building</h1>
         <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
           Khatleng Farms is a farm in motion. Here is where we are headed.
         </p>
@@ -95,19 +96,23 @@ function ProjectsGrid() {
   return (
     <section className="section-pad">
       <div className="container">
-        <div style={{ maxWidth: 720, marginBottom: 'clamp(56px,7vw,88px)' }}>
-          <SectionLabel number="" label="Our Projects" />
-          <h2 style={{ fontWeight: 400 }}>Building for the long term.</h2>
-        </div>
+        <ScrollReveal direction="up">
+          <div style={{ maxWidth: 720, marginBottom: 'clamp(56px,7vw,88px)' }}>
+            <SectionLabel number="" label="Our Projects" />
+            <h2 style={{ fontWeight: 400 }}>Building for the long term.</h2>
+          </div>
+        </ScrollReveal>
         <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-          {projects.map(({ title, status, statusType, body }) => (
-            <div key={title} style={{ padding: '36px 32px', border: '1px solid rgba(47,47,47,0.12)', background: statusType === 'future' ? 'var(--color-bone-deep)' : 'var(--color-bone)', display: 'flex', flexDirection: 'column', gap: 16 }}>
+          {projects.map(({ title, status, statusType, body }, i) => (
+            <ScrollReveal key={title} direction="up" delay={i * 80}>
+            <div style={{ padding: '36px 32px', border: '1px solid rgba(47,47,47,0.12)', background: statusType === 'future' ? 'var(--color-bone-deep)' : 'var(--color-bone)', display: 'flex', flexDirection: 'column', gap: 16, height: '100%' }}>
               <div style={{ display: 'inline-block', padding: '5px 12px', fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', fontWeight: 500, ...statusStyle(statusType) }}>
                 {status}
               </div>
               <h3 style={{ fontSize: 'clamp(18px,1.7vw,22px)', fontWeight: 600, lineHeight: 1.25 }}>{title}</h3>
               <p style={{ color: 'var(--color-ink-mute)', margin: 0, fontSize: 15, lineHeight: 1.7 }}>{body}</p>
             </div>
+            </ScrollReveal>
           ))}
         </div>
         <div style={{ marginTop: 48, padding: '20px 0', borderTop: '1px solid rgba(47,47,47,0.1)', display: 'flex', gap: 32, flexWrap: 'wrap' }}>

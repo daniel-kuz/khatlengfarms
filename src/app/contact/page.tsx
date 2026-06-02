@@ -1,8 +1,9 @@
-﻿﻿'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import NavBar from '@/components/layout/NavBar';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
+import ScrollReveal from '@/components/ui/ScrollReveal';
 import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Btn from '@/components/ui/Btn';
@@ -26,8 +27,8 @@ function PageHero() {
       <HeroVideoLoop videos={['/videos/hero5.mp4','/videos/hero6.mp4','/videos/hero7.mp4']} />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.7) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span></span>CONTACT</div>
-        <h1 style={{ color: 'var(--color-bone)', maxWidth: '14ch', marginBottom: 14, fontWeight: 400 }}>Get in Touch</h1>
+        <div className="numlabel hero-animate" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span></span>CONTACT</div>
+        <h1 className="hero-animate-1" style={{ color: 'var(--color-bone)', maxWidth: '14ch', marginBottom: 14, fontWeight: 400 }}>Get in Touch</h1>
         <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
           We&rsquo;d love to hear from you  -  whether you&rsquo;re a supplier, retailer, partner or visitor.
         </p>

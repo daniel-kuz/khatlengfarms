@@ -1,6 +1,7 @@
-﻿﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import NavBar from '@/components/layout/NavBar';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
+import ScrollReveal from '@/components/ui/ScrollReveal';
 import Footer from '@/components/layout/Footer';
 import SectionLabel from '@/components/ui/SectionLabel';
 import Btn from '@/components/ui/Btn';
@@ -40,8 +41,8 @@ function PageHero() {
       <HeroVideoLoop />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span></span>OUR PRODUCTS</div>
-        <h1 style={{ color: 'var(--color-bone)', maxWidth: '18ch', marginBottom: 20 }}>Four Income Streams. One Resilient Operation.</h1>
+        <div className="numlabel hero-animate" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span></span>OUR PRODUCTS</div>
+        <h1 className="hero-animate-1" style={{ color: 'var(--color-bone)', maxWidth: '18ch', marginBottom: 20 }}>Four Income Streams. One Resilient Operation.</h1>
         <p style={{ color: 'rgba(248,245,238,0.85)', fontSize: 'clamp(17px,1.4vw,21px)', maxWidth: '52ch' }}>Diversified by design  -  no single buyer exceeds 50% of revenue.</p>
       </div>
     </header>
