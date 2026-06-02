@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
@@ -70,8 +70,8 @@ export default function NavBar() {
           <Image
             src="/images/Logo.png"
             alt="Khatleng Farms logo"
-            width={52}
-            height={52}
+            width={68}
+            height={68}
             style={{ objectFit: 'contain', flexShrink: 0 }}
           />
           <span>Khatleng Farms</span>

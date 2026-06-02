@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Playfair_Display, Poppins, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -43,7 +43,7 @@ const structuredData = {
       name: "Khatleng Farms",
       alternateName: "Nkoenyane Family Trust trading as Khatleng Farms",
       url: "https://www.khatlengfarms.co.za",
-      email: "daniel@khatleng.com",
+      email: "info@khatleng.com",
       telephone: "+27691010076",
       description:
         "A commercial agricultural enterprise in Bethlehem, Free State — producing grain, livestock and fresh vegetables from 200 hectares of freehold farmland.",

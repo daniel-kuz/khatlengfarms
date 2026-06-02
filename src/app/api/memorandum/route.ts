@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+﻿import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
     },
     body: JSON.stringify({
       from: 'website@nkoenyane.co.za',
-      to: 'daniel@khatleng.com',
+      to: 'info@khatleng.com',
       reply_to: email,
       subject: `[Memorandum Request] ${name}${org ? ` — ${org}` : ''}`,
       html,

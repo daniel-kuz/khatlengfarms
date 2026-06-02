@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import Image from 'next/image';
 
 const navLinks = [
@@ -37,8 +37,8 @@ export default function Footer() {
             <Image
               src="/images/Logo.png"
               alt="Khatleng Farms logo"
-              width={52}
-              height={52}
+              width={68}
+              height={68}
               style={{ objectFit: 'contain', flexShrink: 0 }}
             />
             <span>Khatleng Farms</span>
@@ -71,7 +71,7 @@ export default function Footer() {
           <h4 style={colHeadStyle}>Contact</h4>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
             {[
-              'daniel@khatleng.com',
+              'info@khatleng.com',
               '069 101 0076',
               'Bethlehem, Free State',
               'South Africa',

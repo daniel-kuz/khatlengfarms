@@ -9,7 +9,7 @@ import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 
 export const metadata: Metadata = {
   title: 'Our Products | The Nkoenyane Family Trust',
-  description: 'Four income streams from Khatleng Farms â€” dryland crops, tunnel vegetables, commercial livestock, and beef stud programme.',
+  description: 'Four income streams from Khatleng Farms "” dryland crops, tunnel vegetables, commercial livestock, and beef stud programme.',
 };
 
 export default function OurProductsPage() {
@@ -40,9 +40,9 @@ function PageHero() {
       <HeroVideoLoop />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span>â€”</span>OUR PRODUCTS</div>
+        <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span>"”</span>OUR PRODUCTS</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '18ch', marginBottom: 20 }}>Four Income Streams. One Resilient Operation.</h1>
-        <p style={{ color: 'rgba(248,245,238,0.85)', fontSize: 'clamp(17px,1.4vw,21px)', maxWidth: '52ch' }}>Diversified by design â€” no single buyer exceeds 50% of revenue.</p>
+        <p style={{ color: 'rgba(248,245,238,0.85)', fontSize: 'clamp(17px,1.4vw,21px)', maxWidth: '52ch' }}>Diversified by design "” no single buyer exceeds 50% of revenue.</p>
       </div>
     </header>
   );
@@ -95,9 +95,9 @@ function DrylandCrops() {
   return (
     <ProductSection
       num="01" label="Dryland Crops"
-      title="Yellow Maize and Sunflower â€” the backbone."
+      title="Yellow Maize and Sunflower "” the backbone."
       body="80ha of yellow maize targeting 5.5 t/ha at R3,500/ton. 20ha of sunflower at 1.8 t/ha and R8,500/ton. Crop rotation reduces input costs, improves soil health, and breaks pest cycles. Off-take via established grain market channels at SAFEX spot price."
-      imgCaption="img Â· yellow maize fields Â· harvest Â· warm tones"
+      imgCaption="img · yellow maize fields · harvest · warm tones"
       facts={[
         { k: 'Maize yield target', v: '5.5 t/ha' },
         { k: 'Maize price', v: 'R3,500/ton' },
@@ -115,12 +115,12 @@ function TunnelVegetables() {
     <ProductSection
       num="02" label="Tunnel Vegetables"
       title="Eight tunnels. Year-round production."
-      body="Tunnel farming â€” Phase 1 operational, with drip irrigation and raised beds. Multi-crop cycles of tomatoes, peppers, spinach, and lettuce run back-to-back throughout the year. First harvest October 2026, reaching full production by December."
-      imgCaption="img Â· production tunnel interior Â· tomatoes Â· fresh produce"
+      body="Tunnel farming "” Phase 1 operational, with drip irrigation and raised beds. Multi-crop cycles of tomatoes, peppers, spinach, and lettuce run back-to-back throughout the year. First harvest October 2026, reaching full production by December."
+      imgCaption="img · production tunnel interior · tomatoes · fresh produce"
       facts={[
         { k: 'Tunnels', v: 'Phase 1 operational' },
-        { k: 'First harvest', v: 'October 2026 â€” R35,000' },
-        { k: 'Full production', v: 'R50,000â€“R55,000/month' },
+        { k: 'First harvest', v: 'October 2026 "” R35,000' },
+        { k: 'Full production', v: 'R50,000"“R55,000/month' },
         { k: 'Primary buyer', v: 'local fresh produce markets' },
         { k: 'Secondary buyers', v: 'Local retailers & restaurants' },
       ]}
@@ -134,9 +134,9 @@ function CommercialLivestock() {
   return (
     <ProductSection
       num="03" label="Livestock"
-      title="Commercial cattle and sheep â€” auction-ready."
+      title="Commercial cattle and sheep "” auction-ready."
       body="Opening herd: 50 cattle (Bonsmara/Simmental) and 50 sheep. Monthly cattle auctions and quarterly sheep auctions at regional livestock auctions. Full seller registration confirmed. Herd quality anchored by 5 stud bulls."
-      imgCaption="img Â· cattle herd Â· Free State veld Â· golden light"
+      imgCaption="img · cattle herd · Free State veld · golden light"
       facts={[
         { k: 'Cattle', v: '50 head' },
         { k: 'Sheep', v: '50 head' },
@@ -154,13 +154,13 @@ function BeefStudProgramme() {
     <ProductSection
       num="04" label="Beef Stud"
       title="Premium genetics. Premium returns."
-      body="5 Bonsmara/Simmental stud bulls with 12+ month maturation programme. Breeding commences Year 1. First stud sales in Year 2 at R80,000â€“R150,000 per animal. Market pricing aligned to Stud Breeders Society SA. A growing high-margin revenue stream from Year 2 onward."
-      imgCaption="img Â· stud bull Â· premium genetics Â· farm portrait"
+      body="5 Bonsmara/Simmental stud bulls with 12+ month maturation programme. Breeding commences Year 1. First stud sales in Year 2 at R80,000"“R150,000 per animal. Market pricing aligned to Stud Breeders Society SA. A growing high-margin revenue stream from Year 2 onward."
+      imgCaption="img · stud bull · premium genetics · farm portrait"
       facts={[
         { k: 'Stud bulls', v: '5 (Bonsmara/Simmental)' },
-        { k: 'First sales', v: 'Year 2 (4â€“5 animals)' },
+        { k: 'First sales', v: 'Year 2 (4"“5 animals)' },
         { k: 'Year 2 income target', v: 'R400,000' },
-        { k: 'Price range', v: 'R80,000â€“R150,000/animal' },
+        { k: 'Price range', v: 'R80,000"“R150,000/animal' },
         { k: 'Market', v: 'Stud Breeders Society SA' },
       ]}
       reverse
@@ -171,8 +171,8 @@ function BeefStudProgramme() {
 
 function FutureRoadmap() {
   const phases = [
-    { year: 'Year 3', title: 'Irrigation Development', body: 'Infrastructure financed from Year 1â€“2 operational surpluses. Significantly increases crop yields across arable land and reduces weather dependency.' },
-    { year: 'Year 3+', title: 'Agro-Processing', body: 'Maize meal, sunflower oil, dried vegetables â€” value chain vertical integration. Higher margins by capturing processing value previously passed upstream.' },
+    { year: 'Year 3', title: 'Irrigation Development', body: 'Infrastructure financed from Year 1"“2 operational surpluses. Significantly increases crop yields across arable land and reduces weather dependency.' },
+    { year: 'Year 3+', title: 'Agro-Processing', body: 'Maize meal, sunflower oil, dried vegetables "” value chain vertical integration. Higher margins by capturing processing value previously passed upstream.' },
     { year: 'Year 5+', title: 'Export Readiness', body: 'Cross-border market entry, international buyer certifications, traceability systems export-grade. Premium identity through data-backed quality claims.' },
   ];
 

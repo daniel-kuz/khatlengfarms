@@ -49,10 +49,10 @@ function PageHero() {
       <HeroVideoLoop />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span>â€”</span>BLK 25 FOURIE FARM Â· BETHLEHEM, FREE STATE</div>
+        <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span>"”</span>BLK 25 FOURIE FARM · BETHLEHEM, FREE STATE</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '16ch', marginBottom: 20 }}>Khatleng Farms</h1>
         <p style={{ color: 'rgba(248,245,238,0.85)', fontSize: 'clamp(17px,1.4vw,21px)', maxWidth: '52ch' }}>
-          Bethlehem, Free State â€” 200 hectares of freehold agricultural land.
+          Bethlehem, Free State "” 200 hectares of freehold agricultural land.
         </p>
       </div>
     </header>
@@ -84,8 +84,8 @@ function FarmFactsBar() {
 
 function MasterplanSection() {
   const zones = [
-    { color: '#4A7FCB', name: 'Dryland Crops', meta: '100ha â€” Yellow Maize & Sunflower' },
-    { color: '#3D5220', name: 'Production Tunnels', meta: 'Tunnel farming â€” Phase 1 operational' },
+    { color: '#4A7FCB', name: 'Dryland Crops', meta: '100ha "” Yellow Maize & Sunflower' },
+    { color: '#3D5220', name: 'Production Tunnels', meta: 'Tunnel farming "” Phase 1 operational' },
     { color: '#C0392B', name: 'Livestock Handling', meta: 'Cattle & sheep pens, loading ramps' },
     { color: '#E67E22', name: 'Grazing Camps', meta: '80.7ha improved + 25.2ha natural' },
     { color: '#1A1A1A', name: 'Operational Hub', meta: 'Workshop, silos, boreholes, homestead' },
@@ -117,7 +117,7 @@ function MasterplanSection() {
             <text x="700" y="430" fontSize={11} fill="rgba(26,26,26,0.6)" fontFamily="monospace">N â†‘</text>
           </svg>
           <div style={{ position: 'absolute', top: 12, left: 16, fontFamily: 'var(--font-mono)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', padding: '5px 10px', background: 'rgba(248,245,238,0.9)', border: '1px solid rgba(26,26,26,0.18)' }}>
-            Khatleng Farms Â· Schematic
+            Khatleng Farms · Schematic
           </div>
         </div>
 
@@ -144,10 +144,10 @@ function MasterplanSection() {
 
 function LandCompositionTable() {
   const rows = [
-    { component: 'Dryland arable â€” maize', hectares: '80ha', use: 'Yellow maize production' },
-    { component: 'Dryland arable â€” sunflower', hectares: '20ha', use: 'Sunflower rotation, oilseed' },
+    { component: 'Dryland arable "” maize', hectares: '80ha', use: 'Yellow maize production' },
+    { component: 'Dryland arable "” sunflower', hectares: '20ha', use: 'Sunflower rotation, oilseed' },
     { component: 'Improved pasture', hectares: '80.7ha', use: 'Livestock grazing and fodder' },
-    { component: 'Natural grazing', hectares: '25.2ha', use: 'Extensive livestock support' },
+    { component: 'Natural grazing', hectares: '70.8ha', use: 'Extensive livestock support' },
     { component: 'Infrastructure & roads', hectares: '~4ha', use: 'Farm operations, access, homestead' },
     { component: 'TOTAL', hectares: '200ha', use: '' },
   ];
@@ -191,35 +191,35 @@ function OperationalZones() {
       title: 'Dryland Crops',
       body: 'The backbone of the farm\'s annual income. 80ha of yellow maize targeting 5.5 t/ha at R3,500/ton, rotated with 20ha of sunflower at 1.8 t/ha and R8,500/ton. SAFEX spot price at delivery through established grain market channels.',
       facts: [{ k: 'Area', v: '100ha total' }, { k: 'Crops', v: 'Yellow Maize + Sunflower' }, { k: 'Off-take', v: 'established grain market channels' }, { k: 'Year 1 Income', v: 'R1,846,000' }],
-      imgCaption: 'img Â· dryland maize fields Â· golden hour',
+      imgCaption: 'img · dryland maize fields · golden hour',
     },
     {
       num: 'ii.',
       title: 'Production Tunnels',
-      body: 'Tunnel farming â€” Phase 1 operational, with drip irrigation and raised beds. Multi-crop cycles run year-round: tomatoes, peppers, spinach, and lettuce. First harvest October 2026 â€” R35,000/month growing to R55,000/month by Year 2.',
+      body: 'Tunnel farming "” Phase 1 operational, with drip irrigation and raised beds. Multi-crop cycles run year-round: tomatoes, peppers, spinach, and lettuce. First harvest October 2026 "” R35,000/month growing to R55,000/month by Year 2.',
       facts: [{ k: 'Tunnels', v: 'Phase 1 operational' }, { k: 'Crops', v: 'Tomatoes, Peppers, Spinach, Lettuce' }, { k: 'First Harvest', v: 'October 2026' }, { k: 'Buyer', v: 'local fresh produce markets' }],
-      imgCaption: 'img Â· tunnel interior Â· vegetables growing',
+      imgCaption: 'img · tunnel interior · vegetables growing',
     },
     {
       num: 'iii.',
       title: 'Livestock Handling',
       body: 'Opening herd of 50 cattle (3 bulls, 39 cows, 8 calves) and 50 sheep (2 rams, 37 ewes, 11 young ewes). Full auction-ready infrastructure: holding pens, loading ramps, crush and working systems.',
       facts: [{ k: 'Cattle', v: '50 head (Bonsmara/Simmental)' }, { k: 'Sheep', v: '50 head' }, { k: 'Stud Bulls', v: '5' }, { k: 'Auction', v: 'regional livestock auctions' }],
-      imgCaption: 'img Â· cattle in pens Â· livestock facility',
+      imgCaption: 'img · cattle in pens · livestock facility',
     },
     {
       num: 'iv.',
       title: 'Grazing Camps',
       body: 'Rotational grazing across 80.7ha of improved pasture and 25.2ha of natural grass veld. Water troughs, perimeter fencing, and paddock divisions support optimal condition scoring and sustainable stocking.',
       facts: [{ k: 'Improved Pasture', v: '80.7ha' }, { k: 'Natural Veld', v: '25.2ha' }, { k: 'System', v: 'Rotational grazing' }, { k: 'Capacity', v: '~100 livestock units' }],
-      imgCaption: 'img Â· free state veld Â· rotational grazing',
+      imgCaption: 'img · free state veld · rotational grazing',
     },
     {
       num: 'v.',
       title: 'Operational Hub',
       body: 'Workshop building, machinery shed, fuel tanks, grain storage silos, three operational boreholes (~100m depth), and a solar energy system (R150,000 own contribution). Main house, cottage, 3 staff quarters (200sqm), and storage sheds.',
       facts: [{ k: 'Water', v: '3 boreholes (~100m)' }, { k: 'Energy', v: 'Solar + Eskom grid' }, { k: 'Accommodation', v: 'Main house + cottage + 3 staff quarters' }, { k: 'Storage', v: 'Grain silos + machinery shed' }],
-      imgCaption: 'img Â· farm hub Â· workshop and silos',
+      imgCaption: 'img · farm hub · workshop and silos',
     },
   ];
 
@@ -274,7 +274,7 @@ function InfrastructureSection() {
   const items = [
     { title: '3 Operational Boreholes', sub: 'Year-round water security, ~100m depth' },
     { title: 'Eskom Grid Connection', sub: 'Reliable grid electricity for all operations' },
-    { title: 'Solar Energy System', sub: 'R150,000 own contribution â€” energy independence' },
+    { title: 'Solar Energy System', sub: 'R150,000 own contribution "” energy independence' },
     { title: 'Main House + Cottage + 3 Quarters', sub: '200sqm staff accommodation on farm' },
     { title: 'Production-Ready Arable Land', sub: '100ha cleared, prepared and ready for planting' },
     { title: 'Perimeter Fencing', sub: 'Complete perimeter and internal paddock fencing' },
@@ -308,10 +308,10 @@ function ClimateSection() {
   const data = [
     { metric: 'Average annual rainfall', value: '772mm (30.4 inches)' },
     { metric: 'Rainy days per year', value: '93' },
-    { metric: 'Wettest months', value: 'Octoberâ€“March' },
-    { metric: 'Driest months', value: 'Juneâ€“August (ideal for harvest)' },
+    { metric: 'Wettest months', value: 'October"“March' },
+    { metric: 'Driest months', value: 'June"“August (ideal for harvest)' },
     { metric: 'Altitude', value: '1,651m above sea level' },
-    { metric: 'Classification', value: 'Cwb KÃ¶ppen-Geiger â€” Subtropical Highland' },
+    { metric: 'Classification', value: 'Cwb Köppen-Geiger "” Subtropical Highland' },
     { metric: 'Annual sunshine hours', value: '~4,047 hours/year' },
   ];
 
@@ -322,7 +322,7 @@ function ClimateSection() {
           <SectionLabel number="04" label="Climate" />
           <h2>A productive climate by any measure.</h2>
           <p className="lede" style={{ marginTop: 16 }}>
-            In 8 of the last 9 recorded seasons, rainfall exceeded 600mm â€” well above the 450mm minimum
+            In 8 of the last 9 recorded seasons, rainfall exceeded 600mm "” well above the 450mm minimum
             for dryland maize production.
           </p>
         </div>

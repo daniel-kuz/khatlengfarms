@@ -26,10 +26,10 @@ function PageHero() {
       <HeroVideoLoop />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.7) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span>â€”</span>CONTACT</div>
+        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span>"”</span>CONTACT</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '14ch', marginBottom: 14, fontWeight: 400 }}>Get in Touch</h1>
         <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
-          We&rsquo;d love to hear from you â€” whether you&rsquo;re a supplier, retailer, partner or visitor.
+          We&rsquo;d love to hear from you "” whether you&rsquo;re a supplier, retailer, partner or visitor.
         </p>
       </div>
     </header>
@@ -131,7 +131,7 @@ function ContactForm() {
         <div>
           <label htmlFor="type" style={labelStyle}>Enquiry Type *</label>
           <select id="type" name="type" required value={form.type} onChange={handle} style={{ ...inputStyle, appearance: 'none' }}>
-            <option value="">Select enquiry type</option>
+            <option value=—>Select enquiry type</option>
             <option value="Become a Supplier">Become a Supplier</option>
             <option value="Retail & Procurement">Retail &amp; Procurement</option>
             <option value="Partnership Enquiries">Partnership Enquiries</option>
@@ -146,11 +146,11 @@ function ContactForm() {
         </div>
         <div>
           <Btn type="submit" variant="green" arrow disabled={status === 'sending'}>
-            {status === 'sending' ? 'Sendingâ€¦' : 'Send Message'}
+            {status === 'sending' ? 'Sending"¦' : 'Send Message'}
           </Btn>
           {status === 'error' && (
             <p style={{ color: '#C0392B', fontSize: 13, marginTop: 10 }}>
-              Something went wrong. Please email daniel@khatleng.com directly.
+              Something went wrong. Please email info@khatleng.com directly.
             </p>
           )}
         </div>
@@ -166,7 +166,7 @@ function ContactDetails() {
       <SectionLabel number="" label="Contact Details" />
       <div style={{ marginBottom: 36 }}>
         <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--color-brown)', marginBottom: 10 }}>Email</div>
-        <a href="mailto:daniel@khatleng.com" style={{ fontFamily: 'var(--font-serif)', fontSize: 20, color: 'var(--color-green)' }}>daniel@khatleng.com</a>
+        <a href="mailto:info@khatleng.com" style={{ fontFamily: 'var(--font-serif)', fontSize: 20, color: 'var(--color-green)' }}>info@khatleng.com</a>
       </div>
       <div style={{ marginBottom: 36 }}>
         <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--color-brown)', marginBottom: 10 }}>Phone</div>

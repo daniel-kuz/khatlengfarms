@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import NavBar from '@/components/layout/NavBar';
 import Footer from '@/components/layout/Footer';
