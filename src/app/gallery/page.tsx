@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+﻿﻿import type { Metadata } from 'next';
 import NavBar from '@/components/layout/NavBar';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 import Footer from '@/components/layout/Footer';
@@ -7,7 +7,7 @@ import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 
 export const metadata: Metadata = {
   title: 'Gallery | Khatleng Farms',
-  description: 'Photos from Khatleng Farms "” grain fields, livestock, production tunnels and the Free State landscape.',
+  description: 'Photos from Khatleng Farms  -  grain fields, livestock, production tunnels and the Free State landscape.',
 };
 
 const categories = [
@@ -88,7 +88,7 @@ function PageHero() {
       <HeroVideoLoop />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.65) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span>"”</span>GALLERY</div>
+        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span></span>GALLERY</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '14ch', fontWeight: 400 }}>The Farm in Pictures</h1>
       </div>
     </header>

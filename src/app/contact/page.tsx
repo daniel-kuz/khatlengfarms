@@ -1,4 +1,4 @@
-﻿'use client';
+﻿﻿'use client';
 
 import { useState } from 'react';
 import NavBar from '@/components/layout/NavBar';
@@ -26,10 +26,10 @@ function PageHero() {
       <HeroVideoLoop />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.7) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span>"”</span>CONTACT</div>
+        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 16 }}><span></span>CONTACT</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '14ch', marginBottom: 14, fontWeight: 400 }}>Get in Touch</h1>
         <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
-          We&rsquo;d love to hear from you "” whether you&rsquo;re a supplier, retailer, partner or visitor.
+          We&rsquo;d love to hear from you  -  whether you&rsquo;re a supplier, retailer, partner or visitor.
         </p>
       </div>
     </header>
@@ -131,7 +131,7 @@ function ContactForm() {
         <div>
           <label htmlFor="type" style={labelStyle}>Enquiry Type *</label>
           <select id="type" name="type" required value={form.type} onChange={handle} style={{ ...inputStyle, appearance: 'none' }}>
-            <option value=—>Select enquiry type</option>
+            <option value="">Select enquiry type</option>
             <option value="Become a Supplier">Become a Supplier</option>
             <option value="Retail & Procurement">Retail &amp; Procurement</option>
             <option value="Partnership Enquiries">Partnership Enquiries</option>

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+﻿﻿import type { Metadata } from 'next';
 import NavBar from '@/components/layout/NavBar';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 import Footer from '@/components/layout/Footer';
@@ -40,7 +40,7 @@ function PageHero() {
       <HeroVideoLoop />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span>"”</span>GOVERNANCE</div>
+        <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span></span>GOVERNANCE</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '18ch', marginBottom: 20 }}>Leadership, Stewardship &amp; Governance</h1>
         <p style={{ color: 'rgba(248,245,238,0.85)', fontSize: 'clamp(17px,1.4vw,21px)', maxWidth: '56ch' }}>
           A Trust built for generational continuity, institutional accountability, and long-term impact.
@@ -74,7 +74,7 @@ function TeamProfiles() {
       name: 'Tshebeletso Hlapane',
       role: 'Co-Beneficiary · Legal & Compliance',
       creds: 'LLB · Diploma in Sports Management · 10 years Governance, Risk & Compliance at the FSCA · Currently at a corporate law firm',
-      bio: 'Oversees all legal, governance, and regulatory matters. Deep financial-sector compliance expertise accumulated over a decade at the Financial Sector Conduct Authority "” a direct competitive advantage for the Trust.',
+      bio: 'Oversees all legal, governance, and regulatory matters. Deep financial-sector compliance expertise accumulated over a decade at the Financial Sector Conduct Authority  -  a direct competitive advantage for the Trust.',
     },
   ];
 
@@ -110,8 +110,8 @@ function SuccessionPipeline() {
   const pipeline = [
     { name: 'Mmatebogo Nkoenyane', current: 'Full-time farming from May 2026', future: 'Primary operator and decision-maker' },
     { name: 'Tshimoloho Hlapane', current: 'Full-time farm involvement', future: 'Full-time farming role' },
-    { name: 'Tshenolo Hlapane', current: 'Part-time "” active vacations + farm involvement', future: 'Full-time farming role' },
-    { name: 'Tshebeletso Hlapane', current: 'Part-time "” active vacations + farm involvement', future: 'Full-time farming role' },
+    { name: 'Tshenolo Hlapane', current: 'Part-time  -  active vacations + farm involvement', future: 'Full-time farming role' },
+    { name: 'Tshebeletso Hlapane', current: 'Part-time  -  active vacations + farm involvement', future: 'Full-time farming role' },
   ];
 
   return (
@@ -125,7 +125,7 @@ function SuccessionPipeline() {
           <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead>
               <tr style={{ borderBottom: '2px solid var(--color-gold)' }}>
-                {['Person', 'Current (2026)', 'Year 3"“5 Path'].map(h => (
+                {['Person', 'Current (2026)', 'Year 3 - 5 Path'].map(h => (
                   <th key={h} style={{ padding: '14px 20px', textAlign: 'left', fontSize: 11, fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--color-ink-mute)', fontFamily: 'var(--font-sans)' }}>{h}</th>
                 ))}
               </tr>
@@ -177,14 +177,14 @@ function GovernanceFramework() {
 
 function BFSCompliance() {
   const criteria = [
-    { criterion: 'South African citizen / registered entity', status: 'âœ“ Compliant' },
-    { criterion: '100% Black-owned and managed', status: 'âœ“ Compliant' },
-    { criterion: 'Priority BFS agricultural sector', status: 'âœ“ Compliant' },
-    { criterion: '10% farm worker profit sharing', status: 'âœ“ Compliant' },
-    { criterion: 'No prior government funding mismanagement', status: 'âœ“ Compliant' },
-    { criterion: 'Full-time producer', status: 'âœ“ Compliant' },
-    { criterion: 'No distressed debt at application', status: 'âœ“ Compliant' },
-    { criterion: 'Scorecard minimum 20/50', status: 'âœ“ Est. 46/50' },
+    { criterion: 'South African citizen / registered entity', status: 'âœ" Compliant' },
+    { criterion: '100% Black-owned and managed', status: 'âœ" Compliant' },
+    { criterion: 'Priority BFS agricultural sector', status: 'âœ" Compliant' },
+    { criterion: '10% farm worker profit sharing', status: 'âœ" Compliant' },
+    { criterion: 'No prior government funding mismanagement', status: 'âœ" Compliant' },
+    { criterion: 'Full-time producer', status: 'âœ" Compliant' },
+    { criterion: 'No distressed debt at application', status: 'âœ" Compliant' },
+    { criterion: 'Scorecard minimum 20/50', status: 'âœ" Est. 46/50' },
   ];
 
   return (
@@ -210,9 +210,9 @@ function BFSCompliance() {
 function SDGAlignment() {
   const sdgs = [
     { num: '01', name: 'No Poverty', desc: 'Asset ownership, dignified employment, structured income pathways for farm workers and families.', bg: '#3D5220' },
-    { num: '02', name: 'Zero Hunger', desc: 'Maize, sunflower, vegetables, red meat "” all DALRRD priority staple foods for South Africa.', bg: '#6E8146' },
-    { num: '08', name: 'Decent Work', desc: '18"“25 jobs Year 1, growing to 33"“44 peak by Year 3. Women and youth priority.', bg: '#C9A84C', textColor: '#1A1A1A' },
-    { num: '09', name: 'Industry & Innovation', desc: '4IR infrastructure, IoT monitoring, automated workflows "” institutional-grade agri-tech.', bg: '#1A1A1A' },
+    { num: '02', name: 'Zero Hunger', desc: 'Maize, sunflower, vegetables, red meat  -  all DALRRD priority staple foods for South Africa.', bg: '#6E8146' },
+    { num: '08', name: 'Decent Work', desc: '18 - 25 jobs Year 1, growing to 33 - 44 peak by Year 3. Women and youth priority.', bg: '#C9A84C', textColor: '#1A1A1A' },
+    { num: '09', name: 'Industry & Innovation', desc: '4IR infrastructure, IoT monitoring, automated workflows  -  institutional-grade agri-tech.', bg: '#1A1A1A' },
     { num: '15', name: 'Life on Land', desc: 'Regenerative land use, precision agriculture, rotational grazing, biodiversity preservation.', bg: '#5C6F2B' },
   ];
 

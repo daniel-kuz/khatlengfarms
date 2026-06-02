@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+﻿﻿import type { Metadata } from 'next';
 import NavBar from '@/components/layout/NavBar';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 import Footer from '@/components/layout/Footer';
@@ -49,10 +49,10 @@ function PageHero() {
       <HeroVideoLoop />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span>"”</span>BLK 25 FOURIE FARM · BETHLEHEM, FREE STATE</div>
+        <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span></span>BLK 25 FOURIE FARM · BETHLEHEM, FREE STATE</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '16ch', marginBottom: 20 }}>Khatleng Farms</h1>
         <p style={{ color: 'rgba(248,245,238,0.85)', fontSize: 'clamp(17px,1.4vw,21px)', maxWidth: '52ch' }}>
-          Bethlehem, Free State "” 200 hectares of freehold agricultural land.
+          Bethlehem, Free State  -  200 hectares of freehold agricultural land.
         </p>
       </div>
     </header>
@@ -84,8 +84,8 @@ function FarmFactsBar() {
 
 function MasterplanSection() {
   const zones = [
-    { color: '#4A7FCB', name: 'Dryland Crops', meta: '100ha "” Yellow Maize & Sunflower' },
-    { color: '#3D5220', name: 'Production Tunnels', meta: 'Tunnel farming "” Phase 1 operational' },
+    { color: '#4A7FCB', name: 'Dryland Crops', meta: '100ha  -  Yellow Maize & Sunflower' },
+    { color: '#3D5220', name: 'Production Tunnels', meta: 'Tunnel farming  -  Phase 1 operational' },
     { color: '#C0392B', name: 'Livestock Handling', meta: 'Cattle & sheep pens, loading ramps' },
     { color: '#E67E22', name: 'Grazing Camps', meta: '80.7ha improved + 25.2ha natural' },
     { color: '#1A1A1A', name: 'Operational Hub', meta: 'Workshop, silos, boreholes, homestead' },
@@ -144,8 +144,8 @@ function MasterplanSection() {
 
 function LandCompositionTable() {
   const rows = [
-    { component: 'Dryland arable "” maize', hectares: '80ha', use: 'Yellow maize production' },
-    { component: 'Dryland arable "” sunflower', hectares: '20ha', use: 'Sunflower rotation, oilseed' },
+    { component: 'Dryland arable  -  maize', hectares: '80ha', use: 'Yellow maize production' },
+    { component: 'Dryland arable  -  sunflower', hectares: '20ha', use: 'Sunflower rotation, oilseed' },
     { component: 'Improved pasture', hectares: '80.7ha', use: 'Livestock grazing and fodder' },
     { component: 'Natural grazing', hectares: '70.8ha', use: 'Extensive livestock support' },
     { component: 'Infrastructure & roads', hectares: '~4ha', use: 'Farm operations, access, homestead' },
@@ -196,7 +196,7 @@ function OperationalZones() {
     {
       num: 'ii.',
       title: 'Production Tunnels',
-      body: 'Tunnel farming "” Phase 1 operational, with drip irrigation and raised beds. Multi-crop cycles run year-round: tomatoes, peppers, spinach, and lettuce. First harvest October 2026 "” R35,000/month growing to R55,000/month by Year 2.',
+      body: 'Tunnel farming  -  Phase 1 operational, with drip irrigation and raised beds. Multi-crop cycles run year-round: tomatoes, peppers, spinach, and lettuce. First harvest October 2026  -  R35,000/month growing to R55,000/month by Year 2.',
       facts: [{ k: 'Tunnels', v: 'Phase 1 operational' }, { k: 'Crops', v: 'Tomatoes, Peppers, Spinach, Lettuce' }, { k: 'First Harvest', v: 'October 2026' }, { k: 'Buyer', v: 'local fresh produce markets' }],
       imgCaption: 'img · tunnel interior · vegetables growing',
     },
@@ -274,7 +274,7 @@ function InfrastructureSection() {
   const items = [
     { title: '3 Operational Boreholes', sub: 'Year-round water security, ~100m depth' },
     { title: 'Eskom Grid Connection', sub: 'Reliable grid electricity for all operations' },
-    { title: 'Solar Energy System', sub: 'R150,000 own contribution "” energy independence' },
+    { title: 'Solar Energy System', sub: 'R150,000 own contribution  -  energy independence' },
     { title: 'Main House + Cottage + 3 Quarters', sub: '200sqm staff accommodation on farm' },
     { title: 'Production-Ready Arable Land', sub: '100ha cleared, prepared and ready for planting' },
     { title: 'Perimeter Fencing', sub: 'Complete perimeter and internal paddock fencing' },
@@ -308,10 +308,10 @@ function ClimateSection() {
   const data = [
     { metric: 'Average annual rainfall', value: '772mm (30.4 inches)' },
     { metric: 'Rainy days per year', value: '93' },
-    { metric: 'Wettest months', value: 'October"“March' },
-    { metric: 'Driest months', value: 'June"“August (ideal for harvest)' },
+    { metric: 'Wettest months', value: 'October - March' },
+    { metric: 'Driest months', value: 'June - August (ideal for harvest)' },
     { metric: 'Altitude', value: '1,651m above sea level' },
-    { metric: 'Classification', value: 'Cwb Köppen-Geiger "” Subtropical Highland' },
+    { metric: 'Classification', value: 'Cwb Köppen-Geiger  -  Subtropical Highland' },
     { metric: 'Annual sunshine hours', value: '~4,047 hours/year' },
   ];
 
@@ -322,7 +322,7 @@ function ClimateSection() {
           <SectionLabel number="04" label="Climate" />
           <h2>A productive climate by any measure.</h2>
           <p className="lede" style={{ marginTop: 16 }}>
-            In 8 of the last 9 recorded seasons, rainfall exceeded 600mm "” well above the 450mm minimum
+            In 8 of the last 9 recorded seasons, rainfall exceeded 600mm  -  well above the 450mm minimum
             for dryland maize production.
           </p>
         </div>

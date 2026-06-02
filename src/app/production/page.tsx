@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+﻿﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import NavBar from '@/components/layout/NavBar';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
@@ -10,7 +10,7 @@ import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 
 export const metadata: Metadata = {
   title: 'Production | Khatleng Farms',
-  description: 'Grain production, field crops, cattle, sheep, free range eggs and tunnel vegetables "” six production streams from Khatleng Farms in the Free State.',
+  description: 'Grain production, field crops, cattle, sheep, free range eggs and tunnel vegetables  -  six production streams from Khatleng Farms in the Free State.',
 };
 
 export default function ProductionPage() {
@@ -43,10 +43,10 @@ function PageHero() {
       <HeroVideoLoop />
       <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0.78) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span>"”</span>PRODUCTION</div>
+        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span></span>PRODUCTION</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '18ch', marginBottom: 20, fontWeight: 400 }}>Four Production Zones. One Resilient Operation.</h1>
         <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
-          Diversified by design "” grain, livestock, tunnel vegetables and free range eggs from 200 hectares of Free State farmland.
+          Diversified by design  -  grain, livestock, tunnel vegetables and free range eggs from 200 hectares of Free State farmland.
         </p>
       </div>
     </header>
@@ -97,8 +97,8 @@ function GrainProduction() {
     <>
       <ProductRow
         label="Grain Production"
-        title={“Yellow Maize — the backbone of the farm.”}
-        body=”60ha of yellow maize in dryland production. Rotated with 40ha of sunflower to improve soil health, manage input costs and break pest cycles.”
+        title="Yellow Maize - the backbone of the farm."
+        body="60ha of yellow maize in dryland production. Rotated with 40ha of sunflower to improve soil health, manage input costs and break pest cycles."
         imgSrc="/images/maize-harvest.jpg" imgAlt="Yellow maize fields at harvest, Free State"
         details={[
           { k: 'Maize area', v: '60ha' },
@@ -115,7 +115,7 @@ function TunnelVegetables() {
     <ProductRow
       label="Tunnel Farming"
       title="Protected tunnel farming. Fresh vegetables, year-round."
-      body={“Tunnel farming infrastructure currently in development — Phase 1 operational. Protected growing environment with drip irrigation, producing tomatoes, peppers, spinach and lettuce. Supplied to local fresh produce markets and direct retail buyers.”}
+      body="Tunnel farming infrastructure currently in development. Phase 1 operational. Protected growing environment with drip irrigation, producing tomatoes, peppers, spinach and lettuce."
       imgSrc="/images/tunnel-tomatoes.jpg" imgAlt="Tunnel interior with tomatoes growing"
       details={[
         { k: 'Status', v: 'Phase 1 operational' },
@@ -133,7 +133,7 @@ function LivestockSection() {
     <>
       <ProductRow
         label="Livestock"
-        title={“Commercial cattle and sheep — built to grow.”}
+        title="Commercial cattle and sheep - built to grow."
         body="Opening herd of 50 cattle and 50 sheep, with a Bonsmara/Simmental stud programme anchored by 5 stud bulls. Sold through regional livestock auctions with consistent, predictable income cycles."
         imgSrc="/images/cattle-morning.jpg" imgAlt="Cattle herd in the Free State veld, morning"
         details={[
@@ -161,7 +161,7 @@ function FreeRangeEggs() {
               A small-scale free range egg operation supplying premium quality eggs to local retailers and restaurants in the Bethlehem area.
             </p>
             <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75 }}>
-              Hens raised on natural pasture, supplemented with farm-grown grain. No cages, no shortcuts "” just clean, traceable eggs from the Free State.
+              Hens raised on natural pasture, supplemented with farm-grown grain. No cages, no shortcuts  -  just clean, traceable eggs from the Free State.
             </p>
             <div style={{ display: 'inline-block', marginTop: 24, padding: '8px 16px', border: '1px solid var(--color-brown)', fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--color-brown)' }}>
               Coming Soon
@@ -218,7 +218,7 @@ function FutureOutlook() {
           <SectionLabel number="" label="What's Next" light />
           <h2 style={{ color: 'var(--color-bone)', fontWeight: 400 }}>Production grows as the farm grows.</h2>
           <p style={{ color: 'rgba(244,235,221,0.75)', fontSize: 'clamp(16px,1.3vw,19px)', maxWidth: '58ch', marginTop: 16, lineHeight: 1.7 }}>
-            Year 1 establishes the foundation. From Year 2, each production stream scales "” more tunnels, larger herds, stud sales, and eventually value-added processing.
+            Year 1 establishes the foundation. From Year 2, each production stream scales  -  more tunnels, larger herds, stud sales, and eventually value-added processing.
           </p>
         </div>
         <div style={{ textAlign: 'left' }}>
