@@ -7,6 +7,7 @@ import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 import SectionLabel from '@/components/ui/SectionLabel';
 import NewsletterSignup from '@/components/ui/NewsletterSignup';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
+import ScrollReveal from '@/components/ui/ScrollReveal';
 
 export default function HomePage() {
   return (
@@ -52,16 +53,16 @@ function Hero() {
 
       {/* ── Content ── */}
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 28 }}>
+        <div className="numlabel hero-animate" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 28 }}>
           <span>—</span>KHATLENG FARMS · BETHLEHEM, FREE STATE
         </div>
-        <h1 style={{ color: 'var(--color-bone)', maxWidth: '15ch', marginBottom: 28, fontWeight: 400 }}>
+        <h1 className="hero-animate-1" style={{ color: 'var(--color-bone)', maxWidth: '15ch', marginBottom: 28, fontWeight: 400 }}>
           Rooted in Legacy.<br />Growing the Future.
         </h1>
-        <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '58ch', marginBottom: 44, lineHeight: 1.65 }}>
+        <p className="hero-animate-2" style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '58ch', marginBottom: 44, lineHeight: 1.65 }}>
           Khatleng Farms is a modern agricultural enterprise based in Bethlehem, Free State — focused on sustainable grain production, livestock development and protected tunnel farming.
         </p>
-        <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+        <div className="hero-animate-3" style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
           <Btn href="/our-farm" variant="gold" arrow>Explore Our Farm</Btn>
           <Btn href="/production" variant="ghost" arrow>View Our Operations</Btn>
         </div>
@@ -76,32 +77,33 @@ function TheStory() {
     <section className="section-pad">
       <div className="container">
         <div className="story-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(56px,8vw,120px)', alignItems: 'center' }}>
-          <div style={{ position: 'relative', height: 'clamp(440px,48vw,580px)', width: '100%', overflow: 'hidden' }}>
-            <Image
-              src="/images/pexels-tomfisk-19165847.jpg"
-              alt="Aerial view of Khatleng Farms, Bethlehem, Free State"
-              fill
-              style={{ objectFit: 'cover', objectPosition: 'center' }}
-              sizes="(max-width: 860px) 100vw, 50vw"
-              priority
-            />
-          </div>
-          <div>
-            <SectionLabel number="" label="Our Story" />
-            <h2 style={{ marginBottom: 28, fontWeight: 400 }}>
-              Farming in the Free State since 2000. Now in full commercial operation.
-            </h2>
-            <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 16 }}>
-              Khatleng Farms was born from a vision planted more than two decades ago.
-            </p>
-            <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 16 }}>
-              Khatleng Farms was farming in the Free State since 2000.
-            </p>
-            <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 32 }}>
-              Today, the land is in full commercial operation — focused on grain production, livestock and tunnel farming, with a commitment to long-term growth and community impact.
-            </p>
-            <Btn href="/about" variant="outline-green" arrow>Read Our Full Story</Btn>
-          </div>
+          <ScrollReveal direction="left">
+            <div style={{ position: 'relative', height: 'clamp(440px,48vw,580px)', width: '100%', overflow: 'hidden' }}>
+              <Image
+                src="/images/pexels-tomfisk-19165847.jpg"
+                alt="Aerial view of Khatleng Farms, Bethlehem, Free State"
+                fill
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
+                sizes="(max-width: 860px) 100vw, 50vw"
+                priority
+              />
+            </div>
+          </ScrollReveal>
+          <ScrollReveal direction="right" delay={150}>
+            <div>
+              <SectionLabel number="" label="Our Story" />
+              <h2 style={{ marginBottom: 28, fontWeight: 400 }}>
+                Farming in the Free State since 2000. Now in full commercial operation.
+              </h2>
+              <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 16 }}>
+                Khatleng Farms has been active in Bethlehem, Free State since 2000 — operating on freehold land held continuously and unencumbered.
+              </p>
+              <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 32 }}>
+                Today, the land is in full commercial operation — focused on grain production, livestock and tunnel farming, with a commitment to long-term growth and community impact.
+              </p>
+              <Btn href="/about" variant="outline-green" arrow>Read Our Full Story</Btn>
+            </div>
+          </ScrollReveal>
         </div>
       </div>
       <style>{`@media(max-width:860px){.story-grid{grid-template-columns:1fr!important}}`}</style>
@@ -158,13 +160,15 @@ function ProductionZones() {
           <h2 style={{ fontWeight: 400 }}>From grain fields to livestock camps — four production zones, one integrated farm.</h2>
         </div>
         <div className="zones-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-          {zones.map(({ icon, name, desc, status, statusColor }) => (
-            <div key={name} style={{ padding: '32px 28px', background: 'var(--color-bone-deep)', border: '1px solid rgba(47,47,47,0.1)', display: 'flex', flexDirection: 'column', gap: 12 }}>
+          {zones.map(({ icon, name, desc, status, statusColor }, i) => (
+            <ScrollReveal key={name} delay={i * 80} direction="up">
+            <div style={{ padding: '32px 28px', background: 'var(--color-bone-deep)', border: '1px solid rgba(47,47,47,0.1)', display: 'flex', flexDirection: 'column', gap: 12, height: '100%' }}>
               <div style={{ fontSize: 32 }}>{icon}</div>
               <h3 style={{ fontSize: 'clamp(18px,1.6vw,22px)', marginBottom: 4 }}>{name}</h3>
               <p style={{ fontSize: 14, color: 'var(--color-ink-mute)', margin: 0, lineHeight: 1.6, flexGrow: 1 }}>{desc}</p>
               <div style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', color: statusColor, fontWeight: 500, marginTop: 4 }}>{status}</div>
             </div>
+            </ScrollReveal>
           ))}
         </div>
         <div style={{ marginTop: 48 }}>

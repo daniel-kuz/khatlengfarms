@@ -7,7 +7,10 @@
       "Bash(head -5 C:/Users/USER-PC/Documents/Farm/nkoenyanetrust-master/nkoenyanetrust-master/src/app/contact/page.tsx *)",
       "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; node --version; npm --version)",
       "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; Set-Location \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\nkoenyanetrust-master\\\\nkoenyanetrust-master\"; Write-Host \"In: $\\(Get-Location\\)\"; npm run dev)",
-      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\nkoenyanetrust-master\\\\nkoenyanetrust-master\\\\public\\\\videos\" | Select-Object Name, @{N='MB';E={[math]::Round\\($_.Length/1MB,1\\)}})"
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\USER-PC\\\\Documents\\\\Farm\\\\nkoenyanetrust-master\\\\nkoenyanetrust-master\\\\public\\\\videos\" | Select-Object Name, @{N='MB';E={[math]::Round\\($_.Length/1MB,1\\)}})",
+      "mcp__1444db9c-b25b-42e6-a94e-29acb0657727__list_projects",
+      "mcp__1444db9c-b25b-42e6-a94e-29acb0657727__get_project",
+      "mcp__1444db9c-b25b-42e6-a94e-29acb0657727__list_deployments"
     ]
   }
 }

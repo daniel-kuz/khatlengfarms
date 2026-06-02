@@ -154,12 +154,12 @@ function BeefStudProgramme() {
     <ProductSection
       num="04" label="Beef Stud"
       title="Premium genetics. Premium returns."
-      body="3 Bonsmara/Simmental stud bulls with 12+ month maturation programme. First stud sales in Year 2 at R80,000 - R150,000 per animal. A growing high-margin revenue stream from Year 2 onward."
+      body="Bonsmara/Simmental stud programme currently in maturation. Premium stud sales to follow."
       imgCaption="img · stud bull · premium genetics · farm portrait"
       facts={[
         { k: 'Cattle', v: 'Commercial herd' },
         { k: 'Sheep', v: 'Commercial flock' },
-        { k: 'Stud bulls', v: '3 (Bonsmara/Simmental)' },
+        { k: 'Stud bulls', v: 'Bonsmara/Simmental' },
         { k: 'First sales', v: 'Year 2 (4 - 5 animals)' },
         { k: 'Year 2 income target', v: 'R400,000' },
         { k: 'Price range', v: 'R80,000 - R150,000/animal' },
