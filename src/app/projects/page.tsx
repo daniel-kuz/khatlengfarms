@@ -45,6 +45,14 @@ function PageHero() {
 
 function ProjectsGrid() {
   const projects = [
+    // Active
+    {
+      title: 'Beef Stud Programme',
+      status: 'In Development',
+      statusType: 'active' as const,
+      body: 'Bonsmara/Simmental genetics programme currently in maturation. Premium stud sales to follow.',
+    },
+    // Planned
     {
       title: 'Tunnel Expansion',
       status: 'Coming Soon',
@@ -52,28 +60,23 @@ function ProjectsGrid() {
       body: 'Scaling vegetable production through additional tunnel capacity.',
     },
     {
-      title: 'Beef Stud Programme',
-      status: 'In Development',
-      statusType: 'active' as const,
-      body: 'Bonsmara/Simmental genetics programme currently in maturation. Premium stud sales to follow.',
-    },
-    {
       title: 'Irrigation',
       status: 'In Planning',
       statusType: 'planned' as const,
       body: 'Developing on-farm water infrastructure to strengthen production reliability.',
+    },
+    // Future
+    {
+      title: 'Feedlot',
+      status: 'Future Vision',
+      statusType: 'future' as const,
+      body: 'Controlled feeding to improve beef yield and enable premium market access.',
     },
     {
       title: 'Agro-Processing',
       status: 'Future Vision',
       statusType: 'future' as const,
       body: 'On-farm processing to add value and capture more of the supply chain.',
-    },
-    {
-      title: 'Feedlot',
-      status: 'Future Vision',
-      statusType: 'future' as const,
-      body: 'Controlled feeding to improve beef yield and enable premium market access.',
     },
     {
       title: 'Packhouse',
