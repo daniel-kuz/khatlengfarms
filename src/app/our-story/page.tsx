@@ -50,7 +50,7 @@ function PageHero() {
         <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span></span>OUR STORY</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '16ch', marginBottom: 20 }}>The Nkoenyane Story</h1>
         <p style={{ color: 'rgba(248,245,238,0.85)', fontSize: 'clamp(17px,1.4vw,21px)', maxWidth: '52ch' }}>
-          A family. A farm. A generational commitment to the land.
+          A farm built to last. Rooted in the Free State since 2000.
         </p>
       </div>
     </header>

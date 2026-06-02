@@ -9,7 +9,7 @@ import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 
 export const metadata: Metadata = {
   title: 'About Us | Khatleng Farms',
-  description: 'The story of Khatleng Farms — from a family vision in 2000 to a growing commercial agricultural enterprise in Bethlehem, Free State.',
+  description: 'Khatleng Farms — a commercial agricultural enterprise in Bethlehem, Free State, established in 2000 on 200 hectares of freehold land.',
 };
 
 export default function AboutPage() {
@@ -55,12 +55,12 @@ function OpeningSection() {
         <div className="opening-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(56px,8vw,112px)', alignItems: 'center' }}>
           <div>
             <SectionLabel number="" label="Who We Are" />
-            <h2 style={{ fontWeight: 400, marginBottom: 28 }}>200 hectares. One family. One enduring purpose.</h2>
+            <h2 style={{ fontWeight: 400, marginBottom: 28 }}>200 hectares. One purpose. Built to last.</h2>
             <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 16 }}>
               Khatleng Farms is focused on sustainable grain production, livestock development and long-term agricultural growth.
             </p>
             <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75 }}>
-              We operate 200 hectares of freehold farmland in Bethlehem, Free State — land that has been in the family since 2000 and is now entering its most productive chapter.
+              We operate 200 hectares of freehold farmland in Bethlehem, Free State — land established in 2000 and now entering its most productive chapter.
             </p>
           </div>
           <div style={{ position: 'relative', height: 'clamp(380px,42vw,520px)', width: '100%', overflow: 'hidden' }}>
@@ -86,28 +86,26 @@ function FullStory() {
         <div className="story-layout" style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: 'clamp(56px,8vw,112px)', alignItems: 'start' }}>
           <div>
             <SectionLabel number="" label="Our Story" light />
-            <h2 style={{ color: 'var(--color-bone)', fontWeight: 400 }}>From a dream spoken at family tables to a living agricultural enterprise.</h2>
+            <h2 style={{ color: 'var(--color-bone)', fontWeight: 400 }}>From landholding to commercial enterprise.</h2>
           </div>
           <div style={{ color: 'rgba(244,235,221,0.82)', lineHeight: 1.8 }}>
             <p style={{ marginBottom: 20 }}>
-              Khatleng Farms was born from a vision planted more than two decades ago. In 2000, the farm was acquired by our father with the hope that one day the land would become more than just property — that it would become a legacy. Like many dreams rooted in agriculture, it was built on sacrifice, patience, resilience and an unwavering belief in the future.
+              Khatleng Farms was established in 2000 on 200 hectares of freehold land in Bethlehem, Free State. The land has been held continuously and unencumbered for over two decades.
             </p>
             <p style={{ marginBottom: 20 }}>
-              Today, that vision is being carried forward by the next generation.
+              
             </p>
             <p style={{ marginBottom: 20 }}>
-              Now that the beneficiaries have come of age, we are returning to the land with a renewed sense of purpose: to build something meaningful not only for our family, but for our community and future generations. What was once a dream spoken about around family tables is now becoming a living agricultural enterprise grounded in stewardship, sustainability and growth.
+              In May 2026, the Trust transitioned from landholding to direct, owner-operated commercial farming — building an enterprise grounded in stewardship, sustainability and long-term growth.
             </p>
             <p style={{ marginBottom: 20 }}>
               Khatleng Farms represents the transition from inherited land to active development — from possibility to production. Our goal is to transform the farm into a modern agricultural operation focused on grain production, livestock and tunnel farming while creating employment opportunities and contributing to local food security in the Free State.
             </p>
             <p style={{ marginBottom: 20 }}>
-              But beyond the crops, livestock and infrastructure, this farm is about restoration.
+              
             </p>
             <p style={{ color: 'var(--color-bone)', fontFamily: 'var(--font-serif)', fontSize: 'clamp(16px,1.3vw,18px)', lineHeight: 1.8 }}>
-              It is about restoring generational agriculture.<br />
-              Restoring pride in working the land.<br />
-              Restoring the belief that agriculture can create opportunity, dignity and lasting impact.
+              Agriculture that creates opportunity, dignity and lasting impact.
             </p>
             <p style={{ marginTop: 20, marginBottom: 0 }}>
               Every field planted, every fence built and every tunnel raised is part of a larger vision: to leave the land better than we found it and to build a foundation that future generations can continue to grow from.
@@ -153,7 +151,7 @@ function PhilosophyPillars() {
 
 function JourneyTimeline() {
   const milestones = [
-    { year: '2000', event: 'Farm acquired by family patriarch. Land in continuous agricultural use from day one.' },
+    { year: '2000', event: 'Farm established. 200ha freehold land, continuously held and in agricultural use.' },
     { year: '2020', event: 'Transition planning begins. Long-term development plan takes shape.' },
     { year: '2026', event: 'Commercial farm development launched. Next generation takes the land into direct operation.' },
     { year: '2027', event: 'Tunnel expansion and livestock growth phase initiated.' },

@@ -89,16 +89,16 @@ function TheStory() {
           <div>
             <SectionLabel number="" label="Our Story" />
             <h2 style={{ marginBottom: 28, fontWeight: 400 }}>
-              What began as a father's vision in 2000 is now becoming reality.
+              Rooted in the Free State since 2000. Now in full commercial operation.
             </h2>
             <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 16 }}>
               Khatleng Farms was born from a vision planted more than two decades ago.
             </p>
             <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 16 }}>
-              In 2000, the farm was acquired by our family with the hope that one day the land would become more than property — that it would become a legacy. Like many dreams rooted in agriculture, it was built on sacrifice, patience, resilience and an unwavering belief in the future.
+              Khatleng Farms was established in 2000 on 200 hectares of freehold land in Bethlehem, Free State.
             </p>
             <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 32 }}>
-              Today, that vision is being carried forward by the next generation. We are returning to the land with a renewed sense of purpose: to build something meaningful not only for our family, but for our community and future generations.
+              Today, the land is in full commercial operation — focused on grain production, livestock and tunnel farming, with a commitment to long-term growth and community impact.
             </p>
             <Btn href="/about" variant="outline-green" arrow>Read Our Full Story</Btn>
           </div>
@@ -113,7 +113,7 @@ function TheStory() {
 function StatsStrip() {
   const stats = [
     { number: '200', unit: 'ha', label: 'Freehold Land' },
-    { number: '26', unit: 'yrs', label: 'In the Family' },
+    { number: '26', unit: 'yrs', label: 'Years Established' },
     { number: 'Free State', label: 'Bethlehem Highlands' },
     { number: '1,651', unit: 'm', label: 'Above Sea Level' },
   ];
@@ -220,7 +220,7 @@ function WhyBethlehem() {
 /* ─────────────────── OUR JOURNEY ─────────────────── */
 function OurJourney() {
   const milestones = [
-    { year: '2000', event: 'Farm acquired by family patriarch. Land in continuous agricultural use from day one.' },
+    { year: '2000', event: 'Farm established. 200ha of freehold land in Bethlehem, Free State.' },
     { year: '2020', event: 'Transition planning begins. Long-term development plan takes shape for next-generation operation.' },
     { year: '2026', event: 'Commercial farm development launched. Next generation takes the land into direct operation.' },
     { year: '2027', event: 'Tunnel expansion and livestock growth phase initiated.' },
