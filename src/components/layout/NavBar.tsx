@@ -2,8 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import KhatlengLogoSVG from '@/components/ui/KhatlengLogoSVG';
 
 const navLinks = [
   { href: '/',           label: 'Home' },
@@ -67,39 +67,7 @@ export default function NavBar() {
             letterSpacing: '0.02em',
           }}
         >
-          <Image
-            src="/images/Logo.png"
-            alt="Khatleng Farms logo"
-            width={88}
-            height={88}
-            className="logo-spin"
-            style={{ objectFit: 'contain', flexShrink: 0 }}
-          />
-          <style>{`
-            @keyframes logo-spin {
-              0%   { transform: rotate(0deg); }
-              100% { transform: rotate(360deg); }
-            }
-            .logo-spin {
-              animation: logo-spin 0.7s cubic-bezier(0.4,0,0.2,1);
-              animation-iteration-count: 1;
-              animation-play-state: paused;
-            }
-            .logo-spin:hover { animation-play-state: running; }
-            @keyframes logo-idle-spin {
-              0%,89%   { transform: rotate(0deg); }
-              92%  { transform: rotate(370deg); }
-              95%  { transform: rotate(355deg); }
-              98%  { transform: rotate(362deg); }
-              100% { transform: rotate(360deg); }
-            }
-            .logo-spin {
-              animation: logo-idle-spin 7s ease-in-out infinite;
-            }
-            .logo-spin:hover {
-              animation: logo-spin 0.7s cubic-bezier(0.4,0,0.2,1) 1;
-            }
-          `}</style>
+          <KhatlengLogoSVG size={92} />
           <span>Khatleng Farms</span>
         </Link>
 

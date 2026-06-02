@@ -1,5 +1,5 @@
 ﻿import Link from 'next/link';
-import Image from 'next/image';
+import KhatlengLogoSVG from '@/components/ui/KhatlengLogoSVG';
 
 const navLinks = [
   { href: '/',           label: 'Home' },
@@ -34,13 +34,7 @@ export default function Footer() {
               color: 'var(--color-bone)', letterSpacing: '0.02em', marginBottom: 24,
             }}
           >
-            <Image
-              src="/images/Logo.png"
-              alt="Khatleng Farms logo"
-              width={88}
-              height={88}
-              style={{ objectFit: 'contain', flexShrink: 0 }}
-            />
+            <KhatlengLogoSVG size={92} />
             <span>Khatleng Farms</span>
           </Link>
           <p
