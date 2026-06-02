@@ -97,8 +97,8 @@ function GrainProduction() {
     <>
       <ProductRow
         label="Grain Production"
-        title=”Yellow Maize — the backbone of the farm.”
-        body="60ha of yellow maize in dryland production. Rotated with 40ha of sunflower to improve soil health, manage input costs and break pest cycles."
+        title={“Yellow Maize — the backbone of the farm.”}
+        body=”60ha of yellow maize in dryland production. Rotated with 40ha of sunflower to improve soil health, manage input costs and break pest cycles.”
         imgSrc="/images/maize-harvest.jpg" imgAlt="Yellow maize fields at harvest, Free State"
         details={[
           { k: 'Maize area', v: '60ha' },
@@ -115,7 +115,7 @@ function TunnelVegetables() {
     <ProductRow
       label="Tunnel Farming"
       title="Protected tunnel farming. Fresh vegetables, year-round."
-      body=”Tunnel farming infrastructure currently in development — Phase 1 operational. Protected growing environment with drip irrigation, producing tomatoes, peppers, spinach and lettuce. Supplied to local fresh produce markets and direct retail buyers."
+      body={“Tunnel farming infrastructure currently in development — Phase 1 operational. Protected growing environment with drip irrigation, producing tomatoes, peppers, spinach and lettuce. Supplied to local fresh produce markets and direct retail buyers.”}
       imgSrc="/images/tunnel-tomatoes.jpg" imgAlt="Tunnel interior with tomatoes growing"
       details={[
         { k: 'Status', v: 'Phase 1 operational' },
@@ -133,7 +133,7 @@ function LivestockSection() {
     <>
       <ProductRow
         label="Livestock"
-        title=”Commercial cattle and sheep — built to grow.”
+        title={“Commercial cattle and sheep — built to grow.”}
         body="Opening herd of 50 cattle and 50 sheep, with a Bonsmara/Simmental stud programme anchored by 5 stud bulls. Sold through regional livestock auctions with consistent, predictable income cycles."
         imgSrc="/images/cattle-morning.jpg" imgAlt="Cattle herd in the Free State veld, morning"
         details={[
