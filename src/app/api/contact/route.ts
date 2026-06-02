@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      from: 'website@nkoenyane.co.za',
+      from: 'website@khatleng.com',
       to: 'info@khatleng.com',
       reply_to: email,
       subject: `[Website Enquiry] ${type || 'General'} — ${name}`,
