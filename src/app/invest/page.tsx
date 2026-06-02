@@ -8,7 +8,7 @@ import Divider from '@/components/ui/Divider';
 
 export const metadata: Metadata = {
   title: 'Invest | The Nkoenyane Family Trust',
-  description: 'A de-risked agricultural investment opportunity. 200ha freehold land, four income streams, R6.2M projected Year 5 revenue. BFS scorecard 46/50.',
+  description: 'A de-risked agricultural investment opportunity. Freehold land, four income streams, strong projected revenue. BFS scorecard 46/50.',
 };
 
 export default function InvestPage() {
@@ -45,7 +45,7 @@ function PageHero() {
         <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span></span>INVEST</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '20ch', marginBottom: 20 }}>A De-Risked, Governance-Led Investment in South African Agriculture.</h1>
         <p style={{ color: 'rgba(248,245,238,0.85)', fontSize: 'clamp(17px,1.4vw,21px)', maxWidth: '60ch' }}>
-          200ha unencumbered freehold land. Four revenue streams. Institutional-grade management. Zero existing debt.
+          Unencumbered freehold land. Four revenue streams. Institutional-grade management. Zero existing debt.
         </p>
       </div>
     </header>
@@ -69,7 +69,7 @@ function InvestmentCase() {
             </p>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, borderTop: '1px solid rgba(26,26,26,0.1)' }}>
               {[
-                '200ha freehold land  -  unencumbered, valued ~R12,000,000',
+                'Freehold land  -  unencumbered, valued ~R12,000,000',
                 'Four diversified revenue streams',
                 'Zero existing debt  -  clean balance sheet',
                 'Management combining financial governance, legal compliance, and 4IR expertise',
@@ -110,7 +110,7 @@ function InvestmentCase() {
 
 function KeyAssets() {
   const assets = [
-    { value: 'R12,000,000', label: '200ha Freehold Land', sub: 'Unencumbered. Owned since 2000.' },
+    { value: 'R12,000,000', label: 'Freehold Land Asset', sub: 'Unencumbered. Farming since 2000.' },
     { value: 'Zero', label: 'Existing Debt', sub: 'Clean balance sheet at application.' },
     { value: '100%', label: 'Black-Owned, Female-Led', sub: 'Fully BFS and transformation aligned.' },
     { value: '46/50', label: 'BFS Scorecard (Est.)', sub: 'Minimum required: 20 points.' },

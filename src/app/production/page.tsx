@@ -46,7 +46,7 @@ function PageHero() {
         <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span></span>PRODUCTION</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '18ch', marginBottom: 20, fontWeight: 400 }}>Four Production Zones. One Resilient Operation.</h1>
         <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
-          Diversified by design  -  grain, livestock, tunnel vegetables and free range eggs from 200 hectares of Free State farmland.
+          Diversified by design — grain, livestock, tunnel vegetables and free range eggs from our Free State farmland.
         </p>
       </div>
     </header>

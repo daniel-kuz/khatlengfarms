@@ -8,7 +8,7 @@ import Divider from '@/components/ui/Divider';
 
 export const metadata: Metadata = {
   title: 'Projects | Khatleng Farms',
-  description: 'The growth roadmap for Khatleng Farms  -  from irrigation and tunnel expansion to agro-processing and feedlot development.',
+  description: 'The growth roadmap for Khatleng Farms — expanding production, infrastructure and market reach.',
 };
 
 export default function ProjectsPage() {
@@ -59,27 +59,27 @@ function ProjectsGrid() {
     },
     {
       title: 'Irrigation Infrastructure',
-      status: 'Planned  -  Year 3',
+      status: 'In Planning',
       statusType: 'planned' as const,
-      body: 'Developing irrigation from existing boreholes to reduce dryland risk, extend growing seasons and expand crop options.',
+      body: 'Expanding water infrastructure to reduce weather dependency and increase production reliability.',
     },
     {
       title: 'Agro-Processing',
       status: 'Future Vision',
       statusType: 'future' as const,
-      body: 'Maize meal, sunflower oil, dried vegetables  -  value chain integration for higher margins by capturing processing value on-farm.',
+      body: 'Value-added processing on-farm to capture more of the supply chain and improve margins.',
     },
     {
       title: 'Feedlot Development',
       status: 'Future Vision',
       statusType: 'future' as const,
-      body: 'Controlled feeding programme to improve beef yield and consistency, enabling premium abattoir pricing and direct supply arrangements.',
+      body: 'Controlled feeding programme to improve beef yield and enable premium supply arrangements.',
     },
     {
       title: 'Packhouse Facility',
       status: 'Future Vision',
       statusType: 'future' as const,
-      body: 'On-farm grading, packing and cold storage for vegetables and produce. Enables direct supply to retail and export-grade presentation.',
+      body: 'On-farm handling and storage for produce — enabling direct supply and better market access.',
     },
   ];
 

@@ -9,7 +9,7 @@ import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 
 export const metadata: Metadata = {
   title: 'Our Farm | Khatleng Farms',
-  description: '200 hectares of freehold farmland in Bethlehem, Free State. An integrated commercial agricultural operation  -  grain production, tunnel farming, livestock and beef stud development.',
+  description: 'Freehold farmland in Bethlehem, Free State. An integrated commercial agricultural operation — grain production, tunnel farming, livestock and beef stud development.',
 };
 
 export default function OurFarmPage() {
@@ -44,7 +44,7 @@ function PageHero() {
         <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span></span>BETHLEHEM, FREE STATE</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '16ch', marginBottom: 20, fontWeight: 400 }}>Our Farm</h1>
         <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
-          200 hectares of freehold agricultural land in Bethlehem, Free State  -  owned since 2000 and now in full commercial operation.
+          Freehold agricultural land in Bethlehem, Free State — in full commercial operation since 2026.
         </p>
       </div>
     </header>
@@ -55,7 +55,7 @@ function FarmFactsBar() {
   const facts = [
     { label: 'Altitude', value: '1,651m above sea level' },
     { label: 'Annual Rainfall', value: '772mm average' },
-    { label: 'Land Area', value: '200 hectares' },
+    { label: 'Land Area', value: 'Freehold, Bethlehem' },
     { label: 'Water Supply', value: 'Boreholes + Eskom + Solar' },
   ];
   return (

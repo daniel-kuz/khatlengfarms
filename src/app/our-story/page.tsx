@@ -9,7 +9,7 @@ import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 
 export const metadata: Metadata = {
   title: 'Our Story | The Nkoenyane Family Trust',
-  description: 'The story of the Nkoenyane Family Trust  -  200 hectares of freehold land, 26 years of stewardship, and a generational commitment to premium agriculture.',
+  description: 'The Nkoenyane Family Trust — farming in the Free State since 2000, with a long-standing commitment to sustainable agriculture.',
 };
 
 export default function OurStoryPage() {
@@ -66,8 +66,7 @@ function OriginSection() {
             <SectionLabel number="01" label="The Beginning" />
             <h2 style={{ marginBottom: 24 }}>Planted in 2000. Growing ever since.</h2>
             <p className="lede" style={{ marginBottom: 20 }}>
-              The Nkoenyane Family Trust acquired Khatleng Farms in Bethlehem, Free State in the year 2000  - 
-              200 hectares of freehold agricultural land held continuously and unencumbered for 26 years.
+              Khatleng Farms has been active in Bethlehem, Free State since 2000 — operating on freehold land held continuously and unencumbered.
             </p>
             <p style={{ color: 'var(--color-ink-mute)' }}>
               For more than two decades, the land was stewarded with intention. In May 2026, the Trust transitioned
@@ -127,7 +126,7 @@ function StructureSection() {
   const facts = [
     { label: 'Trust Registration', value: '' },
     { label: 'Governing Law', value: 'South African Trust Law' },
-    { label: 'Land Title', value: '200ha Freehold, Unencumbered' },
+    { label: 'Land Title', value: 'Freehold, Unencumbered' },
     { label: 'Ownership', value: '100% Black-Owned, Female-Led' },
     { label: 'Operational From', value: 'May 2026' },
     { label: 'BFS Scorecard (Est.)', value: '46 / 50' },
@@ -147,7 +146,7 @@ function StructureSection() {
             <p style={{ color: 'var(--color-ink-mute)' }}>
               This is a first-generation black female commercial farming enterprise  -  not a smallholder operation
               and not an emerging farmer. It is an institutional-grade agricultural business anchored by 200
-              hectares of unencumbered freehold land.
+              freehold land.
             </p>
           </div>
           <div>

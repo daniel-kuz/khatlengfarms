@@ -9,7 +9,7 @@ import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
 
 export const metadata: Metadata = {
   title: 'About Us | Khatleng Farms',
-  description: 'Khatleng Farms — a commercial agricultural enterprise in Bethlehem, Free State, established in 2000 on 200 hectares of freehold land.',
+  description: 'Khatleng Farms — a commercial agricultural enterprise in Bethlehem, Free State, farming since 2000.',
 };
 
 export default function AboutPage() {
@@ -60,7 +60,7 @@ function OpeningSection() {
               Khatleng Farms is focused on sustainable grain production, livestock development and long-term agricultural growth.
             </p>
             <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75 }}>
-              We operate 200 hectares of freehold farmland in Bethlehem, Free State — land established in 2000 and now entering its most productive chapter.
+              We operate Freehold farmland in Bethlehem, Free State — now entering its most productive chapter.
             </p>
           </div>
           <div style={{ position: 'relative', height: 'clamp(380px,42vw,520px)', width: '100%', overflow: 'hidden' }}>
@@ -90,7 +90,7 @@ function FullStory() {
           </div>
           <div style={{ color: 'rgba(244,235,221,0.82)', lineHeight: 1.8 }}>
             <p style={{ marginBottom: 20 }}>
-              Khatleng Farms was established in 2000 on 200 hectares of freehold land in Bethlehem, Free State. The land has been held continuously and unencumbered for over two decades.
+              Khatleng Farms was farming in the Free State since 2000 on freehold land in Bethlehem.
             </p>
             <p style={{ marginBottom: 20 }}>
               
@@ -151,11 +151,11 @@ function PhilosophyPillars() {
 
 function JourneyTimeline() {
   const milestones = [
-    { year: '2000', event: 'Farm established. 200ha freehold land, continuously held and in agricultural use.' },
+    { year: '2000', event: 'Farming operations established in Bethlehem, Free State.' },
     { year: '2020', event: 'Transition planning begins. Long-term development plan takes shape.' },
     { year: '2026', event: 'Commercial farm development launched. Next generation takes the land into direct operation.' },
-    { year: '2027', event: 'Tunnel expansion and livestock growth phase initiated.' },
-    { year: 'Future', event: 'Integrated commercial agriculture — irrigation, agro-processing, feedlot, packhouse.' },
+    { year: 'Near Term', event: 'Continued expansion across all production streams.' },
+    { year: 'Long Term', event: 'Fully integrated commercial operation — diversified, resilient, sustainable.' },
   ];
 
   return (

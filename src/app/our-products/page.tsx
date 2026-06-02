@@ -173,9 +173,9 @@ function BeefStudProgramme() {
 
 function FutureRoadmap() {
   const phases = [
-    { year: 'Year 3', title: 'Irrigation Development', body: 'Infrastructure financed from Year 1 - 2 operational surpluses. Significantly increases crop yields across arable land and reduces weather dependency.' },
+    { year: 'Next Phase', title: 'Infrastructure Expansion', body: 'Continued investment in water and production infrastructure to increase yields and reduce risk.' },
     { year: 'Year 3+', title: 'Agro-Processing', body: 'Maize meal, sunflower oil, dried vegetables  -  value chain vertical integration. Higher margins by capturing processing value previously passed upstream.' },
-    { year: 'Year 5+', title: 'Export Readiness', body: 'Cross-border market entry, international buyer certifications, traceability systems export-grade. Premium identity through data-backed quality claims.' },
+    { year: 'Long Term', title: 'Market Expansion', body: 'Broadening reach into new markets — anchored by quality, traceability and operational consistency.' },
   ];
 
   return (

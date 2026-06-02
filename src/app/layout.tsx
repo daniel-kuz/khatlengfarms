@@ -26,7 +26,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Khatleng Farms | Commercial Agriculture, Bethlehem Free State",
   description:
-    "Khatleng Farms is a commercial agricultural enterprise in Bethlehem, Free State — producing grain, livestock and fresh vegetables from 200 hectares of freehold farmland.",
+    "Khatleng Farms is a commercial agricultural enterprise in Bethlehem, Free State — producing grain, livestock and fresh vegetables from our Free State farmland.",
   openGraph: {
     type: "website",
     locale: "en_ZA",
@@ -46,7 +46,7 @@ const structuredData = {
       email: "info@khatleng.com",
       telephone: "+27691010076",
       description:
-        "A commercial agricultural enterprise in Bethlehem, Free State — producing grain, livestock and fresh vegetables from 200 hectares of freehold farmland.",
+        "A commercial agricultural enterprise in Bethlehem, Free State — producing grain, livestock and fresh vegetables from our Free State farmland.",
       foundingDate: "2000",
       legalName: "Nkoenyane Family Trust",
     },

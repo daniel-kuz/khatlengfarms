@@ -89,13 +89,13 @@ function TheStory() {
           <div>
             <SectionLabel number="" label="Our Story" />
             <h2 style={{ marginBottom: 28, fontWeight: 400 }}>
-              Rooted in the Free State since 2000. Now in full commercial operation.
+              Farming in the Free State since 2000. Now in full commercial operation.
             </h2>
             <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 16 }}>
               Khatleng Farms was born from a vision planted more than two decades ago.
             </p>
             <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 16 }}>
-              Khatleng Farms was established in 2000 on 200 hectares of freehold land in Bethlehem, Free State.
+              Khatleng Farms was farming in the Free State since 2000.
             </p>
             <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 32 }}>
               Today, the land is in full commercial operation — focused on grain production, livestock and tunnel farming, with a commitment to long-term growth and community impact.
@@ -220,11 +220,11 @@ function WhyBethlehem() {
 /* ─────────────────── OUR JOURNEY ─────────────────── */
 function OurJourney() {
   const milestones = [
-    { year: '2000', event: 'Farm established. 200ha of freehold land in Bethlehem, Free State.' },
+    { year: '2000', event: 'Farming operations established in Bethlehem, Free State.' },
     { year: '2020', event: 'Transition planning begins. Long-term development plan takes shape for next-generation operation.' },
     { year: '2026', event: 'Commercial farm development launched. Next generation takes the land into direct operation.' },
-    { year: '2027', event: 'Tunnel expansion and livestock growth phase initiated.' },
-    { year: 'Future', event: 'Integrated commercial agriculture — irrigation, agro-processing, feedlot, packhouse.' },
+    { year: 'Near Term', event: 'Continued expansion across all production streams.' },
+    { year: 'Long Term', event: 'Fully integrated commercial operation — diversified, resilient, sustainable.' },
   ];
 
   return (
@@ -290,7 +290,7 @@ function ImpactSection() {
     { title: 'Youth Agriculture', body: 'Priority employment and skills development for youth under 35.' },
     { title: 'Women in Farming', body: '50% female employment target across all permanent roles.' },
     { title: 'Food Security', body: 'Producing staple crops and fresh vegetables for local and regional markets.' },
-    { title: 'Local Employment', body: '18–25 jobs in Year 1, growing to 33–44 by Year 3.' },
+    { title: 'Local Employment', body: 'Creating jobs and skills development in the Bethlehem area.' },
   ];
 
   return (

@@ -8,7 +8,7 @@ import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 
 export const metadata: Metadata = {
   title: 'Khatleng Farms | The Nkoenyane Family Trust',
-  description: '200 hectares of freehold agricultural land in Bethlehem, Free State. Dryland crops, tunnel vegetables, livestock, and beef stud operations.',
+  description: 'Freehold agricultural land in Bethlehem, Free State. Dryland crops, tunnel vegetables, livestock, and beef stud operations.',
 };
 
 export default function TheFarmPage() {
@@ -52,7 +52,7 @@ function PageHero() {
         <div className="numlabel" style={{ color: 'var(--color-gold-soft)', marginBottom: 20 }}><span></span>BLK 25 FOURIE FARM · BETHLEHEM, FREE STATE</div>
         <h1 style={{ color: 'var(--color-bone)', maxWidth: '16ch', marginBottom: 20 }}>Khatleng Farms</h1>
         <p style={{ color: 'rgba(248,245,238,0.85)', fontSize: 'clamp(17px,1.4vw,21px)', maxWidth: '52ch' }}>
-          Bethlehem, Free State  -  200 hectares of freehold agricultural land.
+          Bethlehem, Free State — freehold agricultural land.
         </p>
       </div>
     </header>
