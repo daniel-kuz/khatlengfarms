@@ -42,14 +42,14 @@ const structuredData = {
       "@type": "Organization",
       "@id": "https://www.khatlengfarms.co.za/#org",
       name: "Khatleng Farms",
-      alternateName: "Nkoenyane Family Trust trading as Khatleng Farms",
+      alternateName: "NFT trading as Khatleng Farms",
       url: "https://www.khatlengfarms.co.za",
       email: "info@khatleng.com",
       telephone: "+27691010076",
       description:
         "A commercial agricultural enterprise in Bethlehem, Free State — producing grain, livestock and fresh vegetables from our Free State farmland.",
       foundingDate: "2000",
-      legalName: "Nkoenyane Family Trust",
+      legalName: "NFT",
     },
     {
       "@type": "LocalBusiness",

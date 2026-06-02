@@ -182,7 +182,7 @@ function ContactDetails() {
         </div>
       </div>
       <p style={{ marginTop: 24, fontSize: 12, color: 'var(--color-ink-mute)', lineHeight: 1.6 }}>
-        Operated by Nkoenyane Family Trust trading as Khatleng Farms.
+        Operated by NFT trading as Khatleng Farms.
       </p>
     </div>
   );

@@ -8,8 +8,8 @@ import Divider from '@/components/ui/Divider';
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 
 export const metadata: Metadata = {
-  title: 'Our Story | The Nkoenyane Family Trust',
-  description: 'The Nkoenyane Family Trust — farming in the Free State since 2000, with a long-standing commitment to sustainable agriculture.',
+  title: 'Our Story | The NFT',
+  description: 'The NFT — farming in the Free State since 2000, with a long-standing commitment to sustainable agriculture.',
 };
 
 export default function OurStoryPage() {
@@ -140,7 +140,7 @@ function StructureSection() {
             <SectionLabel number="03" label="Our Structure" />
             <h2 style={{ marginBottom: 24 }}>Governed for the long term.</h2>
             <p className="lede" style={{ marginBottom: 20 }}>
-              The Nkoenyane Family Trust () operates under South African trust law with fiduciary
+              The NFT () operates under South African trust law with fiduciary
               oversight, institutional controls, and a governance framework designed for generational continuity.
             </p>
             <p style={{ color: 'var(--color-ink-mute)' }}>

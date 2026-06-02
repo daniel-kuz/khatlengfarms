@@ -7,7 +7,7 @@ import Btn from '@/components/ui/Btn';
 import Divider from '@/components/ui/Divider';
 
 export const metadata: Metadata = {
-  title: 'Invest | The Nkoenyane Family Trust',
+  title: 'Invest | The NFT',
   description: 'A de-risked agricultural investment opportunity. Freehold land, four income streams, strong projected revenue. BFS scorecard 46/50.',
 };
 

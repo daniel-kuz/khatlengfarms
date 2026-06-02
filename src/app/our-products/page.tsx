@@ -8,7 +8,7 @@ import Divider from '@/components/ui/Divider';
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 
 export const metadata: Metadata = {
-  title: 'Our Products | The Nkoenyane Family Trust',
+  title: 'Our Products | The NFT',
   description: 'Four income streams from Khatleng Farms  -  dryland crops, tunnel vegetables, commercial livestock, and beef stud programme.',
 };
 

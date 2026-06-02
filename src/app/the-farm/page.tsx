@@ -7,7 +7,7 @@ import Divider from '@/components/ui/Divider';
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 
 export const metadata: Metadata = {
-  title: 'Khatleng Farms | The Nkoenyane Family Trust',
+  title: 'Khatleng Farms | The NFT',
   description: 'Freehold agricultural land in Bethlehem, Free State. Dryland crops, tunnel vegetables, livestock, and beef stud operations.',
 };
 

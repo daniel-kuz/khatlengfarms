@@ -92,7 +92,7 @@ export default function Footer() {
           fontSize: 12, color: 'rgba(244,235,221,0.45)', letterSpacing: '0.07em',
         }}
       >
-        <span>© 2026 Khatleng Farms | Operated by Nkoenyane Family Trust</span>
+        <span>© 2026 Khatleng Farms | Operated by NFT</span>
         <span>Bethlehem · Free State · ZA</span>
       </div>
 

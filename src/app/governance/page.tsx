@@ -7,8 +7,8 @@ import Divider from '@/components/ui/Divider';
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 
 export const metadata: Metadata = {
-  title: 'Governance | The Nkoenyane Family Trust',
-  description: 'Leadership, stewardship and governance at the Nkoenyane Family Trust. A trust built for generational continuity, institutional accountability, and long-term impact.',
+  title: 'Governance | The NFT',
+  description: 'Leadership, stewardship and governance at the NFT. A trust built for generational continuity, institutional accountability, and long-term impact.',
 };
 
 export default function GovernancePage() {
