@@ -36,9 +36,9 @@ export default function NewsPage() {
             </div>
             <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 32 }}>
               {articles.map((article) => (
-                <Link key={article.slug} href={`/news/${article.slug}`} style={{ display: 'flex', flexDirection: 'column', textDecoration: 'none' }}>
-                  <div style={{ position: 'relative', height: 260, overflow: 'hidden', marginBottom: 20 }}>
-                    <Image src={article.image} alt={article.imageAlt} fill style={{ objectFit: 'cover', transition: 'transform 0.4s ease' }} sizes="(max-width:860px) 100vw, 50vw" className="news-img" />
+                <Link key={article.slug} href={`/news/${article.slug}`} className="card-hover" style={{ display: 'flex', flexDirection: 'column', textDecoration: 'none' }}>
+                  <div className="img-zoom" style={{ position: 'relative', height: 260, overflow: 'hidden', marginBottom: 20 }}>
+                    <Image src={article.image} alt={article.imageAlt} fill style={{ objectFit: 'cover' }} sizes="(max-width:860px) 100vw, 50vw" />
                   </div>
                   <div style={{ display: 'flex', gap: 14, alignItems: 'center', marginBottom: 12, fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--color-ink-mute)' }}>
                     <span style={{ color: 'var(--color-green)', border: '1px solid var(--color-green)', padding: '2px 8px' }}>{article.category}</span>

@@ -56,7 +56,7 @@ export default function GalleryPage() {
                 style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gridAutoRows: '280px', gap: 12, marginTop: 32 }}
               >
                 {images.map(({ src, alt, tall }, i) => (
-                  <div key={i} style={{ gridRow: tall ? 'span 2' : 'span 1', position: 'relative', overflow: 'hidden' }}>
+                  <div key={i} className="img-zoom" style={{ gridRow: tall ? 'span 2' : 'span 1', position: 'relative', overflow: 'hidden' }}>
                     <Image
                       src={src}
                       alt={alt}

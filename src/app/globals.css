@@ -128,3 +128,85 @@ p  { margin: 0 0 1em; }
 
 /* ── Focus ── */
 :focus-visible { outline: 2px solid var(--color-brown); outline-offset: 3px; }
+
+/* ───────────────────────────────────────────
+   GLOBAL ANIMATIONS & TRANSITIONS
+─────────────────────────────────────────── */
+
+/* Smooth page-level transitions */
+main { animation: page-enter 0.5s ease both; }
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Image hover zoom — add class "img-zoom" to any image wrapper */
+.img-zoom { overflow: hidden; }
+.img-zoom img,
+.img-zoom > div { transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important; }
+.img-zoom:hover img,
+.img-zoom:hover > div { transform: scale(1.05) !important; }
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(47,47,47,0.12);
+}
+
+/* Animated underline for nav links and text links */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-brown);
+  transition: width 0.3s ease;
+}
+.link-underline:hover::after { width: 100%; }
+
+/* Divider entrance */
+.divider { opacity: 0; animation: divider-in 0.6s ease forwards; }
+@keyframes divider-in { to { opacity: 1; } }
+
+/* Stat/number count-up feel — subtle pulse on load */
+@keyframes stat-pop {
+  0%   { transform: scale(0.92); opacity: 0; }
+  60%  { transform: scale(1.04); }
+  100% { transform: scale(1);    opacity: 1; }
+}
+.stat-animate { animation: stat-pop 0.6s cubic-bezier(0.34,1.56,0.64,1) both; }
+
+/* Button press effect */
+button, a[class*="btn"], [class*="btn"] {
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+button:active, a[class*="btn"]:active {
+  transform: scale(0.97);
+}
+
+/* Smooth image loading fade-in */
+img { transition: opacity 0.4s ease; }
+
+/* Section heading reveal — subtle left border accent */
+@keyframes accent-grow {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
+
+/* Footer links smooth colour transition */
+footer a { transition: color 0.2s ease; }
+footer a:hover { color: var(--color-bone) !important; }
+
+/* Nav link hover colour */
+nav a { transition: color 0.2s ease, border-color 0.2s ease !important; }
+
+/* Smooth background transitions on sections */
+section { transition: background-color 0.3s ease; }
