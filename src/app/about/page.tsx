@@ -6,6 +6,7 @@ import SectionLabel from '@/components/ui/SectionLabel';
 import Divider from '@/components/ui/Divider';
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
 import HeroVideoLoop from '@/components/ui/HeroVideoLoop';
+import ScrollReveal from '@/components/ui/ScrollReveal';
 
 export const metadata: Metadata = {
   title: 'About Us | Khatleng Farms',
@@ -38,9 +39,9 @@ function PageHero() {
       <HeroVideoLoop videos={['/videos/hero4.mp4','/videos/hero5.mp4','/videos/hero6.mp4','/videos/hero7.mp4']} />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.55) 60%,rgba(0,0,0,0.78) 100%)', zIndex: 1 }} />
       <div style={{ position: 'relative', zIndex: 2, maxWidth: 1320, margin: '0 auto', width: '100%' }}>
-        <div className="numlabel" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span>—</span>ABOUT US</div>
-        <h1 style={{ color: 'var(--color-bone)', maxWidth: '18ch', marginBottom: 20, fontWeight: 400 }}>About Khatleng Farms</h1>
-        <p style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
+        <div className="numlabel hero-animate" style={{ color: 'rgba(244,235,221,0.6)', marginBottom: 20 }}><span>—</span>ABOUT US</div>
+        <h1 className="hero-animate-1" style={{ color: 'var(--color-bone)', maxWidth: '18ch', marginBottom: 20, fontWeight: 400 }}>About Khatleng Farms</h1>
+        <p className="hero-animate-2" style={{ color: 'rgba(244,235,221,0.82)', fontSize: 'clamp(16px,1.4vw,20px)', maxWidth: '52ch' }}>
           A commercial agricultural enterprise based in Bethlehem, Free State.
         </p>
       </div>
@@ -53,25 +54,29 @@ function OpeningSection() {
     <section className="section-pad">
       <div className="container">
         <div className="opening-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(56px,8vw,112px)', alignItems: 'center' }}>
-          <div>
-            <SectionLabel number="" label="Who We Are" />
-            <h2 style={{ fontWeight: 400, marginBottom: 28 }}>200 hectares. One purpose. Built to last.</h2>
-            <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 16 }}>
-              Khatleng Farms is focused on sustainable grain production, livestock development and long-term agricultural growth.
-            </p>
-            <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75 }}>
-              We operate Freehold farmland in Bethlehem, Free State — now entering its most productive chapter.
-            </p>
-          </div>
-          <div style={{ position: 'relative', height: 'clamp(380px,42vw,520px)', width: '100%', overflow: 'hidden' }}>
-            <Image
-              src="/images/img · farm landscape · Free State highlands · morning light.jpg"
-              alt="Farm landscape, Free State highlands, morning light"
-              fill
-              style={{ objectFit: 'cover', objectPosition: 'center' }}
-              sizes="(max-width: 860px) 100vw, 50vw"
-            />
-          </div>
+          <ScrollReveal direction="left">
+            <div>
+              <SectionLabel number="" label="Who We Are" />
+              <h2 style={{ fontWeight: 400, marginBottom: 28 }}>200 hectares. One purpose. Built to last.</h2>
+              <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75, marginBottom: 16 }}>
+                Khatleng Farms is focused on sustainable grain production, livestock development and long-term agricultural growth.
+              </p>
+              <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.75 }}>
+                We operate Freehold farmland in Bethlehem, Free State — now entering its most productive chapter.
+              </p>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal direction="right" delay={150}>
+            <div className="img-zoom" style={{ position: 'relative', height: 'clamp(380px,42vw,520px)', width: '100%', overflow: 'hidden' }}>
+              <Image
+                src="/images/img · farm landscape · Free State highlands · morning light.jpg"
+                alt="Farm landscape, Free State highlands, morning light"
+                fill
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
+                sizes="(max-width: 860px) 100vw, 50vw"
+              />
+            </div>
+          </ScrollReveal>
         </div>
       </div>
       <style>{`@media(max-width:860px){.opening-grid{grid-template-columns:1fr!important}}`}</style>
@@ -84,10 +89,13 @@ function FullStory() {
     <section className="section-pad" style={{ background: 'var(--color-green-deep)', color: 'var(--color-bone)' }}>
       <div className="container">
         <div className="story-layout" style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: 'clamp(56px,8vw,112px)', alignItems: 'start' }}>
-          <div>
-            <SectionLabel number="" label="Our Story" light />
-            <h2 style={{ color: 'var(--color-bone)', fontWeight: 400 }}>From landholding to commercial enterprise.</h2>
-          </div>
+          <ScrollReveal direction="up">
+            <div>
+              <SectionLabel number="" label="Our Story" light />
+              <h2 style={{ color: 'var(--color-bone)', fontWeight: 400 }}>From landholding to commercial enterprise.</h2>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal direction="up" delay={200}>
           <div style={{ color: 'rgba(244,235,221,0.82)', lineHeight: 1.8 }}>
             <p style={{ marginBottom: 20 }}>
               Khatleng Farms was farming in the Free State since 2000 on freehold land in Bethlehem.
@@ -114,6 +122,7 @@ function FullStory() {
               At Khatleng Farms, we are not simply farming land. We are continuing a legacy.
             </p>
           </div>
+          </ScrollReveal>
         </div>
       </div>
       <style>{`@media(max-width:860px){.story-layout{grid-template-columns:1fr!important}}`}</style>
@@ -136,11 +145,13 @@ function PhilosophyPillars() {
           <h2 style={{ fontWeight: 400 }}>How we farm. Why it matters.</h2>
         </div>
         <div className="phil-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24 }}>
-          {pillars.map(({ title, body }) => (
-            <div key={title} style={{ padding: '36px 32px', borderTop: '3px solid var(--color-brown)' }}>
-              <h3 style={{ marginBottom: 16, fontWeight: 600 }}>{title}</h3>
-              <p style={{ color: 'var(--color-ink-mute)', margin: 0, lineHeight: 1.75 }}>{body}</p>
-            </div>
+          {pillars.map(({ title, body }, i) => (
+            <ScrollReveal key={title} direction="up" delay={i * 120}>
+              <div style={{ padding: '36px 32px', borderTop: '3px solid var(--color-brown)', height: '100%' }}>
+                <h3 style={{ marginBottom: 16, fontWeight: 600 }}>{title}</h3>
+                <p style={{ color: 'var(--color-ink-mute)', margin: 0, lineHeight: 1.75 }}>{body}</p>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
@@ -168,13 +179,15 @@ function JourneyTimeline() {
         <div style={{ position: 'relative', maxWidth: 860 }}>
           <div style={{ position: 'absolute', left: 'clamp(48px,6vw,72px)', top: 0, bottom: 0, width: 1, background: 'rgba(122,92,62,0.25)' }} />
           {milestones.map(({ year, event }, i) => (
-            <div key={year} style={{ display: 'grid', gridTemplateColumns: 'clamp(96px,12vw,144px) 1fr', gap: 32, padding: 'clamp(20px,2.5vw,32px) 0', borderBottom: i < milestones.length - 1 ? '1px solid rgba(47,47,47,0.08)' : 'none', alignItems: 'start' }}>
-              <div style={{ textAlign: 'right', paddingRight: 'clamp(20px,3vw,36px)', position: 'relative' }}>
-                <div style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(18px,1.8vw,24px)', color: year === 'Future' ? 'var(--color-brown)' : 'var(--color-green)', fontWeight: 600 }}>{year}</div>
-                <div style={{ position: 'absolute', right: -6, top: '50%', transform: 'translateY(-50%)', width: 12, height: 12, background: year === 'Future' ? 'var(--color-brown)' : 'var(--color-green)', border: '3px solid var(--color-bone-deep)', zIndex: 2 }} />
+            <ScrollReveal key={year} direction="left" delay={i * 100}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'clamp(96px,12vw,144px) 1fr', gap: 32, padding: 'clamp(20px,2.5vw,32px) 0', borderBottom: i < milestones.length - 1 ? '1px solid rgba(47,47,47,0.08)' : 'none', alignItems: 'start' }}>
+                <div style={{ textAlign: 'right', paddingRight: 'clamp(20px,3vw,36px)', position: 'relative' }}>
+                  <div style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(18px,1.8vw,24px)', color: year === 'Future' ? 'var(--color-brown)' : 'var(--color-green)', fontWeight: 600 }}>{year}</div>
+                  <div style={{ position: 'absolute', right: -6, top: '50%', transform: 'translateY(-50%)', width: 12, height: 12, background: year === 'Future' ? 'var(--color-brown)' : 'var(--color-green)', border: '3px solid var(--color-bone-deep)', zIndex: 2 }} />
+                </div>
+                <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.7, margin: 0, paddingTop: 2 }}>{event}</p>
               </div>
-              <p style={{ color: 'var(--color-ink-mute)', lineHeight: 1.7, margin: 0, paddingTop: 2 }}>{event}</p>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
